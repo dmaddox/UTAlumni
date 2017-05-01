@@ -1,4 +1,9 @@
 body {
-  background-color: tomato; }
+  background-color: #bf5700; }
+
+.brand-text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px;
+  color: #392f2d !important; }
 
 /*# sourceMappingURL=style.css.map */
