@@ -1,14 +1,57 @@
-
-
 @import "variables";
 @import "mixins";
-body {
-	background-color: $orange;
 
-}
 .brand-text{
 	font-family: $main-font;
 	font-size: $font-heading;
-	color: $darkGrey !important;
+	color: $dark-grey !important;
 }
 
+.navbar {
+	margin-bottom: 0;
+}
+
+.main-title {
+	margin-top: 0;
+	color: $white;
+}
+
+.main-subtitle {
+	margin-bottom: 50px;
+	padding-right: 50px;
+	color: $white;
+}
+//background-image placeholder
+.main-image {
+	background-image: url("../../assets/main-image.jpeg");
+	background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
+	height: 750px;
+}
+
+
+// vertical centering of main content
+.main-content {
+	padding-top: 130px;
+}
+
+//log-in header
+.log-in {
+	margin-top: 0;
+}
+
+//sign-up form container
+#sign-up {
+	background-color: $light-grey;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+
+
+//sign-in form divider
+.border {
+	border-top: 1px solid #eee;
+	padding-top: 10px;
+}

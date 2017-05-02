@@ -1,9 +1,41 @@
-body {
-  background-color: #bf5700; }
-
 .brand-text {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;
   color: #392f2d !important; }
+
+.navbar {
+  margin-bottom: 0; }
+
+.main-title {
+  margin-top: 0;
+  color: #ffffff; }
+
+.main-subtitle {
+  margin-bottom: 50px;
+  padding-right: 50px;
+  color: #ffffff; }
+
+.main-image {
+  background-image: url("../../assets/main-image.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 750px; }
+
+.main-content {
+  padding-top: 130px; }
+
+.log-in {
+  margin-top: 0; }
+
+#sign-up {
+  background-color: #d3d3d3;
+  padding: 20px 30px;
+  margin-bottom: 20px; }
+
+.border {
+  border-top: 1px solid #eee;
+  padding-top: 10px; }
 
 /*# sourceMappingURL=style.css.map */
