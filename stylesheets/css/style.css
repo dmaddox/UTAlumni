@@ -33,8 +33,28 @@
   padding: 20px 0 20px 0;
   margin-bottom: 20px; }
 
+.profile-image {
+  border-radius: 50%;
+  height: 200px;
+  margin-top: 30px; }
+
+.results-image {
+  border-radius: 50%;
+  height: 100px; }
+
 #nav-tabs {
   background-color: tan;
   padding: 20px 20px 0 20px; }
+
+#profile-section {
+  background-color: tomato;
+  height: 800px; }
+
+.search-results {
+  margin-top: 30px; }
+
+.individual-result {
+  margin: 10px 0;
+  border: 1px solid tomato; }
 
 /*# sourceMappingURL=style.css.map */

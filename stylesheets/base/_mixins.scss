@@ -1,0 +1,9 @@
+@mixin profile-image {
+	border-radius: 50%;
+	height: 200px;
+}
+
+@mixin results-image {
+	border-radius: 50%;
+	height: 100px;
+}

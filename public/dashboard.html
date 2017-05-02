@@ -15,23 +15,55 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 		<!-- Custom CSS Link -->
-		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../stylesheets/css/style.css">
 	</head>
 	<body>
 		<nav class="navbar navbar-default">
 		  <div class="container">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand" href="#">Brand</a>
+		      <a class="navbar-brand" href="index.html">Brand</a>
 		      <p class="navbar-text pull-right">About</p>
-		    </div>
 		  </div>
-    	</nav>	
+    	</nav> <!-- /navbar -->
+    	<div id="dashboard">
+			<div class="row">
+				<div class="col-md-3 text-center" id="profile-section">
+					<img src="http://placehold.it/200x200" class="profile-image" />
+					<h1>User Name</h1>
+				</div> <!-- /profile-section -->
+				<div class="col-md-7" id="results-section">
+				    <div class="input-group search-results">
+				      <input type="text" class="form-control" placeholder="Search">
+				      <span class="input-group-btn">
+				        <button class="btn btn-default" type="button">Go!</button>
+				      </span>
+				    </div><!-- /search bar -->
+				    <div class="individual-result">
+						<div class="row">
+							<div class="col-md-2">
+								<img src="http://placehold.it/100x100" class="results-image">
+							</div>
+							<div class="col-md-3 text-left">
+								<h3 class="result-name">First Last</h3>
+								<p class="result-city">Austin, Tx</p> 
+							</div>
+							<div class="col-md-5">
+								<p class="result-bio">Come and listen to a story about a man named Jed - a poor mountaineer barely kept his family fed. Just sit right back and you'll hear a tale a tale of a fateful trip that started from this tropic port aboard this tiny ship. Believe it or not I'm walking on air.</p>
+							</div>
+							<div class="col-md-2">
+								<img src="http://placehold.it/100x100">
+							</div>
+
+						</div>
+				    </div>
+				    <div class="individual-result">
+						<div class="row">
+							<div class="col-md-3">
+								<img src="http://placehold.it/100x100" class="results-image">
+							</div>
+						</div>
+				    </div>
+				</div><!-- /results-section -->
+			</div>
+		</div>	
 	</body>
 </html>
