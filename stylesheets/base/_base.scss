@@ -48,6 +48,17 @@
     margin-bottom: 20px;
 }
 
+//user's profile image
+.profile-image {
+	@include profile-image;
+	margin-top: 30px; 
+}
+
+.results-image {
+	@include results-image;
+}
+
+
 
 
 
