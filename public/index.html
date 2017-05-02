@@ -30,58 +30,59 @@
 		<section class="main-image">
 			<div class="container main-content">
 	    		<div class="row">
-					<div class="col-md-6 col-sm-offset-1">
+					<div class="col-sm-6 col-sm-offset-1">
 						<h1 class="main-title">Welcome to HookedIn</h1>
 						<h3 class="main-subtitle">Connect with your friends -- and other fascinating people. Check in with members from your cohort and see where your colleagues have landed jobs!</h3>
 					</div>
-					<div class="col-md-5">
+					<div class="col-sm-5">
+						<div id="nav-tabs"> <!-- Nav tabs -->
+						  <ul class="nav nav-tabs text-right" role="tablist">
+						    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Log in</a></li>
+						    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Sign Up</a></li>
+						  </ul>
 
-						<!-- Login Form -->
-						<div class="row">
-							<div class="col-md-12">
-								<form id="sign-up">
-									<div class="row">
-										<div class="col-xs-9">
-											<h3 class="log-in">Welcome Back!</h3>
-										</div>
+						  <!-- Tab panes -->
+						  <div class="tab-content">
+						    <div role="tabpanel" class="tab-pane active" id="home">
+						    	<!-- Login Form -->
+								<div class="row">
+									<div class="col-sm-12">
+										<form id="sign-up">
+										  <div class="form-group border">
+										    <label class="sr-only" for="email-input">Email address</label>
+										    <input type="email" class="form-control" id="email-input" placeholder="Email">
+										  </div>
+										  <div class="form-group">
+										    	<label class="sr-only" for="password-input">Password</label>
+										    	<input type="password" class="form-control" id="password-input" placeholder="Password">
+										    	
+										  </div>
+										  <button type="submit" class="btn btn-default" id="btn-sign-in">Sign in</button>
+										</form>
 									</div>
+								</div>
+						    </div>
+						    <div role="tabpanel" class="tab-pane" id="profile">
+						    <!-- Sign-up Form -->
+						    	<form id="sign-up">
 								  <div class="form-group border">
-								    <label class="sr-only" for="exampleInputEmail3">Email address</label>
-								    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+								    <input type="name" class="form-control" id="full-name" placeholder="Full Name">
 								  </div>
 								  <div class="form-group">
-								    	<label class="sr-only" for="exampleInputPassword3">Password</label>
-								    	<input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
-								    	
+								    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
 								  </div>
-								  <button type="submit" class="btn btn-default" id="btn-sign-in">Sign in</button>
-								  
-								</form>
-							</div>
-						</div>
+								  <div class="form-group">
+								    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+								  </div>
+								  <button type="submit" class="btn btn-default" id="btn-sign-up">Sign Up</button>
+								</form>	
+						    </div>
+						  </div>
 
-						<!-- Sign-up Form -->
-						<form id="sign-up">
-							<div class="row">
-								<div class="col-xs-9">
-									<h3 class="log-in">New to HookedIn?</h3>
-								</div>
-							</div>
-						  <div class="form-group border">
-						    <input type="name" class="form-control" id="full-name" placeholder="Full Name">
-						  </div>
-						  <div class="form-group">
-						    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-						  </div>
-						  <div class="form-group">
-						    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-						  </div>
-						  <button type="submit" class="btn btn-default" id="btn-sign-up">Sign Up</button>
-						</form>	
+						</div>
 					</div>
 				</div>
 	    	</div>  <!-- /container -->
 		</section> <!-- /main image -->
-
 	</body>
 </html>
