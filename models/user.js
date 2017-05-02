@@ -20,6 +20,7 @@ module.exports = function(sequelize, Sequelize) {
  
         username: {
             type: Sequelize.TEXT
+            allowNull: false
         },
  
         about: {
@@ -45,9 +46,46 @@ module.exports = function(sequelize, Sequelize) {
         status: {
             type: Sequelize.ENUM('active', 'inactive'),
             defaultValue: 'active'
+        },
+
+        graduation: {
+            type: Sequelize.DATE,
+            allowNull: false
+        },
+
+        linkedIn_url: {
+            type: Sequelize.STRING
+
+        },
+
+        profile_photo: {
+            type: Sequelize.STRING
+
+        },
+
+        personal_website: {
+            type: Sequelize.STRING
+        },
+
+        first_salary: {
+            type: Sequelize.STRING
+        },
+
+        first_job: {
+            type: Sequelize.STRING
+        },
+
+        interview_time: {
+            type: Sequelize.STRING
+        },
+
+        mentor: {
+            type: Sequelize.Boolean
+        },
+        
+        user_comment: {
+            type: Sequelize.TEXT
         }
- 
- 
     });
  
     return User;
