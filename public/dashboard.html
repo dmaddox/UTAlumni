@@ -20,49 +20,80 @@
 	<body>
 		<nav class="navbar navbar-default">
 		  <div class="container">
-		      <a class="navbar-brand" href="index.html">Brand</a>
+		      <a class="navbar-brand" href="index.html">HookedIn</a>
 		      <p class="navbar-text pull-right">About</p>
 		  </div>
     	</nav> <!-- /navbar -->
     	<div id="dashboard">
 			<div class="row">
-				<div class="col-md-3 text-center" id="profile-section">
+				<div class="col-md-3 text-center" id="profile-section"> <!-- user profile sidebar -->
 					<img src="http://placehold.it/200x200" class="profile-image" />
-					<h1>User Name</h1>
-				</div> <!-- /profile-section -->
-				<div class="col-md-7" id="results-section">
+					<h1 class="user-fullname">Isaac Hawkins</h1>
+					<p class="user-employment-status">Employment Status</p>
+					<p class="user-city">Austin, Texas</p>
+					<p class="user-cohort">Full-time | Spring 2017</p>
+					<p class="user-linkedin">www.linkedin.com</p>
+					<p class="user-github">www.github.com</p>
+				</div> <!-- user profile sidebar -->
+
+
+				<div class="col-md-7" id="results-section"> <!-- search bar -->
 				    <div class="input-group search-results">
 				      <input type="text" class="form-control" placeholder="Search">
 				      <span class="input-group-btn">
 				        <button class="btn btn-default" type="button">Go!</button>
 				      </span>
 				    </div><!-- /search bar -->
-				    <div class="individual-result">
+				    <div class="individual-result text-center"> <!-- search results -->
 						<div class="row">
 							<div class="col-md-2">
 								<img src="http://placehold.it/100x100" class="results-image">
 							</div>
-							<div class="col-md-3 text-left">
+							<div class="col-md-3 text-center">
 								<h3 class="result-name">First Last</h3>
 								<p class="result-city">Austin, Tx</p> 
+								<p class="linkedin-link">www.linkedin.com/isaachawkins</p>
 							</div>
 							<div class="col-md-5">
 								<p class="result-bio">Come and listen to a story about a man named Jed - a poor mountaineer barely kept his family fed. Just sit right back and you'll hear a tale a tale of a fateful trip that started from this tropic port aboard this tiny ship. Believe it or not I'm walking on air.</p>
 							</div>
 							<div class="col-md-2">
-								<img src="http://placehold.it/100x100">
+								<img src="http://placehold.it/100x100" data-target="#myModal" data-toggle="modal">
 							</div>
 
 						</div>
 				    </div>
-				    <div class="individual-result">
-						<div class="row">
-							<div class="col-md-3">
-								<img src="http://placehold.it/100x100" class="results-image">
-							</div>
-						</div>
+				</div><!-- /search results -->
+
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">John Doe</h4>
+				      </div>
+				      <div class="modal-body">
+				      	<div class="row">
+				      		<div class="col-sm-3 text-center">
+				      			<img src="http://placehold.it/100x100" class="results-image">
+				      		</div>
+				      		<div class="col-md-9 text-center">
+				      			<h1>Isaac Hawkins</h1>
+				      			<p class="search-employment-status">Employment Status</p>
+								<p class="search-city">Austin, Texas</p>
+								<p class="search-cohort">Full-time | Spring 2017</p>
+								<p class="search-linkedin">www.linkedin.com</p>
+								<p class="seach-github">www.github.com</p>
+				      		</div>
+				      	</div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				      </div>
 				    </div>
-				</div><!-- /results-section -->
+				  </div>
+				</div>
 			</div>
 		</div>	
 	</body>
