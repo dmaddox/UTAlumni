@@ -47,21 +47,25 @@ module.exports = function(sequelize, Sequelize) {
 			defaultValue: 'active'
 		},
 
-		graduation: {
-			type: Sequelize.DATE
+		cohort: {
+			type: Sequelize.STRING
 		},
 
-		linkedIn_url: {
+		linkedInURL: {
 			type: Sequelize.STRING
 
 		},
 
-		profile_photo: {
+		profilePic: {
 			type: Sequelize.STRING
 
 		},
 
-		personal_website: {
+		location: {
+			type: Sequelize.STRING
+		},
+
+		portfolioURL: {
 			type: Sequelize.STRING
 		},
 
@@ -69,7 +73,7 @@ module.exports = function(sequelize, Sequelize) {
 			type: Sequelize.STRING
 		},
 
-		first_job: {
+		employment: {
 			type: Sequelize.STRING
 		},
 
