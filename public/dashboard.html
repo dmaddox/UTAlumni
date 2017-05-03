@@ -14,6 +14,9 @@
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+		<!-- Font Awesome -->
+		<script src="https://use.fontawesome.com/28a2b82478.js"></script>
+
 		<!-- Custom CSS Link -->
 		<link rel="stylesheet" type="text/css" href="../stylesheets/css/style.css">
 	</head>
@@ -26,8 +29,8 @@
     	</nav> <!-- /navbar -->
     	<main id="dashboard">
 			<div class="row">
-				<aside class="col-md-3 text-center" id="profile-section"> <!-- user profile sidebar -->
-					<a href="profile.html"><img src="http://placehold.it/200x200" class="profile-image" /></a>
+				<aside class="col-md-3 text-center well well-lg" id="profile-section"> <!-- user profile sidebar -->
+					<a href="profile.html"><img src="../assets/test.jpg" class="profile-image" /></a>
 					<h1 class="user-fullname">Isaac Hawkins</h1>
 					<p class="user-employment-status">Employment Status</p>
 					<p class="user-city">Austin, Texas</p>
@@ -41,24 +44,63 @@
 				    <div class="input-group search-results">
 				      <input type="text" class="form-control" placeholder="Search">
 				      <span class="input-group-btn">
-				        <button class="btn btn-default" type="button">Go!</button>
+				        <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i>
+</button>
 				      </span>
 				    </div><!-- /search bar -->
-				    <div class="individual-result text-center"> <!-- search results -->
+				    <div class="individual-result well" data-toggle="modal" data-target="#myModal"> <!-- search results -->
 						<div class="row">
 							<div class="col-md-2">
-								<img src="http://placehold.it/100x100" class="results-image">
+								<img src="../assets/test.jpg" class="results-image">
 							</div>
-							<div class="col-md-3 text-center">
+							<div class="col-md-3 text-left">
 								<h3 class="result-name">First Last</h3>
 								<p class="result-city">Austin, Tx</p> 
-								<p class="linkedin-link">www.linkedin.com/isaachawkins</p>
+								<p class="company-name">Google</p>
 							</div>
-							<div class="col-md-5">
+							<div class="col-md-6">
 								<p class="result-bio">Come and listen to a story about a man named Jed - a poor mountaineer barely kept his family fed. Just sit right back and you'll hear a tale a tale of a fateful trip that started from this tropic port aboard this tiny ship. Believe it or not I'm walking on air.</p>
 							</div>
+							<div class="col-md-1">
+								<i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>
+							</div>
+
+						</div>
+				    </div>
+				    <div class="individual-result well"> <!-- search results -->
+						<div class="row">
 							<div class="col-md-2">
-								<img src="http://placehold.it/100x100" data-target="#myModal" data-toggle="modal">
+								<img src="../assets/test.jpg" class="results-image">
+							</div>
+							<div class="col-md-3 text-left">
+								<h3 class="result-name">First Last</h3>
+								<p class="result-city">Austin, Tx</p> 
+								<p class="company-name">Google</p>
+							</div>
+							<div class="col-md-6">
+								<p class="result-bio">Come and listen to a story about a man named Jed - a poor mountaineer barely kept his family fed. Just sit right back and you'll hear a tale a tale of a fateful trip that started from this tropic port aboard this tiny ship. Believe it or not I'm walking on air.</p>
+							</div>
+							<div class="col-md-1">
+								<i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>
+							</div>
+
+						</div>
+				    </div>
+				    <div class="individual-result well"> <!-- search results -->
+						<div class="row">
+							<div class="col-md-2">
+								<img src="../assets/test.jpg" class="results-image">
+							</div>
+							<div class="col-md-3 text-left">
+								<h3 class="result-name">First Last</h3>
+								<p class="result-city">Austin, Tx</p> 
+								<p class="company-name">Google</p>
+							</div>
+							<div class="col-md-6">
+								<p class="result-bio">Come and listen to a story about a man named Jed - a poor mountaineer barely kept his family fed. Just sit right back and you'll hear a tale a tale of a fateful trip that started from this tropic port aboard this tiny ship. Believe it or not I'm walking on air.</p>
+							</div>
+							<div class="col-md-1">
+					
 							</div>
 
 						</div>
@@ -71,25 +113,43 @@
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title" id="myModalLabel">John Doe</h4>
 				      </div>
 				      <div class="modal-body">
 				      	<div class="row">
-				      		<div class="col-sm-3 text-center">
-				      			<img src="http://placehold.it/100x100" class="results-image">
+				      		<div class="col-sm-5 text-center">
+				      			<img src="../assets/test.jpg" class="profile-image">
 				      		</div>
-				      		<div class="col-md-9 text-center">
+				      		<div class="col-md-7">
 				      			<h1>Isaac Hawkins</h1>
-				      			<p class="search-employment-status">Employment Status</p>
-								<p class="search-city">Austin, Texas</p>
-								<p class="search-cohort">Full-time | Spring 2017</p>
-								<p class="search-linkedin">www.linkedin.com</p>
-								<p class="seach-github">www.github.com</p>
+				      			<h4 class="employer">Google</h4>
+				      			<hr />
+								<div class="row">
+									<div class="col-xs-4">
+										<p>Cohort</p>
+										<p>Email</p>
+										<p>City</p>
+										<p>Mentor</p>
+									</div>
+									<div class="col-xs-8">
+										<p class="search-cohort">Full-time | Spring 2017</p>
+										<p class="search-email">hawkins.isaac@gmail.com</p>
+										<p class="search-city">Austin, Texas</p>
+										<p class="search-mentor">Yes</p>
+									</div>
+								</div>
 				      		</div>
 				      	</div>
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				      	<div class="row modal-links text-center">
+							<div class="col-xs-4">
+								<a class="search-linkedin" href="www.linkedin.com"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+							</div>
+							<div class="col-xs-4">
+								<a class="search-portfolio" href="ikehawkins.com"><i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
+							</div>
+							<div class="col-xs-4">
+								<a class="search-github" href="www.github.com"><i class="fa fa-github fa-2x" aria-hidden="true"></i>
+							</div>
+				      	</div>
 				      </div>
 				    </div>
 				  </div>

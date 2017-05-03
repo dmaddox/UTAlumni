@@ -1,13 +1,13 @@
-li a {
+a {
   color: black;
   text-decoration: none; }
-  li a:hover {
+  a:hover {
     color: black;
     text-decoration: none; }
-  li a:visited {
+  a:visited {
     color: black;
     text-decoration: none; }
-  li a:active {
+  a:active {
     color: black;
     text-decoration: none; }
 
@@ -28,15 +28,14 @@ li a {
 
 .profile-image {
   border-radius: 50%;
-  height: 200px;
-  margin-top: 30px; }
+  height: 200px; }
 
 .results-image {
   border-radius: 50%;
   height: 100px; }
 
 .main-title {
-  margin-top: 0;
+  margin-bottom: 100px;
   color: #ffffff; }
 
 .main-subtitle {
@@ -70,6 +69,16 @@ li a {
 
 .main-content {
   padding-top: 130px; }
+
+.modal-links {
+  background: linear-gradient(to bottom right, #F0C27B, #4B1248); }
+
+.modal-body {
+  padding: 15px 15px 0 15px; }
+
+.modal-links {
+  padding: 20px;
+  color: white; }
 
 #profile-background {
   height: 150px;
