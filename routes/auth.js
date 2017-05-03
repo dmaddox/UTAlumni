@@ -16,6 +16,30 @@ module.exports = function(app) {
 		successRedirect: '/dashboard',
 		failureRedirect: '/signin'
 	}));
+	app.get("/api/users", isLoggedIn, function(req, res) {
+		// var array = []
+		// 	// findAll returns all entries for a table when used with no options
+		// db.user.findAll({}).then(function(dbUser) {
+		// 	// We have access to the todos as an argument inside of the callback function
+		// 	dbUser.push(array);
+		// 	db.user.findOne({
+		// 		where: {
+		// 			id: //passport id
+		// 		}
+		// 	}).then(function(dbIndvidual) {
+		// 		dbIndvidual.push(array)
+		// 		res.json(array);
+		// 	})
+		// });
+
+		// findAll returns all entries for a table when used with no options
+		db.user.findAll({}).then(function(dbuser) {
+			// We have access to the todos as an argument inside of the callback function
+			res.json(dbuser);
+		});
+
+
+	});
 
 	function isLoggedIn(req, res, next) {
 		if (req.isAuthenticated()) {
