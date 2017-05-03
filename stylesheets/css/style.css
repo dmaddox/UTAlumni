@@ -1,3 +1,16 @@
+li a {
+  color: black;
+  text-decoration: none; }
+  li a:hover {
+    color: black;
+    text-decoration: none; }
+  li a:visited {
+    color: black;
+    text-decoration: none; }
+  li a:active {
+    color: black;
+    text-decoration: none; }
+
 .navbar {
   margin-bottom: 0; }
 
@@ -36,8 +49,17 @@
   font-size: 24px;
   color: #392f2d !important; }
 
-#profile-section {
-  background-color: tomato; }
+#sign-up {
+  padding: 20px 0 20px 0;
+  margin-bottom: 20px; }
+
+.form-container {
+  background-color: rgba(57, 47, 45, 0.3);
+  padding: 20px 20px 0 20px; }
+
+#about-hookedin {
+  padding-top: 60px;
+  margin-bottom: 60px; }
 
 .search-results {
   margin-top: 30px; }
@@ -49,12 +71,27 @@
 .main-content {
   padding-top: 130px; }
 
-#sign-up {
-  padding: 20px 0 20px 0;
-  margin-bottom: 20px; }
+#profile-background {
+  height: 150px;
+  background: red;
+  /* For browsers that do not support gradients */
+  background: linear-gradient(to bottom right, #F0C27B, #4B1248);
+  /* Standard syntax */ }
 
-.form-container {
-  background-color: rgba(57, 47, 45, 0.3);
-  padding: 20px 20px 0 20px; }
+.profile-heading {
+  padding-bottom: 40px;
+  margin-top: -110px; }
+
+#profile-media, #profile-about-me {
+  margin-bottom: 100px; }
+
+.profile-info {
+  border-radius: 5%; }
+
+#profile-media, #profile-about-me, #profile-employment-info {
+  border: 1px solid #eee;
+  padding: 50px;
+  margin-top: 50px;
+  height: 270px; }
 
 /*# sourceMappingURL=style.css.map */
