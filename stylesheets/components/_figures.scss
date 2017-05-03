@@ -1,5 +1,45 @@
 // Tabs for sign in/up
 #nav-tabs {
-	background-color: tan;
-    padding: 20px 20px 0 20px;
+	
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+//background-image placeholder
+.main-image {
+	background-image: url("../../assets/main-image.jpeg");
+	background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
+	height:100%;
+	padding-bottom: 50px;
+}
+
+//log-in header
+.log-in {
+	margin-top: 0;
+}
+
+//user's profile image
+.profile-image {
+	@include profile-image;
+	margin-top: 30px; 
+}
+
+.results-image {
+	@include results-image;
+}
+
+.main-title {
+	margin-top: 0;
+	color: $white;
+}
+
+.main-subtitle {
+	margin-bottom: 50px;
+	padding-right: 50px;
+	color: $white;
 }

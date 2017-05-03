@@ -10,3 +10,19 @@
 	margin: 10px 0;
     border: 1px solid tomato;
 }
+
+// vertical centering of main content
+.main-content {
+	padding-top: 130px;
+}
+
+//sign-up form container
+#sign-up {
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+}
+
+.form-container {
+	background-color: rgba($dark-grey, 0.3);
+    padding: 20px 20px 0 20px;
+}
