@@ -1,175 +1,23 @@
-.brand-text {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 24px;
-  color: #392f2d !important; }
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - main.scss
 
-.navbar {
-  margin-bottom: 0; }
-
-.main-title {
-  margin-top: 0;
-  color: #ffffff; }
-
-.main-subtitle {
-  margin-bottom: 50px;
-  padding-right: 50px;
-  color: #ffffff; }
-
-.main-image {
-  background-image: url("../../assets/main-image.jpeg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 750px; }
-
-.main-content {
-  padding-top: 130px; }
-
-.log-in {
-  margin-top: 0; }
-
-#sign-up {
-  padding: 20px 0 20px 0;
-  margin-bottom: 20px; }
-
-.profile-image {
-  border-radius: 50%;
-  height: 200px;
-  margin-top: 30px; }
-
-.results-image {
-  border-radius: 50%;
-  height: 100px; }
-
-#sign-up-form {
-  width: 400px;
-  margin: 50px auto;
-  position: relative;
-  text-align: center; }
-
-#sign-up-form fieldset {
-  background: white;
-  border: 0 none;
-  border-radius: 3px;
-  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-  padding: 20px 30px;
-  box-sizing: border-box;
-  width: 80%;
-  margin: 0 10%;
-  /*stacking fieldsets above each other*/
-  position: relative; }
-
-/*Hide all except first fieldset*/
-#sign-up-form fieldset:not(:first-of-type) {
-  display: none; }
-
-/*inputs*/
-#sign-up-form input, #sign-up-form textarea {
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  width: 100%;
-  box-sizing: border-box;
-  font-family: montserrat;
-  color: #2C3E50;
-  font-size: 13px; }
-
-/*buttons*/
-#sign-up-form .action-button {
-  width: 100px;
-  background: #27AE60;
-  font-weight: bold;
-  color: white;
-  border: 0 none;
-  border-radius: 1px;
-  cursor: pointer;
-  padding: 10px 5px;
-  margin: 10px 5px; }
-
-#sign-up-form .action-button:hover, #sign-up-form .action-button:focus {
-  box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60; }
-
-/*headings*/
-.fs-title {
-  font-size: 15px;
-  text-transform: uppercase;
-  color: #2C3E50;
-  margin-bottom: 10px; }
-
-.fs-subtitle {
-  font-weight: normal;
-  font-size: 13px;
-  color: #666;
-  margin-bottom: 20px; }
-
-/*progress-bar*/
-#progress-bar {
-  margin-bottom: 30px;
-  overflow: hidden;
-  /*CSS counters to number the steps*/
-  counter-reset: step; }
-
-#progress-bar li {
-  list-style-type: none;
-  color: white;
-  text-transform: uppercase;
-  font-size: 9px;
-  width: 33.33%;
-  float: left;
-  position: relative; }
-
-#progress-bar li:before {
-  content: counter(step);
-  counter-increment: step;
-  width: 20px;
-  line-height: 20px;
-  display: block;
-  font-size: 10px;
-  color: #333;
-  background: white;
-  border-radius: 3px;
-  margin: 0 auto 5px auto; }
-
-/*progress-bar connectors*/
-#progress-bar li:after {
-  content: '';
-  width: 100%;
-  height: 2px;
-  background: white;
-  position: absolute;
-  left: -50%;
-  top: 9px;
-  z-index: -1;
-  /*put it behind the numbers*/ }
-
-#progress-bar li:first-child:after {
-  /*connector not needed before the first step*/
-  content: none; }
-
-/*marking active/completed steps green*/
-/*The number of the step and the connector before it = green*/
-#progress-bar li.active:before, #progress-bar li.active:after {
-  background: #27AE60;
-  color: white; }
-
-.input-error {
-  border: 3px solid tomato !important; }
-
-#nav-tabs {
-  background-color: tan;
-  padding: 20px 20px 0 20px; }
-
-#profile-section {
-  background-color: tomato;
-  height: 800px; }
-
-.search-results {
-  margin-top: 30px; }
-
-.individual-result {
-  margin: 10px 0;
-  border: 1px solid tomato; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:484:in `read'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:294:in `watch'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin.rb:109:in `method_missing'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:22:in `load'
+/usr/local/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - main.scss"; }
