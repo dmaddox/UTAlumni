@@ -4,17 +4,17 @@ var path = require("path");
 module.exports = function(app) {
 
 	app.get('/signup', function(req, res) {
-		res.sendFile(path.join(__dirname, "../public/sign-up.html"));
+		res.sendFile(path.join(__dirname, "../public/html/sign-up.html"));
 	});
 	app.get('/signin', function(req, res) {
-		res.render('signin');
+		res.sendFile(path.join(__dirname, "../public/html/index.html"))
 	});
 	app.post('/signup', passport.authenticate('local-signup', {
 		successRedirect: '/dashboard',
 		failureRedirect: '/signup'
 	}));
 	app.get('/dashboard', isLoggedIn, function(req, res) {
-		res.sendFile(path.join(__dirname, "../public/dashboard.html"));
+		res.sendFile(path.join(__dirname, "../public/html/dashboard.html"));
 	});
 
 	app.get('/logout', function(req, res) {
