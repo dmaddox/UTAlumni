@@ -154,6 +154,9 @@
   background: #27AE60;
   color: white; }
 
+.input-error {
+  border: 3px solid tomato !important; }
+
 #nav-tabs {
   background-color: tan;
   padding: 20px 20px 0 20px; }

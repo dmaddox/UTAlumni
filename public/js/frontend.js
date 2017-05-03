@@ -1,4 +1,3 @@
-// Form jQuery
 
 var currentFieldset;
 var nextFieldset;
@@ -6,78 +5,79 @@ var previousFieldset;
 var animating;
 
 
-$(".next").click(function()){
-	if(animating) return false;
+
+$(".next").click(function(){
+	
+	
+	
 	animating = true;
+	var nextStep = true;
 
 	currentFieldset = $(this).parent();
-	nextFieldset = $(this).next();
+	nextFieldset = $(this).parent().next();
+	currentFieldset.find('input[type="text"],input[type="password"], select').each(function () {
+		console.log(currentFieldset.find('input[type="text"],input[type="password"], select[class="form-control"]'));
+
+            if ($(this).val() == "") {
+                $(this).addClass('input-error');
+                nextStep = false;
+            } else {
+            	console.log($(this));
+                $(this).removeClass('input-error');
+            }
+        });
+	if(nextStep){
 // shows next progress step
-	$("#progress-bar li").eq($("fieldset").index("next-fieldset")).addClass("active");
+	// if(animating) return false;
+	$("#progress-bar li").eq($("fieldset").index(nextFieldset)).addClass("active");
 
 // show next field set
 nextFieldset.show();
 
+
 // hide current
-currentFieldset.animate({ opacity: 0 }, {
-	step: function(now, mx) {
-	    scale = 1 - (1 - now) * 0.2;
-
-	    left = (now * 50) + % ;
-
-	    opacity = 1 - now;
-
-	    currentFieldset.css({
-	        'transform': scale('+scale+'),
-	        'position': 'absolute'
-	    });
-	    nextFieldset.css({ 'left': left, 'opacity': opacity });
-	},
-	duration: 800,
-	complete: function() {
+currentFieldset.animate({
+ opacity: 0
+  }, 800, function() {
 	    currentFieldset.hide();
 	    animating = false;
-	},
-	easing: 'easeInOutBack'
-	});
-
+	})
+nextFieldset.animate({
+ opacity: 1
+  }, 800, function() {
+	    currentFieldset.hide();
+	    animating = false;
+	})
+}
 });
 
-$(".previous").click(function()){
+
+
+$(".previous").click(function(){
 	if(animating) return false;
 	animating = true;
 
 	currentFieldset = $(this).parent();
-	previousF = $(this).next();
-// shows previous progress step
-	$("#progress-bar li").eq($("fieldset").index("next-fieldset")).removeClass("active");
+	previousFieldset = $(this).parent().prev();
+// shows next progress step
+	$("#progress-bar li").eq($("fieldset").index(previousFieldset)).removeClass("active");
 
 // show next field set
 previousFieldset.show();
 
+
 // hide current
-currentFieldset.animate({ opacity: 0 }, {
-	step: function(now, mx) {
-	    scale = 0.8 + (1 - now) * 0.2;
-
-	    left = ((1-now) * 50) + % ;
-
-	    opacity = 1 - now;
-
-	    currentFieldset.css({
-	        'left': left
-	    });
-	   	previousFieldset.css({ 'transform': scale('+scale+'), 'opacity': opacity });
-	},
-	duration: 800,
-	complete: function() {
+currentFieldset.animate({
+ opacity: 0
+  }, 800, function() {
 	    currentFieldset.hide();
 	    animating = false;
-	},
-	easing: 'easeInOutBack'
-	});
+	})
+previousFieldset.animate({
+ opacity: 1
+  }, 800, function() {
+	    currentFieldset.hide();
+	    animating = false;
+	})
 
 });
-$('#submit').click(function(){
-	return false;
-})
