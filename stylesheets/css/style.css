@@ -15,10 +15,10 @@ a {
   margin-bottom: 0; }
 
 .main-image {
-  background-image: url("../../assets/main-image.jpeg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: url(../../assets/main-image.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   height: 100%;
   padding-bottom: 50px; }
@@ -60,12 +60,16 @@ a {
   padding-top: 60px;
   margin-bottom: 60px; }
 
+.description-text {
+  margin-bottom: 40px; }
+
 .search-results {
-  margin-top: 30px; }
+  margin-top: 70px; }
 
 .individual-result {
   margin: 10px 0;
-  border: 1px solid tomato; }
+  position: relative;
+  box-shadow: 7px 6px 5px rgba(0, 0, 0, 0.4); }
 
 .main-content {
   padding-top: 130px; }
@@ -79,6 +83,12 @@ a {
 .modal-links {
   padding: 20px;
   color: white; }
+
+#profile-section {
+  position: fixed;
+  width: 30%;
+  float: left;
+  top: 51px; }
 
 #profile-background {
   height: 150px;
@@ -102,5 +112,10 @@ a {
   padding: 50px;
   margin-top: 50px;
   height: 270px; }
+
+@media only screen and (max-width: 990px) {
+  #profile-section {
+    position: relative;
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
