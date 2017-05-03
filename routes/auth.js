@@ -1,4 +1,3 @@
-var authController = require('../controller/authcontroller.js');
 var passport = require('passport');
 var db = require('../models');
 var path = require("path");
