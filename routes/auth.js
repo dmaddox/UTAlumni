@@ -14,14 +14,7 @@ module.exports = function(app) {
 		failureRedirect: '/signup'
 	}));
 	app.get('/dashboard', isLoggedIn, function(req, res) {
-		db.user.findOne({
-			where: {
-				email: "b_shehadi@yahoo.com"
-			}
-		}).then(function(user) {
-			console.log(user);
-			res.render('dashboard', user);
-		})
+		res.sendFile(path.join(__dirname, "../public/dashboard.html"));
 	});
 
 	app.get('/logout', function(req, res) {
@@ -34,28 +27,18 @@ module.exports = function(app) {
 		failureRedirect: '/signin'
 	}));
 	app.get("/api/users", isLoggedIn, function(req, res) {
-		// var array = []
-		// 	// findAll returns all entries for a table when used with no options
-		// db.user.findAll({}).then(function(dbUser) {
-		// 	// We have access to the todos as an argument inside of the callback function
-		// 	dbUser.push(array);
-		// 	db.user.findOne({
-		// 		where: {
-		// 			id: //passport id
-		// 		}
-		// 	}).then(function(dbIndvidual) {
-		// 		dbIndvidual.push(array)
-		// 		res.json(array);
-		// 	})
-		// });
-
-		// findAll returns all entries for a table when used with no options
-		db.user.findAll({}).then(function(dbuser) {
-			// We have access to the todos as an argument inside of the callback function
-			res.json(dbuser);
-		});
-
-
+		var array = [];
+		db.user.findOne({
+			where: {
+				id: req.user.id
+			}
+		}).then(function(dbUser) {
+			array.push(dbUser);
+			db.user.findAll({}).then(function(dbAll) {
+				array.push(dbAll);
+				res.json(array);
+			})
+		})
 	});
 
 	function isLoggedIn(req, res, next) {
