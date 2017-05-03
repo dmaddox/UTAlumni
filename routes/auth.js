@@ -1,17 +1,35 @@
 var authController = require('../controller/authcontroller.js');
-var passport = require('passport')
-var db = require('../models')
+var passport = require('passport');
+var db = require('../models');
+var path = require("path");
 module.exports = function(app) {
 
-	app.get('/signup', authController.signup);
-	app.get('/signin', authController.signin);
+	app.get('/signup', function(req, res) {
+		res.sendFile(path.join(__dirname, "../public/sign-up.html"));
+	});
+	app.get('/signin', function(req, res) {
+		res.render('signin');
+	});
 	app.post('/signup', passport.authenticate('local-signup', {
 		successRedirect: '/dashboard',
 		failureRedirect: '/signup'
 	}));
-	app.get('/dashboard', isLoggedIn, authController.dashboard);
+	app.get('/dashboard', isLoggedIn, function(req, res) {
+		db.user.findOne({
+			where: {
+				email: "b_shehadi@yahoo.com"
+			}
+		}).then(function(user) {
+			console.log(user);
+			res.render('dashboard', user);
+		})
+	});
 
-	app.get('/logout', authController.logout);
+	app.get('/logout', function(req, res) {
+		req.session.destroy(function(err) {
+			res.redirect('/');
+		});
+	});
 	app.post('/signin', passport.authenticate('local-signin', {
 		successRedirect: '/dashboard',
 		failureRedirect: '/signin'
