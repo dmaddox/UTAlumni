@@ -6,7 +6,7 @@ module.exports = function(app) {
 	app.get('/signup', function(req, res) {
 		res.sendFile(path.join(__dirname, "../public/html/sign-up.html"));
 	});
-	app.get('/signin', function(req, res) {
+	app.get('/', function(req, res) {
 		res.sendFile(path.join(__dirname, "../public/html/index.html"))
 	});
 	app.post('/signup', passport.authenticate('local-signup', {
@@ -22,9 +22,9 @@ module.exports = function(app) {
 			res.redirect('/');
 		});
 	});
-	app.post('/signin', passport.authenticate('local-signin', {
+	app.post('/', passport.authenticate('local-signin', {
 		successRedirect: '/dashboard',
-		failureRedirect: '/signin'
+		failureRedirect: '/'
 	}));
 	app.get("/api/users", isLoggedIn, function(req, res) {
 		var array = [];
