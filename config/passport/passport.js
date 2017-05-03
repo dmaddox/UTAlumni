@@ -25,10 +25,17 @@ module.exports = function(passport, user) {
 				} else {
 					var userPassword = generateHash(password);
 					var data = {
-						email: email,
-						password: userPassword,
-						firstname: req.body.firstname,
-						lastname: req.body.lastname
+						email: email, //come back to match ana file
+						password: userPassword, //come back to match ana file
+						firstname: req.body.fname,
+						lastname: req.body.lname,
+						cohort: req.body.cohort,
+						employment: req.body.employment,
+						location: req.body.location,
+						linkedInURL: req.body.linkedInURL,
+						userPic: req.body.userPic,
+						portfolioURL: req.body.portfolioURL
+
 					};
 					User.create(data).then(function(newUser, created) {
 						if (!newUser) {

@@ -1,0 +1,45 @@
+// Tabs for sign in/up
+#nav-tabs {
+	
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+//background-image placeholder
+.main-image {
+	background: url(../../../assets/main-image.jpeg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height:100%;
+	padding-bottom: 50px;
+}
+
+//log-in header
+.log-in {
+	margin-top: 0;
+}
+
+//user's profile image
+.profile-image {
+	@include profile-image;
+}
+
+.results-image {
+	@include results-image;
+}
+
+.main-title {
+	margin-bottom: 100px;
+	color: $white;
+
+}
+
+.main-subtitle {
+	margin-bottom: 50px;
+	padding-right: 50px;
+	color: $white;
+}

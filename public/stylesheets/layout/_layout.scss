@@ -1,0 +1,125 @@
+// =====================================================================
+
+// Landing Page 
+
+// =====================================================================
+
+//sign-up form container
+#sign-up {
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+}
+
+.form-container {
+	background-color: rgba($dark-grey, 0.3);
+    padding: 20px 20px 0 20px;
+}
+
+#about-hookedin {
+	padding-top: 60px;
+	margin-bottom: 60px;
+}
+
+.description-text {
+	margin-bottom: 40px;
+}
+
+
+
+// =====================================================================
+
+// Dashboard
+
+// =====================================================================
+.search-results {
+	margin-top: 70px;
+}
+
+.individual-result {
+	margin: 10px 0;
+ 	position: relative;
+ 	box-shadow: 7px 6px 5px rgba(0,0,0, 0.4); 
+}
+
+// vertical centering of main content
+.main-content {
+	padding-top: 130px;
+}
+
+//Modal 
+
+.modal-links {
+	background: linear-gradient(to bottom right, #F0C27B, #4B1248);
+}
+
+.modal-body {
+	padding: 15px 15px 0 15px;
+}
+
+.modal-links {
+	padding: 20px;
+	color: white;
+}
+
+#profile-section {
+	position: fixed;
+	width: 30%;
+	float: left;
+	top: 51px;
+}
+
+
+
+// =====================================================================
+
+// Profile
+
+// =====================================================================
+
+#profile-background {
+	height: 150px;
+	background: red; /* For browsers that do not support gradients */
+	background: linear-gradient(to bottom right, #F0C27B, #4B1248); /* Standard syntax */
+}
+
+.profile-heading {
+	padding-bottom: 40px;
+	margin-top: -110px;
+}
+
+#profile-media, #profile-about-me {
+	margin-bottom: 100px;
+}
+
+.profile-info {
+	border-radius: 5%;
+}
+
+#profile-media, #profile-about-me, #profile-employment-info {
+	border: 1px solid #eee;
+    padding: 50px;
+    margin-top: 50px;
+    height: 270px;
+}
+
+
+
+// =====================================================================
+
+// Profile
+
+// =====================================================================
+
+
+@media only screen and (max-width: 990px) {
+    #profile-section {
+        position: relative;
+        width: 100%;
+    }
+}
+
+
+
+
+
+

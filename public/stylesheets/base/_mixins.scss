@@ -7,3 +7,8 @@
 	border-radius: 50%;
 	height: 100px;
 }
+
+@mixin link {
+	color: black;
+	text-decoration: none;
+}
