@@ -9,7 +9,7 @@
 
 //background-image placeholder
 .main-image {
-	background: url(../../assets/main-image.jpeg) no-repeat center center fixed; 
+	background: url(../../assets/meetingSpace.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -42,4 +42,20 @@
 	margin-bottom: 50px;
 	padding-right: 50px;
 	color: $white;
+}
+// placeholder image about page
+.header-image{
+	text-align: center;
+	background: url(../../assets/meetingSpace.jpg) no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height:70vh;
+	margin-bottom: 20px;
+	position: relative;
+}
+.img-circle{
+	padding: 20px;
+	height: 300px;
 }

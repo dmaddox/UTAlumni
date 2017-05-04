@@ -8,10 +8,11 @@
 #sign-up {
     padding: 20px 0 20px 0;
     margin-bottom: 20px;
+    border-radius: 0px 10px 10px 10px;
 }
 
 .form-container {
-	background-color: rgba($dark-grey, 0.3);
+	background-color: #fff;
     padding: 20px 20px 0 20px;
 }
 
@@ -101,8 +102,53 @@
     margin-top: 50px;
     height: 270px;
 }
+#edit-form{
+	width: 400px;
+	margin: 50px auto;
+	position: relative;
+	text-align: center;
+}
+#edit-form fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+	
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
 
+// =====================================================================
 
+// About
+
+// =====================================================================
+
+.featurette{
+	overflow: hidden;
+}
+.featurette-divider{
+	margin: 80px, auto;
+}
+.featurette-image .pull-right{
+	margin-left: 40px;
+}
+.featurette-image .pull-left{
+	margin-right: 40px;
+}
+.about-icons{
+	background-color: $dark-grey;
+}
+.about-text{
+	padding: 20px;
+}
+.profile-divider{
+	border-top: 2px solid #eee;
+}
 
 // =====================================================================
 
