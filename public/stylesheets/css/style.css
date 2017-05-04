@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 .input-error {
   border: 3px solid tomato !important; }
 
-#password-error {
+#password-error, #email-error {
   color: red;
   font-weight: 400; }
 

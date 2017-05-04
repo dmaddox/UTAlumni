@@ -6,11 +6,15 @@ var animating;
 
 
 
+
 $(".next").click(function(){
 	animating = true;
 	var nextStep = true;
 	var password = $('#pass');
 	var confirmPass = $("#confirmP");
+	var email = $("#email");
+	var location = ("#location");
+	var emailArray = $("#email").val().split('');
 
 	currentFieldset = $(this).parent();
 	nextFieldset = $(this).parent().next();
@@ -29,10 +33,22 @@ $(".next").click(function(){
    	$('#password-error').text("*Must enter a password longer than 5 characters!");
  		nextStep = false;
     } else if (password.val().length < 5) {
-    	console.log(password.val().length);
     	$('#password-error').text("*Must enter a password longer than 5 characters!");
     	nextStep = false;
     }
+
+    if (email.val().length < 5) {
+    	$("#email-error").text("*Please include a valid email");
+    }
+
+
+    	if (emailArray.includes('@')) {
+    		nextStep = true;
+    	} else {
+    		$("#email-error").text("*Please include a valid email");
+    		nextStep = false;
+    	}
+
 
 	if(nextStep){
 // shows next progress step
