@@ -19,6 +19,8 @@
 
 		<!-- Custom CSS Link -->
 		<link rel="stylesheet" type="text/css" href="../stylesheets/css/style.css">
+			<!-- jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-default navbar-fixed-top">
@@ -30,13 +32,13 @@
     	<main id="dashboard">
 			<!-- <div class="row"> -->
 				<aside class="text-center well well-lg" id="profile-section"> <!-- user profile sidebar -->
-					<a href="profile.html"><img src="../assets/test.jpg" class="profile-image" /></a>
-					<h1 class="user-fullname">Isaac Hawkins</h1>
-					<p class="user-employment-status">Employment Status</p>
-					<p class="user-city">Austin, Texas</p>
-					<p class="user-cohort">Full-time | Spring 2017</p>
-					<p class="user-linkedin">www.linkedin.com</p>
-					<p class="user-github">www.github.com</p>
+					<a href="profile.html"><img class="profile-image" /></a>
+					<h1 class="user-fullname"> </h1>
+					<p class="user-employment-status"></p>
+					<p class="user-city"></p>
+					<p class="user-cohort"></p>
+					<p class="user-linkedin"></p>
+					<p class="user-github"></p>
 				</aside> <!-- user profile sidebar -->
 
 			<div class="row">
@@ -48,6 +50,7 @@
 </button>
 				      </span>
 				    </div><!-- /search bar -->
+
 				    <div class="individual-result well" data-toggle="modal" data-target="#myModal"> <!-- search results -->
 						<div class="row">
 							<div class="col-md-2">
@@ -179,6 +182,9 @@
 				    </div>
 				</div><!-- /search results -->
 
+				    <div class= "allRows"></div><!-- /search results -->
+
+
 				<!-- Modal -->
 				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 				  <div class="modal-dialog" role="document">
@@ -226,8 +232,8 @@
 				    </div>
 				  </div>
 				</div> <!-- /modal -->
-
 			</div>
 		</main>	
+		<script src="../js/dashboard.js"></script>
 	</body>
 </html>
