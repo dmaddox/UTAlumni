@@ -7,48 +7,58 @@ var animating;
 
 
 $(".next").click(function(){
-	
-	
-	
 	animating = true;
 	var nextStep = true;
+	var password = $('#pass');
+	var confirmPass = $("#confirmP");
 
 	currentFieldset = $(this).parent();
 	nextFieldset = $(this).parent().next();
 	currentFieldset.find('input[type="text"],input[type="password"], select').each(function () {
 		console.log(currentFieldset.find('input[type="text"],input[type="password"], select[class="form-control"]'));
+    if ($(this).val() == "") {
+        $(this).addClass('input-error');
+        nextStep = false;
+    }else {
+    	console.log($(this));
+        $(this).removeClass('input-error');
+    }
+  });
 
-            if ($(this).val() == "") {
-                $(this).addClass('input-error');
-                nextStep = false;
-            } else {
-            	console.log($(this));
-                $(this).removeClass('input-error');
-            }
-        });
+   if (password.val() != confirmPass.val())	 {
+   	$('#password-error').text("*Must enter a password longer than 5 characters!");
+ 		nextStep = false;
+    } else if (password.val().length < 5) {
+    	console.log(password.val().length);
+    	$('#password-error').text("*Must enter a password longer than 5 characters!");
+    	nextStep = false;
+    }
+
 	if(nextStep){
 // shows next progress step
 	// if(animating) return false;
-	$("#progress-bar li").eq($("fieldset").index(nextFieldset)).addClass("active");
+		$("#progress-bar li").eq($("fieldset").index(nextFieldset)).addClass("active");
 
-// show next field set
-nextFieldset.show();
+	// show next field set
+	nextFieldset.show();
 
 
-// hide current
-currentFieldset.animate({
- opacity: 0
-  }, 800, function() {
+		// hide current
+		currentFieldset.animate({
+ 			opacity: 0
+  	}, 800, function() {
 	    currentFieldset.hide();
 	    animating = false;
-	})
-nextFieldset.animate({
- opacity: 1
-  }, 800, function() {
+			}
+		)
+		nextFieldset.animate({
+ 			opacity: 1
+  	}, 800, function() {
 	    currentFieldset.hide();
 	    animating = false;
-	})
-}
+			}
+		)
+	}
 });
 
 
@@ -59,32 +69,30 @@ $(".previous").click(function(){
 
 	currentFieldset = $(this).parent();
 	previousFieldset = $(this).parent().prev();
-// shows next progress step
+	// shows next progress step
 	$("#progress-bar li").eq($("fieldset").index(previousFieldset)).removeClass("active");
 
-// show next field set
-previousFieldset.show();
+	// show next field set
+	previousFieldset.show();
 
 
-// hide current
-currentFieldset.animate({
- opacity: 0
-  }, 800, function() {
-	    currentFieldset.hide();
-	    animating = false;
-	})
-previousFieldset.animate({
- opacity: 1
-  }, 800, function() {
-	    currentFieldset.hide();
-	    animating = false;
-	})
-
+	// hide current
+	currentFieldset.animate({
+	 opacity: 0
+	  }, 800, function() {
+		    currentFieldset.hide();
+		    animating = false;
+		})
+	previousFieldset.animate({
+	 opacity: 1
+	  }, 800, function() {
+		    currentFieldset.hide();
+		    animating = false;
+		}
+	)
 });
 
 // smooth scroll 
-
-
 $('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
     if( target.length ) {
