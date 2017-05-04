@@ -1,8 +1,8 @@
 $( document ).ready(function() {
-				$.ajax({
-			url:'/api/users',
-			method:'GET'
-		}).done(function(data){
+        $.ajax({
+      url:'/api/users',
+      method:'GET'
+    }).done(function(data){
            for (var i = 0; i < data[1].length; i++) {
             var rows_area = $("<div class='individual-result well' data-toggle='modal' data-target='#myModal'>");
             //rows_area.addClass("row_area");
@@ -26,4 +26,4 @@ $( document ).ready(function() {
           }
 
         });// done
-	});// end of document ready
+  });// end of document ready
