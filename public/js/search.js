@@ -7,8 +7,8 @@ $(document).ready(function() {
 		console.log(dropFilter + " " + userFilter)
 		$(".individual-result").each(function(index) {
 			// var testing = (this).attr("id",dropFilter).val();
-			var divResult = $(this +'> h3#'+dropFilter );
-			// .attr("id", dropFilter).val();
+			// THIS IS THE QUESTION- how can we targe the h3 w/i a div and get the value
+			var divResult = $(this).children('h3#' + dropFilter).html();
 			// console.log(testing);
 			console.log(divResult);
 			console.log(this);
