@@ -36,19 +36,21 @@ module.exports = function(app) {
 	app.post('/index', function(req, res) {
 		res.redirect('/signup')
 	});
-
-	app.get("/api/users", isLoggedIn, function(req, res) {
-		var array = [];
+	// app.get("/api/currentUser", isLoggedIn, function(req,res){
+	// 	res.redirect("/api/indv/"+ req.user.id);
+	// })
+	app.get("/api/currentUser", function(req, res) {
 		db.user.findOne({
 			where: {
 				id: req.user.id
 			}
-		}).then(function(dbUser) {
-			array.push(dbUser);
-			db.user.findAll({}).then(function(dbAll) {
-				array.push(dbAll);
-				res.json(array);
-			})
+		}).then(function(result) {
+			res.json(result);
+		});
+	});
+	app.get("/api/users", function(req, res) {
+		db.user.findAll({}).then(function(dbAll) {
+			res.json(dbAll);
 		})
 	});
 	app.get("/myprofile", isLoggedIn, function(req, res) {
