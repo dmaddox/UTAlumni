@@ -5,10 +5,11 @@ var previousFieldset;
 var animating;
 var emailOK = false;
 var passwordOK = false;
+var locationOK = true;
 var password = $('#pass');
 var confirmPass = $("#confirmP");
 var email = $("#email");
-var location = ("#location");
+var city = $("#city");
 var emailArray = [];
 
 
@@ -26,14 +27,16 @@ function passwordCheck(){
 }
 //check email for correct length and if it has a @ value
 function emailCheck(){
+	//email validation
 	if (email.val().length < 5) {
-    	$("#email-error").text("*longer that 5 words");
+    	$("#email-error").text("*Please submit a valid email!");
     	emailOK = false;
     }
+  //email must include a @ character
 	if (emailArray.includes('@')) {
 		emailOK = true;
 	} else {
-		$("#email-error").text("*Please include a @ email");
+		$("#email-error").text("*Please submit a valid email!");
 		emailOK = false;
 	}
 }
@@ -42,6 +45,7 @@ function emailCheck(){
 
 
 $(".next").click(function(){
+	//turn email into an array to check of @ character
 	emailArray = $("#email").val().split('');
 	animating = true;
 	currentFieldset = $(this).parent();
@@ -55,9 +59,11 @@ $(".next").click(function(){
     }
   });
 
+
+
 	passwordCheck();
 	emailCheck();
-    
+
 	if(emailOK && passwordOK){
 // shows next progress step
 	// if(animating) return false;
