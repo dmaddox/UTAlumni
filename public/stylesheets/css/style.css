@@ -257,6 +257,9 @@ a {
   float: left;
   top: 51px; }
 
+.form-group {
+  padding-right: 0px; }
+
 #profile-background {
   height: 150px;
   background: red;
