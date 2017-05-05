@@ -41,13 +41,6 @@ function emailCheck(){
 	}
 }
 
-function locationCheck(){
-	if (city.val() == "") {
-		$("#location-error").text("*Please enter a location.");
-		locationOK = false;
-	}
-}
-
 
 
 
