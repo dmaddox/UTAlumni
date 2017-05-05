@@ -33,7 +33,7 @@ module.exports = function(passport, user) {
 						employment: req.body.employment,
 						location: req.body.location,
 						linkedInURL: req.body.linkedInURL,
-						userPic: req.body.userPic,
+						profilePic: req.body.profilePic,
 						portfolioURL: req.body.portfolioURL
 
 					};

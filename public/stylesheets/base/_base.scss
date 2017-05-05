@@ -119,7 +119,10 @@
 	border: 3px solid tomato !important;
 }
 
-
+#password-error, #email-error {
+	color: red;
+	font-weight:$font-weight-body;
+}
 
 
 
