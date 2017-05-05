@@ -3,33 +3,18 @@ var currentFieldset;
 var nextFieldset;
 var previousFieldset;
 var animating;
+var emailOK = false;
+var passwordOK = false;
+var password = $('#pass');
+var confirmPass = $("#confirmP");
+var email = $("#email");
+var location = ("#location");
+var emailArray = [];
 
 
-
-
-$(".next").click(function(){
-	animating = true;
-	var emailOK = false;
-	var passwordOK = false;
-	var password = $('#pass');
-	var confirmPass = $("#confirmP");
-	var email = $("#email");
-	var location = ("#location");
-	var emailArray = $("#email").val().split('');
-
-	currentFieldset = $(this).parent();
-	nextFieldset = $(this).parent().next();
-	currentFieldset.find('input[type="text"],input[type="password"], select').each(function () {
-		console.log(currentFieldset.find('input[type="text"],input[type="password"], select[class="form-control"]'));
-    if ($(this).val() == "") {
-        $(this).addClass('input-error');
-        emailOK = false;
-    }else {
-        $(this).removeClass('input-error');
-    }
-  });
-
-   if (password.val() != confirmPass.val())	 {
+//check password for length and if they match
+function passwordCheck(){
+	if (password.val() != confirmPass.val())	 {
    	$('#password-error').text("*Passwords must match!");
    	password.addClass("input-error");
     } else if (password.val().length < 5) {
@@ -38,21 +23,41 @@ $(".next").click(function(){
     } else {
     	passwordOK = true;
     }
-
-    if (email.val().length < 5) {
-    	$("#email-error").text("*Please include a valid email");
-    	emailOK = true;
+}
+//check email for correct length and if it has a @ value
+function emailCheck(){
+	if (email.val().length < 5) {
+    	$("#email-error").text("*longer that 5 words");
+    	emailOK = false;
     }
+	if (emailArray.includes('@')) {
+		emailOK = true;
+	} else {
+		$("#email-error").text("*Please include a @ email");
+		emailOK = false;
+	}
+}
 
 
-    	if (emailArray.includes('@')) {
-    		emailOK = true;
-    	} else {
-    		$("#email-error").text("*Please include a valid email");
-    		emailOK = false;
-    	}
 
 
+$(".next").click(function(){
+	emailArray = $("#email").val().split('');
+	animating = true;
+	currentFieldset = $(this).parent();
+	nextFieldset = $(this).parent().next();
+	currentFieldset.find('input[type="text"],input[type="password"], select').each(function () {
+    if ($(this).val() == "") {
+        $(this).addClass('input-error');
+        emailOK = false;
+    }else {
+        $(this).removeClass('input-error');
+    }
+  });
+
+	passwordCheck();
+	emailCheck();
+    
 	if(emailOK && passwordOK){
 // shows next progress step
 	// if(animating) return false;
