@@ -213,6 +213,10 @@ a {
   padding: 20px;
   height: 300px; }
 
+  #city {
+    margin-top: 15px;
+  }
+
 .brand-text {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;

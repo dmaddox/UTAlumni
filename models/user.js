@@ -84,5 +84,4 @@ module.exports = function(sequelize, Sequelize) {
 	});
 
 	return User;
-
 }

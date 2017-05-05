@@ -31,6 +31,7 @@
 	padding: 15px;
 	border: 1px solid #ccc;
 	border-radius: 3px;
+	margin-top: 15px;
 	margin-bottom: 10px;
 	width: 100%;
 	box-sizing: border-box;
@@ -49,6 +50,9 @@
 	cursor: pointer;
 	padding: 10px 5px;
 	margin: 10px 5px;
+}
+#city {
+	margin-top: 15px;
 }
 #sign-up-form .action-button:hover, #sign-up-form .action-button:focus {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;

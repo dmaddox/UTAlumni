@@ -11,6 +11,7 @@ var confirmPass = $("#confirmP");
 var email = $("#email");
 var city = $("#city");
 var emailArray = [];
+var submitForm = false;
 
 
 //check password for length and if they match
@@ -25,7 +26,7 @@ function passwordCheck(){
     	passwordOK = true;
     }
 }
-//check email for correct length and if it has a @ value
+//check email for correct length and if it has a @ and . value
 function emailCheck(){
 	//email validation
 	if (email.val().length < 5) {
@@ -33,7 +34,7 @@ function emailCheck(){
     	emailOK = false;
     }
   //email must include an @ character
-	if (emailArray.includes('@')) {
+	if (emailArray.includes('@') && emailArray.includes('.')) {
 		emailOK = true;
 	} else {
 		$("#email-error").text("*Please submit a valid email!");
@@ -54,17 +55,16 @@ $(".next").click(function(){
     if ($(this).val() == "") {
         $(this).addClass('input-error');
         emailOK = false;
-    }else {
+        animating = false;
+    } else {
         $(this).removeClass('input-error');
     }
   });
 
-
-
 	passwordCheck();
 	emailCheck();
 
-	if(emailOK && passwordOK){
+	if(emailOK && passwordOK && animating && $(".input-value").val()){
 // shows next progress step
 	// if(animating) return false;
 		$("#progress-bar li").eq($("fieldset").index(nextFieldset)).addClass("active");
@@ -92,7 +92,6 @@ $(".next").click(function(){
 });
 
 
-
 $(".previous").click(function(){
 	if(animating) return false;
 	animating = true;
@@ -104,7 +103,6 @@ $(".previous").click(function(){
 
 	// show next field set
 	previousFieldset.show();
-
 
 	// hide current
 	currentFieldset.animate({
