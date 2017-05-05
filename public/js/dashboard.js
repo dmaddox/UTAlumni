@@ -3,11 +3,12 @@ $( document ).ready(function() {
       url:'/api/users',
       method:'GET'
     }).done(function(data){
-           for (var i = 0; i < data[1].length; i++) {
+          // loop through DB to create rows for all users with their information
+          for (var i = 0; i < data[1].length; i++) {
             var rows_area = $("<div class='individual-result well' data-toggle='modal' data-target='#myModal'>");
-            //rows_area.addClass("row_area");
             rows_area.attr("id", "user_row" + i);
             $(".allRows").append(rows_area);
+<<<<<<< HEAD
 
              $("#user_row" + i).append("<img src = '" + data[1][i].profilePic + "'/>");
             $("#user_row" + i).append("<h2>" + data[1][i].firstname + " " + data[1][i].lastname + "</h2>");
@@ -23,16 +24,14 @@ $( document ).ready(function() {
          
           }
 
-          for (var i = 0; i < 1; i++){
-           
+          
+          //add logged-in user data to the left panel on dashboard.html  
             $(".user-fullname").html(data[0].firstname + " " + data[0].lastname);
             $(".user-city").html("Location: " + data[0].location);
             $(".user-cohort").html("Graduation: " + data[0].cohort);
             $(".user-linkedin").html("Linkedin Profile: " + data[0].linkedInURL);
             $(".user-profile").html("Profile: " + data[0].portfolioURL);
              $(".profile-image").html("<img src = '" + data[0].profilePic + "' height = 200px width = 200px/>");
-          }
-          //on click get info from box clicked (.this user_row[i]) and display it in modal. 
 
         });// done
   });// end of document ready

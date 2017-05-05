@@ -22,10 +22,18 @@ module.exports = function(app) {
 			res.redirect('/');
 		});
 	});
+
+	// once user is logged in, send to dashboard page
 	app.post('/', passport.authenticate('local-signin', {
 		successRedirect: '/dashboard',
 		failureRedirect: '/'
 	}));
+	
+	// from index.html, send user from initial signup form to the sign-up.html
+	app.post('/index', function(req, res){
+		res.redirect('/signup')
+	});
+
 	app.get("/api/users", isLoggedIn, function(req, res) {
 		var array = [];
 		db.user.findOne({
