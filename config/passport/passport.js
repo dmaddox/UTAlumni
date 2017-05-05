@@ -30,7 +30,7 @@ module.exports = function(passport, user) {
 						firstname: req.body.fname,
 						lastname: req.body.lname,
 						cohort: req.body.cohort,
-						employment: req.body.employment,
+						status: req.body.status,
 						location: req.body.location,
 						linkedInURL: req.body.linkedInURL,
 						profilePic: req.body.profilePic,
