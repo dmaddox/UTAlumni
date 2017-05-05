@@ -8,8 +8,9 @@ $( document ).ready(function() {
             $(".edit-fullname").html(data.firstname + " " + data.lastname);
             $(".edit-location").html(data.location);
             $(".edit-status").html(data.status);
+            console.log(data.status)
             $(".edit-employer").html(data.employer);
-            $(".edit-salary").html(data.salary);
+            $(".edit-salary").html(data.first_salary);
             $(".edit-interview-time").html(data.interview_time);
             $(".edit-cohort").html(data.cohort);
             $(".edit-email").html(data.email);

@@ -124,13 +124,15 @@
 									<input type="text" name="portfolioURL" placeholder="portfolio Url"/>
 										
 									<label for="status">Employment Status: </label>
-									<select class="form-control" name ="status" class="employment">
+									<select class="form-control" name ="status" class="status">
 										<option value="">select one</option>
 										<option value="current-student">Currently in bootcamp</option>
 									 	<option value="employed-tech">Employed (in tech)</option>
 										<option value="employed-else">Employed (not in tech)</option>
 										<option value="seeking">Job-seeking </option>
 									</select>
+									<label for="employer">employer: </label>
+									<input type="text" name="employer" placeholder="employer"/>
 									<label for="firstSalary">First salary: </label>
 									<select class="form-control" name ="first_salary" class="firstSalary">
 										<option value="">select one</option>
@@ -161,8 +163,8 @@
 									<label for="mentor">Open to mentoring?: </label>
 									<select class="form-control" name ="mentor" class="mentor">
 										<option value="">select one</option>
-										<option value="yes">Yes</option>
-										<option value="no">No</option>
+										<option value="true">Yes</option>
+										<option value="false">No</option>
 									</select>
 									<label for="about">About: </label>
 									<textarea name="about" form="update-profile-form">Tell us about yourself</textarea>

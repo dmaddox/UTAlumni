@@ -71,17 +71,17 @@ module.exports = function(app) {
 		
 
 		db.user.update({
-			// email: req.body.email,
-			// employment: req.body.employment,
+			email: req.body.email,
+			employer: req.body.employer,
 			location: req.body.location,
 			linkedInURL: req.body.linkedInURL,
 			profilePic: req.body.profilePic,
 			portfolioURL: req.body.portfolioURL,
-			// about: req.body.about,
+			about: req.body.about,
 			// mentor: req.body.mentor,
 			interview_time: req.body.interview_time,
-			first_salary: req.body.first_salary
-			// status: req.body.status
+			first_salary: req.body.first_salary,
+			status: req.body.status
 		}, {
 			where: { id: req.user.id}
 		}).then(function(result) {
