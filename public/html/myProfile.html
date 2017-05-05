@@ -40,8 +40,8 @@
 				      		</div>
 			
 				      		<div class="text-center">
-				      			<h1>Isaac Hawkins</h1>
-				      			<h4 class="search-employer">Google</h4>
+				      			<h1 class="edit-fullname">Isaac Hawkins</h1>
+				      			<h4 class="edit-employer">Google</h4>
 				      			<hr/>
 				      			<div class="row">
 								<div class="col-xs-12 col-md-4">
@@ -77,8 +77,8 @@
 										<p>Open to Mentor</p>
 									</div>
 									<div class="col-xs-8 col-md-8">
-										<p class="edit-linkedInURL">Full-time | Spring 2017</p>
-										<p class="edit-portfolioURL">ikehawkins.com</p>
+										<p class="edit-linkedin">Full-time | Spring 2017</p>
+										<p class="edit-profile">ikehawkins.com</p>
 										<p class="edit-mentor">Yes</p>
 									</div>
 								</div>
@@ -105,7 +105,7 @@
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				    </div>
 				  		<div class="modal-body">
-							<form class="update-profile-form"> 
+							<form class="update-profile-form" method="POST" action="/myProfile"> 
 
 					            <div class="form-group">
 					              <h2 class="fs-title text-center">Update Account</h2>
@@ -133,7 +133,7 @@
 										<option value="seeking">Job-seeking </option>
 									</select>
 									<label for="firstSalary">First salary: </label>
-									<select class="form-control" name ="firstSalary" class="firstSalary">
+									<select class="form-control" name ="first_salary" class="firstSalary">
 										<option value="">select one</option>
 										<option value="$0-20,000">$0-20,000</option>
 										<option value="$20,000-40,000">$20,000-40,000</option>
@@ -141,8 +141,8 @@
 										<option value="$60,000-80,000">$60,000-80,000</option>
 										<option value="$80,000-100,000">$80,000-100,000</option>
 										</select>
-									<label for="monthsToJob">Number of months job-seeking after graduation: </label>
-									<select class="form-control" name ="monthsToJob" class="monthsToJob">
+									<label for="interview_time">Number of months job-seeking after graduation: </label>
+									<select class="form-control" name ="interview_time" class="interview_time">
 										<option value="">select one</option>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -176,6 +176,7 @@
 				</div> <!-- /modal -->
 			</div>
 	</div>	
-
+	<script src="../js/myProfile.js"></script>
 	</body>
+
 </html>

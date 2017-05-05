@@ -53,24 +53,37 @@ module.exports = function(app) {
 			res.json(dbAll);
 		})
 	});
-	app.get("/myprofile", isLoggedIn, function(req, res) {
+	app.get("/myProfile", isLoggedIn, function(req, res) {
 		res.sendFile(path.join(__dirname, "../public/html/myProfile.html"));
 	})
-	app.post("/myprofile", isLoggedIn, function(req, res) {
+	app.post("/myProfile", isLoggedIn, function(req, res) {
+		console.log(req.body.email);
+		// console.log(req.body.status);
+		console.log(req.body.location);
+		console.log(req.body.linkedInURL);
+		console.log(req.body.profilePic);
+		console.log(req.body.portfolioURL);
+		// console.log(req.body.about);
+		console.log(req.body.mentor);
+		console.log(req.body.interview_time);
+		console.log(req.body.first_salary);
+		// console.log(req.body.status);
+		
+
 		db.user.update({
-			email: req.body.email,
-			employment: req.body.employment,
+			// email: req.body.email,
+			// employment: req.body.employment,
 			location: req.body.location,
 			linkedInURL: req.body.linkedInURL,
 			profilePic: req.body.profilePic,
 			portfolioURL: req.body.portfolioURL,
-			about: req.body.about,
-			mentor: req.body.mentor,
+			// about: req.body.about,
+			// mentor: req.body.mentor,
 			interview_time: req.body.interview_time,
-			first_salary: req.body.first_salary,
-			status: req.body.status
+			first_salary: req.body.first_salary
+			// status: req.body.status
 		}, {
-			where: req.user.id
+			where: { id: req.user.id}
 		}).then(function(result) {
 			console.log(result);
 		})
