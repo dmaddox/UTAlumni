@@ -28,9 +28,9 @@ module.exports = function(app) {
 		successRedirect: '/dashboard',
 		failureRedirect: '/'
 	}));
-	
+
 	// from index.html, send user from initial signup form to the sign-up.html
-	app.post('/index', function(req, res){
+	app.post('/index', function(req, res) {
 		res.redirect('/signup')
 	});
 
@@ -48,30 +48,36 @@ module.exports = function(app) {
 			})
 		})
 	});
+	app.get("/myprofile", isLoggedIn, function(req, res) {
+		res.sendFile(path.join(__dirname, "../public/html/myProfile.html"));
+	})
 	app.post("/myprofile", isLoggedIn, function(req, res) {
 		db.user.update({
 			email: req.body.email,
 			employment: req.body.employment,
 			location: req.body.location,
 			linkedInURL: req.body.linkedInURL,
-			profilePic: req.body.profilePic, 
+			profilePic: req.body.profilePic,
 			portfolioURL: req.body.portfolioURL,
 			about: req.body.about,
 			mentor: req.body.mentor,
 			interview_time: req.body.interview_time,
 			first_salary: req.body.first_salary,
 			status: req.body.status
-		},{
+		}, {
 			where: req.user.id
-		}).then(function(result){
+		}).then(function(result) {
 			console.log(result);
 		})
+	})
+	app.get("/about", function(req, res) {
+		res.sendFile(path.join(__dirname, "../public/html/about.html"));
 	})
 
 	function isLoggedIn(req, res, next) {
 		if (req.isAuthenticated()) {
 			return next();
 		}
-		res.redirect('/signin');
+		res.redirect('/');
 	}
 }
