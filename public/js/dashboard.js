@@ -10,7 +10,7 @@ $(document).ready(function() {
 			$(".allRows").append(rows_area);
 			$("#user_row" + i).append("<img src = '" + data[i].profilePic + "'/>");
 			$("#user_row" + i).append("<h3 id='firstname'>" + data[i].firstname + "</h3><h3 id='lastname'> " + data[i].lastname + "</h3>");
-			$("#user_row" + i).append("<h3>Employment status:</h3> <h3 id='status'>" + data[i].employment + "</h3>");
+			$("#user_row" + i).append("<h3>Employment status:</h3> <h3 id='status'>" + data[i].status + "</h3>");
 			$("#user_row" + i).append("<h3>City:</h3> <h3 id='location'>" + data[i].location + "</h3>");
 			$("#user_row" + i).append("<h3>Cohort:</h3> <h3 id='cohort'>" + data[i].cohort + "</h3>");
 		}
