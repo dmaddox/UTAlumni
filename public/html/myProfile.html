@@ -105,7 +105,7 @@
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				    </div>
 				  		<div class="modal-body">
-							<form class="update-profile-form"> 
+							<form class="update-profile-form" method="POST" action="/myProfile"> 
 
 					            <div class="form-group">
 					              <h2 class="fs-title text-center">Update Account</h2>
@@ -133,7 +133,7 @@
 										<option value="seeking">Job-seeking </option>
 									</select>
 									<label for="firstSalary">First salary: </label>
-									<select class="form-control" name ="firstSalary" class="firstSalary">
+									<select class="form-control" name ="first_salary" class="firstSalary">
 										<option value="">select one</option>
 										<option value="$0-20,000">$0-20,000</option>
 										<option value="$20,000-40,000">$20,000-40,000</option>
@@ -141,8 +141,8 @@
 										<option value="$60,000-80,000">$60,000-80,000</option>
 										<option value="$80,000-100,000">$80,000-100,000</option>
 										</select>
-									<label for="monthsToJob">Number of months job-seeking after graduation: </label>
-									<select class="form-control" name ="monthsToJob" class="monthsToJob">
+									<label for="interview_time">Number of months job-seeking after graduation: </label>
+									<select class="form-control" name ="interview_time" class="interview_time">
 										<option value="">select one</option>
 										<option value="0">0</option>
 										<option value="1">1</option>

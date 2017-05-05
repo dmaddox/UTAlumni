@@ -5,18 +5,18 @@ $( document ).ready(function() {
     }).done(function(data){
         
           //add logged-in user data to the left panel on dashboard.html  
-            $(".edit-fullname").html(data[0].firstname + " " + data[0].lastname);
-            $(".edit-city").html(data[0].location);
-            $(".edit-status").html(data[0].status);
-            $(".edit-employer").html(data[0].employer);
-            $(".edit-salary").html(data[0].salary);
-            $(".edit-interview-time").html(data[0].interview_time);
-            $(".edit-cohort").html(data[0].cohort);
-            $(".edit-email").html(data[0].email);
-            $(".edit-linkedin").html(data[0].linkedInURL);
-            $(".edit-profile").html(data[0].portfolioURL);
-            $(".edit-mentor").html(data[0].portfolioURL);
-            $(".profile-image").attr("src", data[0].profilePic);
+            $(".edit-fullname").html(data.firstname + " " + data.lastname);
+            $(".edit-city").html(data.location);
+            $(".edit-status").html(data.status);
+            $(".edit-employer").html(data.employer);
+            $(".edit-salary").html(data.salary);
+            $(".edit-interview-time").html(data.interview_time);
+            $(".edit-cohort").html(data.cohort);
+            $(".edit-email").html(data.email);
+            $(".edit-linkedin").html(data.linkedInURL);
+            $(".edit-profile").html(data.portfolioURL);
+            $(".edit-mentor").html(data.portfolioURL);
+            $(".profile-image").attr("src", data.profilePic);
 
         });// done
   });// end of document ready
