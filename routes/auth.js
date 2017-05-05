@@ -40,6 +40,25 @@ module.exports = function(app) {
 			})
 		})
 	});
+	app.post("/myprofile", isLoggedIn, function(req, res) {
+		db.user.update({
+			email: req.body.email,
+			employment: req.body.employment,
+			location: req.body.location,
+			linkedInURL: req.body.linkedInURL,
+			profilePic: req.body.profilePic, 
+			portfolioURL: req.body.portfolioURL,
+			about: req.body.about,
+			mentor: req.body.mentor,
+			interview_time: req.body.interview_time,
+			first_salary: req.body.first_salary,
+			status: req.body.status
+		},{
+			where: req.user.id
+		}).then(function(result){
+			console.log(result);
+		})
+	})
 
 	function isLoggedIn(req, res, next) {
 		if (req.isAuthenticated()) {

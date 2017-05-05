@@ -116,6 +116,10 @@ h1, h2, h3, h4, h5, h6 {
 .input-error {
   border: 3px solid tomato !important; }
 
+#password-error, #email-error {
+  color: red;
+  font-weight: 400; }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 10px; }
 
@@ -209,7 +213,7 @@ a {
   font-size: 24px;
   color: #392f2d !important; }
 
-#sign-up {
+.sign-up {
   padding: 20px 0 20px 0;
   margin-bottom: 20px;
   border-radius: 0px 10px 10px 10px; }
@@ -226,7 +230,8 @@ a {
   margin-bottom: 40px; }
 
 .search-results {
-  margin-top: 70px; }
+  margin-top: 70px;
+  width: 100%; }
 
 .individual-result {
   margin: 10px 0;
@@ -251,6 +256,9 @@ a {
   width: 30%;
   float: left;
   top: 51px; }
+
+.form-group {
+  padding-right: 0px; }
 
 #profile-background {
   height: 150px;
@@ -298,15 +306,6 @@ a {
 
 .featurette-divider {
   margin: 80px, auto; }
-
-.featurette-image .pull-right {
-  margin-left: 40px; }
-
-.featurette-image .pull-left {
-  margin-right: 40px; }
-
-.about-icons {
-  background-color: #392f2d; }
 
 .about-text {
   padding: 20px; }

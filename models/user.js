@@ -18,10 +18,6 @@ module.exports = function(sequelize, Sequelize) {
 			notEmpty: true
 		},
 
-		username: {
-			type: Sequelize.TEXT
-		},
-
 		about: {
 			type: Sequelize.TEXT
 		},
@@ -85,9 +81,6 @@ module.exports = function(sequelize, Sequelize) {
 			type: Sequelize.BOOLEAN
 		},
 
-		user_comment: {
-			type: Sequelize.TEXT
-		}
 	});
 
 	return User;
