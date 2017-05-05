@@ -14,6 +14,13 @@ $( document ).ready(function() {
             $("#user_row" + i).append("<h3>Employment status: " + data[1][i].employment + "</h3>");
             $("#user_row" + i).append("<h3>City: " + data[1][i].location+ "</h3>");
             $("#user_row" + i).append("<h3>Cohort: " + data[1][i].cohort + "</h3>");
+
+        $('#user_row' + i).on('click', function() {
+          console.log(this);
+       $('.employer').html(data.firstname + " " + data.lastname);
+         
+        });
+         
           }
 
           for (var i = 0; i < 1; i++){
@@ -25,6 +32,9 @@ $( document ).ready(function() {
             $(".user-profile").html("Profile: " + data[0].portfolioURL);
              $(".profile-image").html("<img src = '" + data[0].profilePic + "' height = 200px width = 200px/>");
           }
+          //on click get info from box clicked (.this user_row[i]) and display it in modal. 
 
         });// done
   });// end of document ready
+
+
