@@ -54,6 +54,7 @@ $(".next").click(function(){
     if ($(this).val() == "") {
         $(this).addClass('input-error');
         emailOK = false;
+        animating = false;
     }else {
         $(this).removeClass('input-error');
     }
@@ -64,7 +65,7 @@ $(".next").click(function(){
 	passwordCheck();
 	emailCheck();
 
-	if(emailOK && passwordOK){
+	if(emailOK && passwordOK && animating){
 // shows next progress step
 	// if(animating) return false;
 		$("#progress-bar li").eq($("fieldset").index(nextFieldset)).addClass("active");
