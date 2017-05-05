@@ -23,7 +23,6 @@ $( document ).ready(function() {
             $(".user-linkedin").html("Linkedin Profile: " + data[0].linkedInURL);
             $(".user-profile").html("Profile: " + data[0].portfolioURL);
              $(".profile-image").html("<img src = '" + data[0].profilePic + "' height = 200px width = 200px/>");
-          }
 
         });// done
   });// end of document ready
