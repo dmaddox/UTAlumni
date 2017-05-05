@@ -18,7 +18,7 @@ function passwordCheck(){
 	if (password.val() != confirmPass.val())	 {
    	$('#password-error').text("*Passwords must match!");
    	password.addClass("input-error");
-    } else if (password.val().length < 5) {
+    } else if (password.val().length < 6) {
     	$('#password-error').text("*Must enter a password longer than 5 characters!");
     	password.addClass("input-error");
     } else {
@@ -32,7 +32,7 @@ function emailCheck(){
     	$("#email-error").text("*Please submit a valid email!");
     	emailOK = false;
     }
-  //email must include a @ character
+  //email must include an @ character
 	if (emailArray.includes('@')) {
 		emailOK = true;
 	} else {
