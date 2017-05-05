@@ -1,10 +1,11 @@
 {
   "name": "tutsplus",
   "version": "1.0.0",
-  "description": "",
+  "description": "UT Full Stack Development Program Alumni Network",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -19,5 +20,13 @@
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "sequelize": "^3.30.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jflook10/UTAlumni.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jflook10/UTAlumni/issues"
+  },
+  "homepage": "https://github.com/jflook10/UTAlumni#readme"
 }
