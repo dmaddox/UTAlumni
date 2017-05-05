@@ -22,7 +22,7 @@ $( document ).ready(function() {
             $(".user-city").html("Location: " + data[0].location);
             $(".user-cohort").html("Graduation: " + data[0].cohort);
             $(".user-linkedin").html("Linkedin Profile: " + data[0].linkedInURL);
-            $(".user-profile").html("Profile: " + data[0].profileURL);
+            $(".user-profile").html("Profile: " + data[0].portfolioURL);
              $(".profile-image").html("<img src = '" + data[0].profilePic + "' height = 200px width = 200px/>");
           }
 
