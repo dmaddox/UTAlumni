@@ -55,12 +55,12 @@ module.exports = function(app) {
 	})
 	app.post("/myProfile", isLoggedIn, function(req, res) {
 		console.log(req.body.email);
-		// console.log(req.body.status);
+		console.log(req.body.status);
 		console.log(req.body.location);
 		console.log(req.body.linkedInURL);
 		console.log(req.body.profilePic);
 		console.log(req.body.portfolioURL);
-		// console.log(req.body.about);
+		console.log(req.body.about);
 		console.log(req.body.mentor);
 		console.log(req.body.interview_time);
 		console.log(req.body.first_salary);
@@ -84,6 +84,7 @@ module.exports = function(app) {
 		}).then(function(result) {
 			console.log(result);
 		})
+		res.redirect('myProfile');
 	})
 	app.get("/about", function(req, res) {
 		res.sendFile(path.join(__dirname, "../public/html/about.html"));

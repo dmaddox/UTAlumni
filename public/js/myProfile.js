@@ -6,7 +6,7 @@ $( document ).ready(function() {
         
           //add logged-in user data to the left panel on dashboard.html  
             $(".edit-fullname").html(data.firstname + " " + data.lastname);
-            $(".edit-city").html(data.location);
+            $(".edit-location").html(data.location);
             $(".edit-status").html(data.status);
             $(".edit-employer").html(data.employer);
             $(".edit-salary").html(data.salary);
