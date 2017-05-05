@@ -44,11 +44,28 @@
 			<div class="row">
 				<div class="col-md-7 col-md-offset-4" id="results-section"> <!-- search bar -->
 				    <div class="input-group search-results">
+				    <div class="class col-md-8 col-md-offset-2">
+				    	<div type="input-group-btn drop-down-select">
+				    		<select id="drop-down-search" class="form-control selectpicker" data-style="btn-primary">
+				    			<option value="">Category</option>
+				    			<option value="firstName">First Name</option>
+				    			<option value="lastName">Last Name</option>
+				    			<option value="userName">Username</option>
+				    			<option value="status">
+				    			Employment Status</option>
+				    			<option value="location">Location</option>
+				    			<option value="cohort">Cohort</option>		
+				    			<option value="email">Email Address</option>
+				    			<option value="mentor">Mentor</option>		
+				    			
+				    		</select>
+				    	</div>
 				      <input type="text" class="form-control" placeholder="Search">
 				      <span class="input-group-btn">
 				        <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i>
-</button>
+						</button>
 				      </span>
+				    </div>  
 				    </div><!-- /search bar -->
 
 				    <div class="individual-result well" data-toggle="modal" data-target="#myModal"> <!-- search results -->

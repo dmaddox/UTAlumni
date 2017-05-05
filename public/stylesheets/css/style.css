@@ -226,7 +226,8 @@ a {
   margin-bottom: 40px; }
 
 .search-results {
-  margin-top: 70px; }
+  margin-top: 70px;
+  width: 100%; }
 
 .individual-result {
   margin: 10px 0;
@@ -298,15 +299,6 @@ a {
 
 .featurette-divider {
   margin: 80px, auto; }
-
-.featurette-image .pull-right {
-  margin-left: 40px; }
-
-.featurette-image .pull-left {
-  margin-right: 40px; }
-
-.about-icons {
-  background-color: #392f2d; }
 
 .about-text {
   padding: 20px; }
