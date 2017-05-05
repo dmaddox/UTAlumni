@@ -145,9 +145,9 @@ a {
   background-color: transparent; }
 
 .navbar-brand {
-  background-color: #ffffff; }
+  background-color: transparent; }
   .navbar-brand:visited {
-    background-color: #ffffff; }
+    background-color: transparent; }
 
 .person-target {
   height: 50%;
@@ -161,8 +161,13 @@ a {
 .two {
   right: 50px; }
 
+.navbar-brand {
+  background-color: transparent; }
+
 .navbar {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  height: 50px;
+  background-color: #ffffff; }
 
 .main-image {
   background: url(../../assets/meetingSpace.jpg) no-repeat center center fixed;
@@ -217,14 +222,14 @@ a {
   font-size: 24px;
   color: #392f2d !important; }
 
-.sign-up {
+#sign-up {
   padding: 20px 0 20px 0;
   margin-bottom: 20px;
   border-radius: 0px 10px 10px 10px; }
 
 .form-container {
   background-color: #fff;
-  padding: 20px 20px 0 20px; }
+  padding: 20px 20px 20px 20px; }
 
 #about-hookedin {
   padding-top: 60px;
@@ -304,6 +309,12 @@ a {
   margin: 0 10%;
   /*stacking fieldsets above each other*/
   position: relative; }
+
+.content {
+  margin-top: 60px; }
+
+.border-section {
+  border-left: 1px solid #eee; }
 
 .featurette {
   overflow: hidden; }

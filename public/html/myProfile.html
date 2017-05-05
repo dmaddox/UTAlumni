@@ -25,59 +25,77 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 	<body>
+
 		<nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container">
-		      <a class="navbar-brand" href="index.html">HookedIn</a>
+		      <a class="navbar-brand" href="/">HookedIn</a>
 		      <a class="about" href="/about"><p class="navbar-text pull-right">About</p></a>
 		  </div>
     	</nav> <!-- /navbar -->
-    	<main id="dashboard">
-			<!-- <div class="row"> -->
-				<aside class="text-center well well-lg" id="profile-section"> <!-- user profile sidebar -->
-					<!-- <a href="profile.html"> -->
-					<p class="profile-image"> </p>
-					<h1 class="user-fullname"> </h1>
-					<p class="user-employment-status"></p>
-					<p class="user-city"></p>
-					<p class="user-cohort"></p>
-					<p class="user-linkedin"></p>
-					<p class="user-github"></p>
-				</aside> <!-- user profile sidebar -->
+    
+		<div class="container content">
+    		
+				      		<div class="text-center">
+				      			<img src="../assets/test.jpg" class="profile-image">
+				      		</div>
+			
+				      		<div class="text-center">
+				      			<h1>Isaac Hawkins</h1>
+				      			<h4 class="search-employer">Google</h4>
+				      			<hr/>
+				      			<div class="row">
+								<div class="col-xs-12 col-md-4">
+									<div class="col-xs-4">
+										<p>Cohort</p>
+										<p>Email</p>
+									
+									</div>
+									<div class="col-xs-8 col-md-8">
+										<p class="edit-cohort">Full-time | Spring 2017</p>
+										<p class="edit-email">hawkins.isaac@gmail.com</p>
+										
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-4 border-section">
+									<div class="col-xs-4 col-md-4">
+										<p>Employment Status</p>
+										<p>Employer</p>
+										<p>First Salary</p>
+										<p>Time Job-seeking post bootcamp</p>
+									</div>
+									<div class="col-xs-8 col-md-8">
+										<p class="edit-status">Employed</p>
+										<p class="edit-employer">Google</p>
+										<p class="edit-salary">$20,000</p>
+										<p class="edit-interview-time">12+</p>								
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-4 border-section">
+									<div class="col-xs-4 col-md-4">
+										<p>LinkedIn Profile</p>
+										<p>Personal Site</p>
+										<p>Open to Mentor</p>
+									</div>
+									<div class="col-xs-8 col-md-8">
+										<p class="edit-linkedInURL">Full-time | Spring 2017</p>
+										<p class="edit-portfolioURL">ikehawkins.com</p>
+										<p class="edit-mentor">Yes</p>
+									</div>
+								</div>
+								</div>
+				      		</div>
+				      		<!-- <div class="text-center">
+				      			<img src="../assets/test.jpg" class="profile-image">
+				      		</div> -->
 
-			<div class="row">
-				<div class="col-md-7 col-md-offset-4" id="results-section"> <!-- search bar -->
-				    <div class="input-group search-results">
-				    <div class="row">
-				    <div class="col-md-5" type="input-group-btn drop-down-select">
-				    		<select id="drop-down-search" class="form-control selectpicker" data-style="btn-primary">
-				    			<option value="">Category</option>
-				    			<option value="firstName">First Name</option>
-				    			<option value="lastName">Last Name</option>
-				    			<option value="userName">Username</option>
-				    			<option value="status">
-				    			Employment Status</option>
-				    			<option value="location">Location</option>
-				    			<option value="cohort">Cohort</option>		
-				    			<option value="email">Email Address</option>
-				    			<option value="mentor">Mentor</option>		
-				    			
-				    		</select>
-				    	</div>
-				    	<div class="form-group col-md-4">
-							<input type="text" class=" form-control" placeholder="Search"/>
-				    	</div>
-				      
-				      <span class="input-group-btn">
-				        <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i>
-						</button>
-				      </span>
-				      </div>
-				    </div><!-- /search bar -->
-				    <div class= "allRows"></div><!-- /search results -->
+				      		<div class="text-center">
+				      			 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil" aria-hidden="true"></i> Edit profile</button>
+				      		</div>
+				      	</div>
 
-				 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  				  Launch Horizontal Form
-				</button>
+    			<!-- <p class="profile-image"> </p>
+				<h1 class="user-fullname"> </h1>
+ -->
 
 				<!-- Modal -->
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -99,15 +117,15 @@
 									<p id="location-error"></p>
 									
 									
-									<label for="">LinkedIn Picture Url: <label>
+									<label for="">LinkedIn Picture Url: </label>
 									<input type="text" name="profilePic" placeholder="Please use LinkedIn picture URL"/>
-							    	<label for="linkedInURL">LinkedIn: <label>
+							    	<label for="linkedInURL">LinkedIn: </label>
 									<input type="text" name="linkedInURL" placeholder="LinkedIn profile URL"/>
 									<label for="portfolioURL">Personal Portfolio Site: </label>
 									<input type="text" name="portfolioURL" placeholder="portfolio Url"/>
 										
 									<label for="status">Employment Status: </label>
-									<select class="form-control" name ="employment" class="employment" required>
+									<select class="form-control" name ="employment" class="employment">
 										<option value="">select one</option>
 										<option value="current-student">Currently in bootcamp</option>
 									 	<option value="employed-tech">Employed (in tech)</option>
@@ -115,7 +133,7 @@
 										<option value="seeking">Job-seeking </option>
 									</select>
 									<label for="firstSalary">First salary: </label>
-									<select class="form-control" name ="firstSalary" class="firstSalary" required>
+									<select class="form-control" name ="firstSalary" class="firstSalary">
 										<option value="">select one</option>
 										<option value="$0-20,000">$0-20,000</option>
 										<option value="$20,000-40,000">$20,000-40,000</option>
@@ -124,7 +142,7 @@
 										<option value="$80,000-100,000">$80,000-100,000</option>
 										</select>
 									<label for="monthsToJob">Number of months job-seeking after graduation: </label>
-									<select class="form-control" name ="monthsToJob" class="monthsToJob" required>
+									<select class="form-control" name ="monthsToJob" class="monthsToJob">
 										<option value="">select one</option>
 										<option value="0">0</option>
 										<option value="1">1</option>
@@ -142,7 +160,7 @@
 									</select>
 										
 									<label for="mentor">Open to mentoring?: </label>
-									<select class="form-control" name ="mentor" class="mentor" required>
+									<select class="form-control" name ="mentor" class="mentor">
 										<option value="">select one</option>
 										<option value="yes">Yes</option>
 										<option value="no">No</option>
@@ -157,7 +175,7 @@
 				   </div>
 				</div> <!-- /modal -->
 			</div>
-		</main>	
-		<script src="../js/dashboard.js"></script>
+	</div>	
+
 	</body>
 </html>

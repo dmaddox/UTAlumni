@@ -1,10 +1,12 @@
 // Tabs for sign in/up
-#nav-tabs {
-	
+.navbar-brand {
+	background-color: transparent;	
 }
 
 .navbar {
 	margin-bottom: 0;
+	height: 50px;
+	background-color: $white;
 }
 
 //background-image placeholder
