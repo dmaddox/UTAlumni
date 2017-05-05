@@ -9,7 +9,8 @@ var animating;
 
 $(".next").click(function(){
 	animating = true;
-	var nextStep = true;
+	var emailOK = false;
+	var passwordOK = false;
 	var password = $('#pass');
 	var confirmPass = $("#confirmP");
 	var email = $("#email");
@@ -22,35 +23,37 @@ $(".next").click(function(){
 		console.log(currentFieldset.find('input[type="text"],input[type="password"], select[class="form-control"]'));
     if ($(this).val() == "") {
         $(this).addClass('input-error');
-        nextStep = false;
+        emailOK = false;
     }else {
-    	console.log($(this));
         $(this).removeClass('input-error');
     }
   });
 
    if (password.val() != confirmPass.val())	 {
-   	$('#password-error').text("*Must enter a password longer than 5 characters!");
- 		nextStep = false;
+   	$('#password-error').text("*Passwords must match!");
+   	password.addClass("input-error");
     } else if (password.val().length < 5) {
     	$('#password-error').text("*Must enter a password longer than 5 characters!");
-    	nextStep = false;
+    	password.addClass("input-error");
+    } else {
+    	passwordOK = true;
     }
 
     if (email.val().length < 5) {
     	$("#email-error").text("*Please include a valid email");
+    	emailOK = true;
     }
 
 
     	if (emailArray.includes('@')) {
-    		nextStep = true;
+    		emailOK = true;
     	} else {
     		$("#email-error").text("*Please include a valid email");
-    		nextStep = false;
+    		emailOK = false;
     	}
 
 
-	if(nextStep){
+	if(emailOK && passwordOK){
 // shows next progress step
 	// if(animating) return false;
 		$("#progress-bar li").eq($("fieldset").index(nextFieldset)).addClass("active");
