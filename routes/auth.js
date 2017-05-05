@@ -16,7 +16,10 @@ module.exports = function(app) {
 	app.get('/dashboard', isLoggedIn, function(req, res) {
 		res.sendFile(path.join(__dirname, "../public/html/dashboard.html"));
 	});
-
+	// got to the about page, no log in required
+	app.get("/about", function(req, res) {
+		res.sendFile(path.join(__dirname, "../public/html/about.html"));
+	})
 	app.get('/logout', function(req, res) {
 		req.session.destroy(function(err) {
 			res.redirect('/');
@@ -69,9 +72,6 @@ module.exports = function(app) {
 		}).then(function(result) {
 			console.log(result);
 		})
-	})
-	app.get("/about", function(req, res) {
-		res.sendFile(path.join(__dirname, "../public/html/about.html"));
 	})
 
 	function isLoggedIn(req, res, next) {
