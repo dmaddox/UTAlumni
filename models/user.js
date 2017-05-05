@@ -81,9 +81,6 @@ module.exports = function(sequelize, Sequelize) {
 			type: Sequelize.BOOLEAN
 		},
 
-		user_comment: {
-			type: Sequelize.TEXT
-		}
 	});
 
 	return User;
