@@ -82,7 +82,9 @@ module.exports = function(app) {
 			first_salary: req.body.first_salary,
 			status: req.body.status
 		}, {
-			where: { id: req.user.id}
+			where: {
+				id: req.user.id
+			}
 		}).then(function(result) {
 			console.log(result);
 		})
@@ -95,4 +97,9 @@ module.exports = function(app) {
 		}
 		res.redirect('/');
 	}
+	// Handle 404 - Keep this as a last route
+	app.use(function(req, res, next) {
+		res.status(400);
+		res.send('404: File Not Found');
+	});
 }
