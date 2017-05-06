@@ -69,12 +69,6 @@ module.exports = function(app) {
 		console.log(req.body.interview_time);
 		console.log(req.body.first_salary);
 		// console.log(req.body.status);
-		if(req.body.mentor==="yes"){
-			boolean = true;
-		}
-		else{
-			boolean = false;
-		}
 		db.user.update({
 			email: req.body.email,
 			employer: req.body.employer,
