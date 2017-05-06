@@ -77,7 +77,7 @@ module.exports = function(app) {
 			profilePic: req.body.profilePic,
 			portfolioURL: req.body.portfolioURL,
 			about: req.body.about,
-			mentor: boolean,
+			mentor: req.body.mentor,
 			interview_time: req.body.interview_time,
 			first_salary: req.body.first_salary,
 			status: req.body.status
