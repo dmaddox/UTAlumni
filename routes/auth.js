@@ -57,6 +57,7 @@ module.exports = function(app) {
 		res.sendFile(path.join(__dirname, "../public/html/myProfile.html"));
 	})
 	app.post("/myProfile", isLoggedIn, function(req, res) {
+		var boolean
 		console.log(req.body.email);
 		console.log(req.body.status);
 		console.log(req.body.location);
@@ -68,8 +69,12 @@ module.exports = function(app) {
 		console.log(req.body.interview_time);
 		console.log(req.body.first_salary);
 		// console.log(req.body.status);
-		
-
+		if(req.body.mentor==="yes"){
+			boolean = true;
+		}
+		else{
+			boolean = false;
+		}
 		db.user.update({
 			email: req.body.email,
 			employer: req.body.employer,
@@ -78,7 +83,7 @@ module.exports = function(app) {
 			profilePic: req.body.profilePic,
 			portfolioURL: req.body.portfolioURL,
 			about: req.body.about,
-			// mentor: req.body.mentor,
+			mentor: boolean,
 			interview_time: req.body.interview_time,
 			first_salary: req.body.first_salary,
 			status: req.body.status
