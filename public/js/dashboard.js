@@ -5,18 +5,28 @@ $(document).ready(function() {
 	}).done(function(data) {
 		// loop through DB to create rows for all users with their information
 		for (var i = 0; i < data.length; i++) {
-			var rows_area = $("<div class='individual-result well' data-toggle='modal' data-target='#myModal'>");
+			var rows_area = $("<div class='individual-result well row' data-toggle='modal' data-target='#myModal'>");
 			rows_area.attr("id", "user_row" + i);
 			$(".allRows").append(rows_area);
-			$("#user_row" + i).append("<img src = '" + data[i].profilePic + "'/>");
-			$("#user_row" + i).append("<h3 id='firstname'>" + data[i].firstname + "</h3><h3 id='lastname'> " + data[i].lastname + "</h3>");
-			$("#user_row" + i).append("<h3>Employment status:</h3> <h3 id='status'>" + data[i].status + "</h3>");
-			$("#user_row" + i).append("<h3>City:</h3> <h3 id='location'>" + data[i].location + "</h3>");
-			$("#user_row" + i).append("<h3>Cohort:</h3> <h3 id='cohort'>" + data[i].cohort + "</h3>");
+
+      //create each row here
+      $("#user_row" + i).append(
+          "<div class='col-xs-3 text-center'>" +
+            "<img src = '" + data[i].profilePic + "'class='results-image'/>"+
+          "</div>"+
+          "<div class='col-xs-6 text-center'>"+
+            "<span id='firstname'>" + data[i].firstname + "</span><span id='lastname'> " + data[i].lastname + "</span>"+
+            "<hr id='results-hr'/>" +
+            "<p id='location'>" + data[i].location + "</p>"+
+            "<p id='cohort'>" + data[i].cohort + "</p>"+
+          "</div>"+
+          "<div class='col-xs-offset-1 col-xs-2 text-center'>"+
+            "<div id='employed'>" +
+              "<i class='fa fa-briefcase fa-3x' aria-hidden='true'></i>"+
+            "</div>"+
+          "</div>"
+        )
 		}
-
-
-
 	}); // done
 	$.ajax({
 		url: '/api/currentUser',

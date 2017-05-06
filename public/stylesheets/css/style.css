@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  margin-top: 15px;
   margin-bottom: 10px;
   width: 100%;
   box-sizing: border-box;
@@ -46,6 +47,9 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   padding: 10px 5px;
   margin: 10px 5px; }
+
+#city {
+  margin-top: 15px; }
 
 #sign-up-form .action-button:hover, #sign-up-form .action-button:focus {
   box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60; }
@@ -119,6 +123,27 @@ h1, h2, h3, h4, h5, h6 {
 #password-error, #email-error {
   color: red;
   font-weight: 400; }
+
+#firstname, #lastname {
+  font-size: 30px;
+  font-family: "Source Sans Pro", sans-serif; }
+
+#location, #cohort {
+  display: inline; }
+
+#location {
+  padding-right: 20px;
+  border-right: 1px solid; }
+
+#cohort {
+  padding-left: 20px; }
+
+#results-hr {
+  color: #000; }
+
+.fa-briefcase {
+  margin-top: 40px;
+  color: green; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 10px; }
@@ -212,10 +237,6 @@ a {
 .img-circle {
   padding: 20px;
   height: 300px; }
-
-  #city {
-    margin-top: 15px;
-  }
 
 .brand-text {
   font-family: "Source Sans Pro", sans-serif;
