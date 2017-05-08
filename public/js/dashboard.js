@@ -5,18 +5,17 @@ $(document).ready(function() {
 	}).done(function(data) {
 		// loop through DB to create rows for all users with their information
 		for (var i = 0; i < data.length; i++) {
-			var rows_area = $("<div class='individual-result row' data-toggle='modal' data-target='#myModal'>");
+			var rows_area = $("<div class='individual-result well row' data-toggle='modal' data-target='#myModal'>");
 			rows_area.attr("id", "user_row" + i);
 			$(".allRows").append(rows_area);
 
       //create each row here
-        $("#user_row" + i).attr("id", data[i].id).append(
+        $("#user_row" + i).attr("id", i).append(
           "<div class='col-xs-3 text-center'>" +
             "<img src = '" + data[i].profilePic + "'class='results-image'/>"+
           "</div>"+
           "<div class='col-xs-6 text-center'>"+
             "<span id='firstname'>" + data[i].firstname + "</span><span id='lastname'> " + data[i].lastname + "</span>"+
-            "<h4 id='results-company'>Google</h4>"+
             "<hr id='results-hr'/>" +
             "<p id='location'>" + data[i].location + "</p>"+
             "<p id='cohort'>" + data[i].cohort + "</p>"+
@@ -29,10 +28,18 @@ $(document).ready(function() {
         )
 		}//end of for loop
 
+		// click event to populate the modal
 		$("div.individual-result").on("click", function(){
-			//you are getting a modal
-			//get id from individual result
-			//send value from api to the modal
+			var resultId = $(this).attr('id');
+			console.log(resultId);
+			console.log(data[resultId].firstname);
+			$(".modal-name").html("").html(data[resultId].firstname + " " + data[resultId].lastname);
+			$(".modal-employer").html("").html(data[resultId].employer);
+			$(".modal-cohort").html("").html(data[resultId].cohort);
+			$(".modal-email").html("").html(data[resultId].email);
+			$(".modal-city").html("").html(data[resultId].location);
+			$(".modal-mentor").html("").html(data[resultId].mentor);
+			// remember to add icon links when isaac is done with HTML
 		})
 	}); // done users api call
 	$.ajax({
