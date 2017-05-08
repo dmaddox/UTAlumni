@@ -34,13 +34,15 @@ $(document).ready(function() {
 			var resultId = $(this).attr('id');
 			console.log(resultId);
 			console.log(data[resultId].firstname);
+			$(".modal-profile-image").attr("src","").attr("src", data[resultId].profilePic);
 			$(".modal-name").html("").html(data[resultId].firstname + " " + data[resultId].lastname);
 			$(".modal-employer").html("").html(data[resultId].employer);
 			$(".modal-cohort").html("").html(data[resultId].cohort);
 			$(".modal-email").html("").html(data[resultId].email);
 			$(".modal-city").html("").html(data[resultId].location);
 			$(".modal-mentor").html("").html(data[resultId].mentor);
-			// remember to add icon links when isaac is done with HTML
+			$(".modal-linkedin").attr("href","").attr("href", data[resultId].linkedInURL);
+			$(".modal-profile").attr("href","").attr("href", data[resultId].portfolioURL);
 		})
 	}); // done users api call
 	$.ajax({
