@@ -10,7 +10,7 @@ $(document).ready(function() {
 			$(".allRows").append(rows_area);
 
       //create each row here
-      $("#user_row" + i).append(
+        $("#user_row" + i).attr("id", data[i].id).append(
           "<div class='col-xs-3 text-center'>" +
             "<img src = '" + data[i].profilePic + "'class='results-image'/>"+
           "</div>"+
@@ -26,8 +26,14 @@ $(document).ready(function() {
             "</div>"+
           "</div>"
         )
-		}
-	}); // done
+		}//end of for loop
+
+		$("div.individual-result").on("click", function(){
+			//you are getting a modal
+			//get id from individual result
+			//send value from api to the modal
+		})
+	}); // done users api call
 	$.ajax({
 		url: '/api/currentUser',
 		method: "GET"
@@ -39,6 +45,8 @@ $(document).ready(function() {
 		$(".user-linkedin").html("Linkedin Profile: " + data.linkedInURL);
 		$(".user-profile").html("Profile: " + data.portfolioURL);
 		$(".profile-image").html("<img src = '" + data.profilePic + "' height = 200px width = 200px/>");
-	})
+	});
+
+
 
 }); // end of document ready
