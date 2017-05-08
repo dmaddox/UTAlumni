@@ -5,7 +5,7 @@ $(document).ready(function() {
 	}).done(function(data) {
 		// loop through DB to create rows for all users with their information
 		for (var i = 0; i < data.length; i++) {
-			var rows_area = $("<div class='individual-result well row' data-toggle='modal' data-target='#myModal'>");
+			var rows_area = $("<div class='individual-result row' data-toggle='modal' data-target='#myModal'>");
 			rows_area.attr("id", "user_row" + i);
 			$(".allRows").append(rows_area);
 
@@ -16,6 +16,7 @@ $(document).ready(function() {
           "</div>"+
           "<div class='col-xs-6 text-center'>"+
             "<span id='firstname'>" + data[i].firstname + "</span><span id='lastname'> " + data[i].lastname + "</span>"+
+            "<h4 id='results-company'>Google</h4>"+
             "<hr id='results-hr'/>" +
             "<p id='location'>" + data[i].location + "</p>"+
             "<p id='cohort'>" + data[i].cohort + "</p>"+

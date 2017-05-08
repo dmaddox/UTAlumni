@@ -135,6 +135,9 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 20px;
   border-right: 1px solid; }
 
+#results-company {
+  font-style: italic; }
+
 #cohort {
   padding-left: 20px; }
 
@@ -270,7 +273,14 @@ a {
 .individual-result {
   margin: 10px 0;
   position: relative;
-  box-shadow: 7px 6px 5px rgba(0, 0, 0, 0.4); }
+  padding: 10px;
+  border-left: 5px solid green;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 2px -2px #e4e4e4; }
+
+#dashboard-page {
+  background-color: #eee; }
 
 .main-content {
   padding-top: 130px; }
@@ -289,7 +299,9 @@ a {
   position: fixed;
   width: 30%;
   float: left;
-  top: 51px; }
+  top: 51px;
+  background-color: white;
+  border: 2px solid #ccc; }
 
 .form-group {
   padding-right: 0px; }
