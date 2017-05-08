@@ -131,9 +131,6 @@ h1, h2, h3, h4, h5, h6 {
 #employment-text {
   color: green; }
 
-#cohort {
-  padding-left: 20px; }
-
 #results-hr {
   color: #000;
   margin: 10px 0; }
@@ -141,6 +138,9 @@ h1, h2, h3, h4, h5, h6 {
 .fa-briefcase {
   margin-top: 5px;
   color: green; }
+
+#employed {
+  margin-bottom: 80px; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 10px; }
@@ -298,15 +298,6 @@ a {
 
 #employment-status {
   color: green; }
-
-#profile-section {
-  position: fixed;
-  width: 30%;
-  float: left;
-  top: 51px;
-  background-color: white;
-  border: 1px solid #ccc;
-  padding: 15px 0px; }
 
 .form-group {
   padding-right: 0px; }

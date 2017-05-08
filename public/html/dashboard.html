@@ -30,49 +30,46 @@
 		  </div>
     	</nav> <!-- /navbar -->
     	<main id="dashboard">
-			<!-- <div class="row"> -->
-				<aside class="text-center" id="profile-section"> <!-- user profile sidebar -->
-					<!-- <a href="profile.html"> -->
-					<a href="/myProfile">
-					<p class="profile-image"> </p>
-					<h1 class="user-fullname"> </h1>
-					<p class="user-employment-status"></p>
-					<p class="user-city"></p>
-					<p class="user-cohort"></p>
-					<p class="user-linkedin"></p>
-					<p class="user-github"></p>
-					</a>
-				</aside> <!-- user profile sidebar -->
-
-			<div class="row">
-				<div class="col-md-6 col-md-offset-4" id="results-section"> <!-- search bar -->
+    		<div class="row">
+    			<div class="col-md-4">
+					<aside class="text-center" id="profile-section"> <!-- user profile sidebar -->
+						<a href="/myProfile">
+						<p class="profile-image"> </p>
+						<h1 class="user-fullname"> </h1>
+						<p class="user-employment-status"></p>
+						<p class="user-city"></p>
+						<p class="user-cohort"></p>
+						<p class="user-linkedin"></p>
+						<p class="user-github"></p>
+						</a>
+					</aside> <!-- user profile sidebar -->
+				</div>
+				<div class="col-md-6" id="results-section"> <!-- search bar -->
 				    <div class="input-group search-results">
-				    <div class="row">
-				    	<div class="col-xs-6" type="input-group-btn drop-down-select">
-				    		<select id="drop-down-search" class="form-control selectpicker" data-style="btn-primary">
-				    			<option value="">Category</option>
-				    			<option value="firstName">First Name</option>
-				    			<option value="lastName">Last Name</option>
-				    			<option value="status">
-				    			Employment Status</option>
-				    			<option value="location">Location</option>
-				    			<option value="cohort">Cohort</option>		
-				    			<option value="email">Email Address</option>	
-				    			
-				    		</select>
-				    	</div>
-				    	<div class="form-group col-xs-5">
-							<input id="userFilter" type="text" class=" form-control" placeholder="Search"/>
-				    	</div>
+				    	<div class="row">
+					    	<div class="col-xs-6" type="input-group-btn drop-down-select">
+					    		<select id="drop-down-search" class="form-control selectpicker" data-style="btn-primary">
+					    			<option value="">Category</option>
+					    			<option value="firstName">First Name</option>
+					    			<option value="lastName">Last Name</option>
+					    			<option value="status">
+					    			Employment Status</option>
+					    			<option value="location">Location</option>
+					    			<option value="cohort">Cohort</option>		
+					    			<option value="email">Email Address</option>	
+					    		</select>
+					    	</div>
+					    	<div class="form-group col-xs-5">
+								<input id="userFilter" type="text" class=" form-control" placeholder="Search"/>
+					    	</div>
 				      
-				      <span class="input-group-btn">
-				        <button class="btn btn-default" type="button" id="searchBtn"><i class="fa fa-search" aria-hidden="true"></i>
-						</button>
-				      </span>
-				      </div>
+					      <span class="input-group-btn">
+					        <button class="btn btn-default" type="button" id="searchBtn"><i class="fa fa-search" aria-hidden="true"></i>
+							</button>
+					      </span>
+				      </div> <!-- /row -->
 				    </div><!-- /search bar -->
-				    <div class= "allRows"></div><!-- /search results -->
-
+				  </div>
 
 				<!-- Modal -->
 				<div class="modal edit-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
