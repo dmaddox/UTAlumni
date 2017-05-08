@@ -134,29 +134,22 @@
 	font-family: $main-font;
 }
 
-#location, #cohort {
-	display: inline;
-}
-
 #location {
-	padding-right: 20px;
-    border-right: 1px solid;
-}
-#results-company {
-	font-style: italic;
+
 }
 
-#cohort {
-    padding-left: 20px;
+#employment-text {
+	color: $employment-green;
 }
 
 #results-hr{
 	color: #000;
+	margin: 10px 0;
 }
 
 .fa-briefcase {
-	margin-top: 40px;
-	color: green;
+	margin-top: 5px;
+	color: $employment-green;
 }
 
 

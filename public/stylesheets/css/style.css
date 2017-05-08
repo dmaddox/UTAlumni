@@ -128,24 +128,18 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   font-family: "Source Sans Pro", sans-serif; }
 
-#location, #cohort {
-  display: inline; }
-
-#location {
-  padding-right: 20px;
-  border-right: 1px solid; }
-
-#results-company {
-  font-style: italic; }
+#employment-text {
+  color: green; }
 
 #cohort {
   padding-left: 20px; }
 
 #results-hr {
-  color: #000; }
+  color: #000;
+  margin: 10px 0; }
 
 .fa-briefcase {
-  margin-top: 40px;
+  margin-top: 5px;
   color: green; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -275,6 +269,8 @@ a {
   position: relative;
   padding: 10px;
   border-left: 5px solid green;
+  display: flex;
+  align-items: center;
   background-color: white;
   border: 1px solid #ccc;
   box-shadow: 0 4px 2px -2px #e4e4e4; }
@@ -295,13 +291,22 @@ a {
   padding: 20px;
   color: white; }
 
+#results-company {
+  margin-top: 0px;
+  font-weight: 200px;
+  font-style: italic; }
+
+#employment-status {
+  color: green; }
+
 #profile-section {
   position: fixed;
   width: 30%;
   float: left;
   top: 51px;
   background-color: white;
-  border: 2px solid #ccc; }
+  border: 1px solid #ccc;
+  padding: 15px 0px; }
 
 .form-group {
   padding-right: 0px; }
