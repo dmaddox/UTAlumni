@@ -22,7 +22,7 @@
 			<!-- jquery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
-	<body>
+	<body id="dashboard-page">
 		<nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container">
 		      <a class="navbar-brand" href="/">HookedIn</a>
@@ -31,7 +31,7 @@
     	</nav> <!-- /navbar -->
     	<main id="dashboard">
 			<!-- <div class="row"> -->
-				<aside class="text-center well well-lg" id="profile-section"> <!-- user profile sidebar -->
+				<aside class="text-center" id="profile-section"> <!-- user profile sidebar -->
 					<!-- <a href="profile.html"> -->
 					<a href="/myProfile">
 					<p class="profile-image"> </p>
@@ -82,13 +82,13 @@
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				      </div>
 				      <div class="modal-body">
-				      	<div class="row">
+				      	<div class="row modal-row">
 				      		<div class="col-sm-5 text-center">
 				      			<img src="../assets/test.jpg" class="profile-image">
 				      		</div>
 				      		<div class="col-md-7">
-				      			<h1>Isaac Hawkins</h1>
-				      			<h4 class="employer">Google</h4>
+				      			<h1 class="modal-name">Isaac Hawkins</h1>
+				      			<h4 class="modal-employer">Google</h4>
 				      			<hr />
 								<div class="row">
 									<div class="col-xs-4">
@@ -98,10 +98,10 @@
 										<p>Mentor</p>
 									</div>
 									<div class="col-xs-8">
-										<p class="search-cohort">Full-time | Spring 2017</p>
-										<p class="search-email">hawkins.isaac@gmail.com</p>
-										<p class="search-city">Austin, Texas</p>
-										<p class="search-mentor">Yes</p>
+										<p class="modal-cohort">Full-time | Spring 2017</p>
+										<p class="modal-email">hawkins.isaac@gmail.com</p>
+										<p class="modal-city">Austin, Texas</p>
+										<p class="modal-mentor">Yes</p>
 									</div>
 								</div>
 				      		</div>

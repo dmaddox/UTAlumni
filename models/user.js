@@ -1,3 +1,4 @@
+//here we are creating the table with sequlize that will store user data
 module.exports = function(sequelize, Sequelize) {
 
 	var User = sequelize.define('user', {
@@ -77,7 +78,7 @@ module.exports = function(sequelize, Sequelize) {
 		},
 
 		mentor: {
-			type: Sequelize.BOOLEAN
+			type: Sequelize.STRING
 		},
 
 	});
