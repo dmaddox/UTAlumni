@@ -16,13 +16,14 @@ $(document).ready(function() {
           "<div class='col-xs-3 text-center'>" +
             "<img src = '" + data[i].profilePic + "'class='results-image'/>"+
           "</div>"+
-          "<div class='col-xs-6'>"+
+          "<div class='col-xs-7'>"+
             "<span id='firstname'>" + data[i].firstname + "</span><span id='lastname'> " + data[i].lastname + "</span>"+
+            "<h4 id='results-company'>Google</h4>"+
             "<hr id='results-hr'/>" +
             "<p id='location'>" + data[i].location + "</p>"+
             "<p id='cohort'>" + data[i].cohort + "</p>"+
           "</div>"+
-          "<div class='col-xs-3 text-right'>"+
+          "<div class='col-xs-2 text-right'>"+
             "<div id='employed'>" +
               "<i class='fa fa-briefcase fa-2x' aria-hidden='true'></i>"+
               "<p id='employment-text'>Hired</p>"+

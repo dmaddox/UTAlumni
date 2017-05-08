@@ -36,7 +36,6 @@
 
 // =====================================================================
 .search-results {
-	margin-top: 70px;
 	width: 100%;
 }
 
@@ -59,6 +58,10 @@
 // vertical centering of main content
 .main-content {
 	padding-top: 130px;
+}
+
+.main-row {
+	margin-top:75px;
 }
 
 //Modal 
@@ -86,13 +89,13 @@
 }
 
 #profile-section {
-	// position: fixed;
-	// width: 30%;
-	// float: left;
-	// top: 51px;
-	// background-color: white;
-	// border: 1px solid #ccc;
-	// padding: 15px 0px;
+	background-color: white;
+	border: 1px solid #ccc;
+	padding: 30px 0;
+}
+
+.input-areas {
+	margin-top: 20px;
 }
 .form-group{
 	padding-right: 0px;
