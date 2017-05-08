@@ -124,6 +124,27 @@ h1, h2, h3, h4, h5, h6 {
   color: red;
   font-weight: 400; }
 
+#firstname, #lastname {
+  font-size: 30px;
+  font-family: "Source Sans Pro", sans-serif; }
+
+#location, #cohort {
+  display: inline; }
+
+#location {
+  padding-right: 20px;
+  border-right: 1px solid; }
+
+#cohort {
+  padding-left: 20px; }
+
+#results-hr {
+  color: #000; }
+
+.fa-briefcase {
+  margin-top: 40px;
+  color: green; }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 10px; }
 
