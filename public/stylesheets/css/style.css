@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  margin-top: 15px;
   margin-bottom: 10px;
   width: 100%;
   box-sizing: border-box;
@@ -46,6 +47,9 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   padding: 10px 5px;
   margin: 10px 5px; }
+
+#city {
+  margin-top: 15px; }
 
 #sign-up-form .action-button:hover, #sign-up-form .action-button:focus {
   box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60; }
@@ -120,6 +124,27 @@ h1, h2, h3, h4, h5, h6 {
   color: red;
   font-weight: 400; }
 
+#firstname, #lastname {
+  font-size: 30px;
+  font-family: "Source Sans Pro", sans-serif; }
+
+#location, #cohort {
+  display: inline; }
+
+#location {
+  padding-right: 20px;
+  border-right: 1px solid; }
+
+#cohort {
+  padding-left: 20px; }
+
+#results-hr {
+  color: #000; }
+
+.fa-briefcase {
+  margin-top: 40px;
+  color: green; }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 10px; }
 
@@ -145,9 +170,9 @@ a {
   background-color: transparent; }
 
 .navbar-brand {
-  background-color: #ffffff; }
+  background-color: transparent; }
   .navbar-brand:visited {
-    background-color: #ffffff; }
+    background-color: transparent; }
 
 .person-target {
   height: 50%;
@@ -161,8 +186,13 @@ a {
 .two {
   right: 50px; }
 
+.navbar-brand {
+  background-color: transparent; }
+
 .navbar {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  height: 50px;
+  background-color: #ffffff; }
 
 .main-image {
   background: url(../../assets/meetingSpace.jpg) no-repeat center center fixed;
@@ -208,23 +238,23 @@ a {
   padding: 20px;
   height: 300px; }
 
-  #city {
-    margin-top: 15px;
-  }
-
 .brand-text {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;
   color: #392f2d !important; }
 
-.sign-up {
+#sign-up {
   padding: 20px 0 20px 0;
   margin-bottom: 20px;
   border-radius: 0px 10px 10px 10px; }
 
+.sign-in-row {
+  display: flex;
+  justify-content: center; }
+
 .form-container {
   background-color: #fff;
-  padding: 20px 20px 0 20px; }
+  padding: 20px 20px 20px 20px; }
 
 #about-hookedin {
   padding-top: 60px;
@@ -281,6 +311,25 @@ a {
 .profile-info {
   border-radius: 5%; }
 
+.about-pair {
+  display: flex;
+  text-align: left; }
+
+.about-item-label {
+  width: 50%; }
+
+.about-item {
+  flex-grow: 1;
+  text-align: right;
+  word-break: break-all; }
+
+.about-icon {
+  color: #d3d3d3;
+  margin-top: 0px; }
+
+.about-section-container {
+  color: #392f2d; }
+
 #profile-media, #profile-about-me, #profile-employment-info {
   border: 1px solid #eee;
   padding: 50px;
@@ -305,6 +354,32 @@ a {
   /*stacking fieldsets above each other*/
   position: relative; }
 
+.content {
+  margin-top: 60px; }
+
+.border-section {
+  border-left: 1px solid #eee; }
+
+.multi-input-row {
+  display: flex; }
+
+.form-pair {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1; }
+
+.input-label {
+  width: 100%; }
+
+.input-field {
+  flex-grow: 1;
+  margin-right: 10px;
+  height: 40px;
+  padding: 10px; }
+
+.url-input {
+  width: 100%; }
+
 .featurette {
   overflow: hidden; }
 
@@ -317,9 +392,8 @@ a {
 .profile-divider {
   border-top: 2px solid #eee; }
 
-@media only screen and (max-width: 990px) {
-  #profile-section {
-    position: relative;
-    width: 100%; } }
+@media only screen and (max-width: 992px) {
+  .border-section {
+    border-left: none; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,10 +10,13 @@
     margin-bottom: 20px;
     border-radius: 0px 10px 10px 10px;
 }
-
+.sign-in-row{
+	display: flex;
+	justify-content: center;
+}
 .form-container {
 	background-color: #fff;
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 #about-hookedin {
@@ -100,6 +103,27 @@
 .profile-info {
 	border-radius: 5%;
 }
+.about-pair{
+    display: flex;
+    text-align: left;
+
+}
+.about-item-label{
+
+	width: 50%;
+}
+.about-item{
+	flex-grow: 1;
+	text-align: right;
+	word-break: break-all;
+}
+.about-icon{
+	color: $light-grey;
+	margin-top: 0px;
+}
+.about-section-container{
+	color: $dark-grey;
+}
 
 #profile-media, #profile-about-me, #profile-employment-info {
 	border: 1px solid #eee;
@@ -126,6 +150,33 @@
 	/*stacking fieldsets above each other*/
 	position: relative;
 }
+.content{
+	margin-top: 60px;
+}
+.border-section{
+	border-left: 1px solid #eee;
+}
+.multi-input-row{
+	display: flex;
+}
+.form-pair{
+	display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.input-label{
+	width: 100%;
+}
+.input-field{
+	flex-grow: 1;
+	margin-right: 10px;
+	height: 40px;
+	padding: 10px;
+}
+.url-input{
+	width: 100%;
+}
+
 
 // =====================================================================
 
@@ -153,10 +204,9 @@
 // =====================================================================
 
 
-@media only screen and (max-width: 990px) {
-    #profile-section {
-        position: relative;
-        width: 100%;
+@media only screen and (max-width: 992px) {
+    .border-section {
+        border-left: none;
     }
 }
 

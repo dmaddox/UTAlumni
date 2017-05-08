@@ -128,6 +128,33 @@
 	font-weight:$font-weight-body;
 }
 
+//Dashboard results
+#firstname, #lastname {
+	font-size: 30px;
+	font-family: $main-font;
+}
+
+#location, #cohort {
+	display: inline;
+}
+
+#location {
+	padding-right: 20px;
+    border-right: 1px solid;
+}
+
+#cohort {
+    padding-left: 20px;
+}
+
+#results-hr{
+	color: #000;
+}
+
+.fa-briefcase {
+	margin-top: 40px;
+	color: green;
+}
 
 
 

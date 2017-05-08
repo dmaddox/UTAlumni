@@ -39,8 +39,7 @@ module.exports = function(sequelize, Sequelize) {
 		},
 
 		status: {
-			type: Sequelize.ENUM('active', 'inactive'),
-			defaultValue: 'active'
+			type: Sequelize.STRING
 		},
 
 		cohort: {
@@ -69,7 +68,7 @@ module.exports = function(sequelize, Sequelize) {
 			type: Sequelize.STRING
 		},
 
-		employment: {
+		employer: {
 			type: Sequelize.STRING
 		},
 
