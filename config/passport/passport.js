@@ -1,8 +1,9 @@
 //load bcrypt
 var bCrypt = require('bcrypt-nodejs');
-
+//configure passport
 module.exports = function(passport, user) {
 	var User = user;
+	//used by passport to create authentication
 	var LocalStrategy = require('passport-local').Strategy;
 	passport.use('local-signup', new LocalStrategy({
 			usernameField: 'email',
@@ -13,15 +14,18 @@ module.exports = function(passport, user) {
 			var generateHash = function(password) {
 				return bCrypt.hashSync(password, bCrypt.genSaltSync(8), null);
 			};
+			//use sequalize to check to see if email is taken in database
 			User.findOne({
 				where: {
 					email: email
 				}
+				// if email is taken, alert user
 			}).then(function(user) {
 				if (user) {
 					return done(null, false, {
 						message: 'That email is already taken'
 					});
+	//if email isn't taken, hash password and data to be used to create new user
 				} else {
 					var userPassword = generateHash(password);
 					var data = {
@@ -37,8 +41,10 @@ module.exports = function(passport, user) {
 						portfolioURL: req.body.portfolioURL
 
 					};
+					//create a new user
 					console.log(req.body.status);
 					User.create(data).then(function(newUser, created) {
+						//if not a new user, don't make a new user
 						if (!newUser) {
 							return done(null, false);
 						}
@@ -74,19 +80,23 @@ module.exports = function(passport, user) {
 		},
 		function(req, email, password, done) {
 			var User = user;
+			//encrypt password
 			var isValidPassword = function(userpass, password) {
 				return bCrypt.compareSync(password, userpass);
 			}
+			//check to see if email is in database
 			User.findOne({
 				where: {
 					email: email
 				}
+				// if email not in database, alert user
 			}).then(function(user) {
 				if (!user) {
 					return done(null, false, {
 						message: 'Email does not exist'
 					});
 				}
+				//if password isn't right, alert user
 				if (!isValidPassword(user.password, password)) {
 					return done(null, false, {
 						message: 'Incorrect password.'
@@ -94,6 +104,7 @@ module.exports = function(passport, user) {
 				}
 				var userinfo = user.get();
 				return done(null, userinfo);
+				//if an error is thrown, alert user
 			}).catch(function(err) {
 				console.log("Error:", err);
 				return done(null, false, {
