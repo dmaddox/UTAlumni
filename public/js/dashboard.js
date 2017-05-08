@@ -20,9 +20,10 @@ $(document).ready(function() {
             "<p id='location'>" + data[i].location + "</p>"+
             "<p id='cohort'>" + data[i].cohort + "</p>"+
           "</div>"+
-          "<div class='col-xs-offset-1 col-xs-2 text-center'>"+
+          "<div class='col-xs-3 text-right'>"+
             "<div id='employed'>" +
-              "<i class='fa fa-briefcase fa-3x' aria-hidden='true'></i>"+
+            	"<span id='employment-text'>Hired</span>"+
+              "<i class='fa fa-briefcase fa-2x' aria-hidden='true'></i>"+
             "</div>"+
           "</div>"
         )
