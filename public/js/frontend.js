@@ -13,6 +13,14 @@ var city = $("#city");
 var emailArray = [];
 var submitForm = false;
 
+ $(document).on("keypress", 'form', function (e) {
+    var code = e.keyCode || e.which;
+    if (code == 13) {
+        e.preventDefault();
+        return false;
+    }
+});
+
 
 //check password for length and if they match
 function passwordCheck(){

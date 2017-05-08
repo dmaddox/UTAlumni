@@ -77,7 +77,7 @@ module.exports = function(sequelize, Sequelize) {
 		},
 
 		mentor: {
-			type: Sequelize.BOOLEAN
+			type: Sequelize.STRING
 		},
 
 	});
