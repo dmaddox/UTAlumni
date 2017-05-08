@@ -128,16 +128,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   font-family: "Source Sans Pro", sans-serif; }
 
-#location, #cohort {
-  display: inline; }
-
-#location {
-  padding-right: 20px;
-  border-right: 1px solid; }
-
-#results-company {
-  font-style: italic; }
-
 #employment-text {
   color: green; }
 
@@ -145,7 +135,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 20px; }
 
 #results-hr {
-  color: #000; }
+  color: #000;
+  margin: 10px 0; }
 
 .fa-briefcase {
   margin-top: 5px;
@@ -302,7 +293,8 @@ a {
 
 #results-company {
   margin-top: 0px;
-  font-weight: 200px; }
+  font-weight: 200px;
+  font-style: italic; }
 
 #employment-status {
   color: green; }

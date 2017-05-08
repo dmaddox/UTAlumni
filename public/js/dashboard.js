@@ -14,7 +14,7 @@ $(document).ready(function() {
           "<div class='col-xs-3 text-center'>" +
             "<img src = '" + data[i].profilePic + "'class='results-image'/>"+
           "</div>"+
-          "<div class='col-xs-6 text-center'>"+
+          "<div class='col-xs-6'>"+
             "<span id='firstname'>" + data[i].firstname + "</span><span id='lastname'> " + data[i].lastname + "</span>"+
             "<hr id='results-hr'/>" +
             "<p id='location'>" + data[i].location + "</p>"+
@@ -22,8 +22,8 @@ $(document).ready(function() {
           "</div>"+
           "<div class='col-xs-3 text-right'>"+
             "<div id='employed'>" +
-            	"<span id='employment-text'>Hired</span>"+
               "<i class='fa fa-briefcase fa-2x' aria-hidden='true'></i>"+
+              "<p id='employment-text'>Hired</p>"+
             "</div>"+
           "</div>"
         )
