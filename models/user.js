@@ -57,7 +57,10 @@ module.exports = function(sequelize, Sequelize) {
 
 		},
 
-		location: {
+		city: {
+			type: Sequelize.STRING
+		},
+		state: {
 			type: Sequelize.STRING
 		},
 
