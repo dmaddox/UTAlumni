@@ -5,13 +5,11 @@ $(document).ready(function() {
 		console.log(dropFilter)
 		if (dropFilter === "cohort") {
 			console.log("caught chenge to cohort");
-			$("#userFilter").html('<p>Worked</p>');
-
-			// ('<select id="userFilter" class="form-control selectpicker" data-style="btn-primary"><option value="Fall Full Time 2016">Fall Full Time 2016</option><option value="Fall Part Time 2016">Fall Part Time 2016</option><option value="Spring Full Time 2017">Spring Full Time 2017</option><option value="Spring Part Time 2017">Spring Part Time 2017</option><option value="Fall Full Time 2017">Fall Full Time 2017</option></select>')
+			$("#userFilterElement").html('<select id="userFilter" class="form-control selectpicker" data-style="btn-primary"><option value="Fall Full Time 2016">Fall Full Time 2016</option><option value="Fall Part Time 2016">Fall Part Time 2016</option><option value="Spring Full Time 2017">Spring Full Time 2017</option><option value="Spring Part Time 2017">Spring Part Time 2017</option><option value="Fall Full Time 2017">Fall Full Time 2017</option></select>');
 
 		} else {
 			console.log("hit the else");
-			$("#userFilter").html('<input id="userFilter" type="text" class=" form-control" placeholder="Search"/>')
+			$("#userFilterElement").html('<input id="userFilter" type="text" class=" form-control" placeholder="Search"/>')
 		}
 	})
 
