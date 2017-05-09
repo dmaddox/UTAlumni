@@ -33,6 +33,19 @@ h2{
     margin: 40px;
 }
 
+//media query for sign-up form 
+@media (max-width: 399px){
+	#sign-up-form{
+		width: 100%;
+	}
+
+	#sign-up-form fieldset{
+		margin: 0% 5%;
+		width: 90%;
+		padding: 15px;
+	}
+}
+
 
 // =====================================================================
 
