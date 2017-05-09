@@ -1,5 +1,6 @@
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-family: "Source Sans Pro", sans-serif; }
 
 #sign-up-form {
   width: 400px;
@@ -146,7 +147,8 @@ h1, h2, h3, h4, h5, h6 {
   color: green; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-family: "Source Sans Pro", sans-serif; }
 
 a {
   color: black;
@@ -162,7 +164,12 @@ a {
     text-decoration: none; }
 
 .nav-tabs li {
-  background-color: #d3d3d3; }
+  background-color: #d3d3d3;
+  width: 50%; }
+
+.nav-tabs > li > a {
+  border-radius: 0;
+  margin-right: 0; }
 
 .about-item {
   color: black;
@@ -170,9 +177,13 @@ a {
   background-color: transparent; }
 
 .navbar-brand {
-  background-color: transparent; }
+  background-color: transparent;
+  color: white;
+  text-shadow: none; }
   .navbar-brand:visited {
-    background-color: transparent; }
+    background-color: transparent;
+    color: white;
+    text-shadow: none; }
 
 .person-target {
   height: 50%;
@@ -187,20 +198,36 @@ a {
   right: 50px; }
 
 .navbar-brand {
-  background-color: transparent; }
+  background-color: transparent;
+  color: white; }
+
+.navbar-text {
+  color: white; }
 
 .navbar {
-  margin-bottom: 0;
-  height: 50px;
-  background-color: #ffffff; }
+  margin-bottom: 70px;
+  height: 70px;
+  background-color: transparent;
+  border-radius: none;
+  border: none; }
+
+.landing-box-tab {
+  border: none !important; }
+
+input::placeholder {
+  background-color: white; }
+
+/* Change the white to any color ;) */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset; }
 
 .main-image {
-  background: url(../../assets/meetingSpace.jpg) no-repeat center center fixed;
+  background: url(../../assets/heading-background.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100%;
+  height: 65vh;
   padding-bottom: 50px; }
 
 .log-in {
@@ -215,12 +242,9 @@ a {
   height: 100px; }
 
 .main-title {
-  margin-bottom: 100px;
   color: #ffffff; }
 
 .main-subtitle {
-  margin-bottom: 50px;
-  padding-right: 50px;
   color: #ffffff; }
 
 .header-image {
@@ -238,15 +262,16 @@ a {
   padding: 20px;
   height: 300px; }
 
+.landing-icon {
+  width: 30%; }
+
+.step-container-header {
+  margin-bottom: 20px; }
+
 .brand-text {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;
   color: #392f2d !important; }
-
-#sign-up {
-  padding: 20px 0 20px 0;
-  margin-bottom: 20px;
-  border-radius: 0px 10px 10px 10px; }
 
 .sign-in-row {
   display: flex;
@@ -254,14 +279,17 @@ a {
 
 .form-container {
   background-color: #fff;
-  padding: 20px 20px 20px 20px; }
-
-#about-hookedin {
-  padding-top: 60px;
-  margin-bottom: 60px; }
+  padding: 20px 20px 20px 20px;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5); }
 
 .description-text {
   margin-bottom: 40px; }
+
+.step-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px; }
 
 .search-results {
   margin-top: 70px;
@@ -271,9 +299,6 @@ a {
   margin: 10px 0;
   position: relative;
   box-shadow: 7px 6px 5px rgba(0, 0, 0, 0.4); }
-
-.main-content {
-  padding-top: 130px; }
 
 .modal-links {
   background: linear-gradient(to bottom right, #F0C27B, #4B1248); }
@@ -375,7 +400,8 @@ a {
   flex-grow: 1;
   margin-right: 10px;
   height: 40px;
-  padding: 10px; }
+  padding: 10px;
+  border-radius: 0; }
 
 .url-input {
   width: 100%; }

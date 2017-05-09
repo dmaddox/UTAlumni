@@ -5,11 +5,7 @@
 // =====================================================================
 
 //sign-up form container
-#sign-up {
-    padding: 20px 0 20px 0;
-    margin-bottom: 20px;
-    border-radius: 0px 10px 10px 10px;
-}
+
 .sign-in-row{
 	display: flex;
 	justify-content: center;
@@ -17,17 +13,19 @@
 .form-container {
 	background-color: #fff;
     padding: 20px 20px 20px 20px;
-}
-
-#about-hookedin {
-	padding-top: 60px;
-	margin-bottom: 60px;
+   	box-shadow: 2px 3px 8px rgba(0,0,0, 0.5);
 }
 
 .description-text {
 	margin-bottom: 40px;
 }
 
+.step-container{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
+}
 
 
 // =====================================================================
@@ -47,9 +45,6 @@
 }
 
 // vertical centering of main content
-.main-content {
-	padding-top: 130px;
-}
 
 //Modal 
 
@@ -172,6 +167,7 @@
 	margin-right: 10px;
 	height: 40px;
 	padding: 10px;
+	border-radius: 0;
 }
 .url-input{
 	width: 100%;

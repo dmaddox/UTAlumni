@@ -1,22 +1,41 @@
 // Tabs for sign in/up
 .navbar-brand {
-	background-color: transparent;	
+	background-color: transparent;
+	color: white;	
+}
+.navbar-text{
+	color: white;
 }
 
 .navbar {
-	margin-bottom: 0;
-	height: 50px;
-	background-color: $white;
+	margin-bottom: 70px;
+	height: 70px;
+	background-color: transparent;
+	border-radius: none;
+	border: none;
+
+}
+.landing-box-tab{
+	border: none !important;
+}
+
+// override chrome placeholder css
+input::placeholder{
+	background-color: white;
+}
+/* Change the white to any color ;) */
+input:-webkit-autofill {
+-webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 
 //background-image placeholder
 .main-image {
-	background: url(../../assets/meetingSpace.jpg) no-repeat center center fixed; 
+	background: url(../../assets/heading-background.png) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height:100%;
+	height: 65vh;
 	padding-bottom: 50px;
 }
 
@@ -35,14 +54,10 @@
 }
 
 .main-title {
-	margin-bottom: 100px;
 	color: $white;
-
 }
 
 .main-subtitle {
-	margin-bottom: 50px;
-	padding-right: 50px;
 	color: $white;
 }
 // placeholder image about page
@@ -60,4 +75,12 @@
 .img-circle{
 	padding: 20px;
 	height: 300px;
+}
+
+// index
+.landing-icon{
+	width: 30%;
+}
+.step-container-header{
+	margin-bottom: 20px;
 }
