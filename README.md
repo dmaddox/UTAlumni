@@ -2,12 +2,12 @@
 
 
 
-##vThis is a platform for UT coding boot camp alumni to share their experiences in the workforce, connect current students with graduates. 
+## This is a platform for UT coding boot camp alumni to share their experiences in the workforce, connect current students with graduates. 
 
 
 ---------
 
-##vFeatures
+## Features
 
 * ### Stay in contact with your cohort and new students. 
 
