@@ -1,10 +1,12 @@
 // Tabs for sign in/up
 .navbar-brand {
 	background-color: transparent;
-	color: white;	
+	color: white;
+	font-size: 30px;	
 }
 .navbar-text{
 	color: white;
+	font-size: 24px; 
 }
 
 .navbar {
@@ -35,7 +37,6 @@ input:-webkit-autofill {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	height: 65vh;
 	padding-bottom: 50px;
 }
 
@@ -46,7 +47,14 @@ input:-webkit-autofill {
 
 //user's profile image
 .profile-image {
-	@include profile-image;
+	@include profile-image;	
+}
+
+.edit-profile-image{
+	position: absolute;
+    top: -110px;
+    right: 490px;
+    border: 4px solid white;
 }
 
 .results-image {
@@ -60,18 +68,7 @@ input:-webkit-autofill {
 .main-subtitle {
 	color: $white;
 }
-// placeholder image about page
-.header-image{
-	text-align: center;
-	background: url(../../assets/meetingSpace.jpg) no-repeat center center scroll;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	height:70vh;
-	margin-bottom: 20px;
-	position: relative;
-}
+
 .img-circle{
 	padding: 20px;
 	height: 300px;
@@ -83,4 +80,15 @@ input:-webkit-autofill {
 }
 .step-container-header{
 	margin-bottom: 20px;
+}
+.background-banner-image{
+	background: url(../../assets/heading-background.png) no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 300px;
+}
+.edit-fullname{
+	padding-top: 50px;
 }

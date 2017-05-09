@@ -1,6 +1,9 @@
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 10px;
-  font-family: "Source Sans Pro", sans-serif; }
+  margin-top: 10px; }
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400; }
 
 #sign-up-form {
   width: 400px;
@@ -147,8 +150,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 80px; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 10px;
-  font-family: "Source Sans Pro", sans-serif; }
+  margin-top: 10px; }
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400; }
 
 a {
   color: black;
@@ -185,6 +191,12 @@ a {
     color: white;
     text-shadow: none; }
 
+.edit {
+  background-color: #bf5700;
+  border: none;
+  text-shadow: none;
+  margin-top: 40px; }
+
 .person-target {
   height: 50%;
   width: 50%;
@@ -199,10 +211,12 @@ a {
 
 .navbar-brand {
   background-color: transparent;
-  color: white; }
+  color: white;
+  font-size: 30px; }
 
 .navbar-text {
-  color: white; }
+  color: white;
+  font-size: 24px; }
 
 .navbar {
   margin-bottom: 70px;
@@ -227,7 +241,6 @@ input:-webkit-autofill {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 65vh;
   padding-bottom: 50px; }
 
 .log-in {
@@ -236,6 +249,12 @@ input:-webkit-autofill {
 .profile-image {
   border-radius: 50%;
   height: 200px; }
+
+.edit-profile-image {
+  position: absolute;
+  top: -110px;
+  right: 490px;
+  border: 4px solid white; }
 
 .results-image {
   border-radius: 50%;
@@ -247,17 +266,6 @@ input:-webkit-autofill {
 .main-subtitle {
   color: #ffffff; }
 
-.header-image {
-  text-align: center;
-  background: url(../../assets/meetingSpace.jpg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 70vh;
-  margin-bottom: 20px;
-  position: relative; }
-
 .img-circle {
   padding: 20px;
   height: 300px; }
@@ -268,10 +276,27 @@ input:-webkit-autofill {
 .step-container-header {
   margin-bottom: 20px; }
 
+.background-banner-image {
+  background: url(../../assets/heading-background.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 300px; }
+
+.edit-fullname {
+  padding-top: 50px; }
+
 .brand-text {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;
   color: #392f2d !important; }
+
+h1 {
+  font-size: 50px; }
+
+h2 {
+  font-size: 24px; }
 
 .sign-in-row {
   display: flex;
@@ -307,6 +332,9 @@ input:-webkit-autofill {
 
 #dashboard-page {
   background-color: #eee; }
+
+.main-row {
+  margin-top: 75px; }
 
 .modal-links {
   background: linear-gradient(to bottom right, #F0C27B, #4B1248); }
@@ -399,7 +427,12 @@ input:-webkit-autofill {
   position: relative; }
 
 .content {
-  margin-top: 60px; }
+  margin-top: -20px;
+  padding-bottom: 70px;
+  padding-top: 27px;
+  background-color: white;
+  position: relative;
+  box-shadow: 0px 11px 19px rgba(0, 0, 0, 0.17); }
 
 .border-section {
   border-left: 1px solid #eee; }
@@ -440,5 +473,8 @@ input:-webkit-autofill {
 @media only screen and (max-width: 992px) {
   .border-section {
     border-left: none; } }
+@media only screen and (max-width: 992px) {
+  .landing-icon {
+    width: 20%; } }
 
 /*# sourceMappingURL=style.css.map */

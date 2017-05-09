@@ -6,6 +6,12 @@
 
 //sign-up form container
 
+h1{
+	font-size: 50px;
+}
+h2{
+	font-size: 24px;
+}
 .sign-in-row{
 	display: flex;
 	justify-content: center;
@@ -172,7 +178,12 @@
 	position: relative;
 }
 .content{
-	margin-top: 60px;
+	margin-top: -20px;
+	padding-bottom: 70px;
+    padding-top: 27px;
+    background-color: white;
+    position: relative;
+    box-shadow: 0px 11px 19px rgba(0, 0, 0, 0.17);
 }
 .border-section{
 	border-left: 1px solid #eee;
@@ -231,7 +242,16 @@
         border-left: none;
     }
 }
+// =====================================================================
 
+// Landing Page
+
+// =====================================================================
+@media only screen and (max-width: 992px){
+	.landing-icon{
+		width: 20%;
+	}
+}
 
 
 
