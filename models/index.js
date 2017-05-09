@@ -1,5 +1,5 @@
 'use strict';
-
+//require dependencies
 var fs = require('fs');
 var path = require('path');
 var Sequelize = require('sequelize');
@@ -8,6 +8,7 @@ var env = process.env.NODE_ENV || 'development';
 var config = require(__dirname + '/../config/config.json')[env];
 var db = {};
 
+//configuring the env with sequelize
 if (config.use_env_variable) {
 	var sequelize = new Sequelize(process.env[config.use_env_variable]);
 } else {

@@ -130,32 +130,35 @@
 
 //Dashboard results
 #firstname, #lastname {
-	font-size: 30px;
+	font-size: 25px;
 	font-family: $main-font;
 }
 
-#location, #cohort {
-	display: inline;
-}
-
 #location {
-	padding-right: 20px;
-    border-right: 1px solid;
+
 }
 
-#cohort {
-    padding-left: 20px;
+.navbar-text {
+	margin: 15px 10px;
+}
+
+#employment-text {
+	color: $employment-green;
 }
 
 #results-hr{
 	color: #000;
+	margin: 10px 0;
 }
 
 .fa-briefcase {
-	margin-top: 40px;
-	color: green;
+	margin-top: 5px;
+	color: $employment-green;
 }
 
+#employed {
+	margin-bottom: 80px;
+}
 
 
 

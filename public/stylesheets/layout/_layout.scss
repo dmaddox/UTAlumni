@@ -34,17 +34,30 @@
 
 // =====================================================================
 .search-results {
-	margin-top: 70px;
 	width: 100%;
 }
 
 .individual-result {
 	margin: 10px 0;
  	position: relative;
- 	box-shadow: 7px 6px 5px rgba(0,0,0, 0.4); 
+ 	padding: 10px;
+ 	border-left: 5px solid $employment-green;
+ 	display: flex;
+ 	align-items: center;
+ 	background-color: white;
+ 	border: 1px solid #ccc;
+ 	box-shadow: 0 4px 2px -2px #e4e4e4;
+}
+
+#dashboard-page {
+	background-color: #eee;
 }
 
 // vertical centering of main content
+
+.main-row {
+	margin-top:75px;
+}
 
 //Modal 
 
@@ -61,11 +74,24 @@
 	color: white;
 }
 
+#results-company {
+	margin-top: 0px;
+	font-weight: 200;
+	font-style: italic;
+}
+#employment-status {
+	color: $employment-green;
+}
+
 #profile-section {
-	position: fixed;
-	width: 30%;
-	float: left;
-	top: 51px;
+	background-color: white;
+	border: 1px solid #ccc;
+	padding: 30px 0;
+	margin-top: 20px;
+}
+
+.input-areas {
+	margin-top: 20px;
 }
 .form-group{
 	padding-right: 0px;

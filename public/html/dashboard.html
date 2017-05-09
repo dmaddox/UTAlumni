@@ -22,57 +22,57 @@
 			<!-- jquery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
-	<body>
+	<body id="dashboard-page">
 		<nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container">
 		      <a class="navbar-brand" href="/">HookedIn</a>
 		      <a class="about" href="/about"><p class="navbar-text pull-right">About</p></a>
+		      <a class="about" href="/myProfile"><p class="navbar-text pull-right">Profile</p></a>
 		  </div>
     	</nav> <!-- /navbar -->
-    	<main id="dashboard">
-			<!-- <div class="row"> -->
-				<aside class="text-center well well-lg" id="profile-section"> <!-- user profile sidebar -->
-					<!-- <a href="profile.html"> -->
-					<a href="/myProfile">
-					<p class="profile-image"> </p>
-					<h1 class="user-fullname"> </h1>
-					<p class="user-employment-status"></p>
-					<p class="user-city"></p>
-					<p class="user-cohort"></p>
-					<p class="user-linkedin"></p>
-					<p class="user-github"></p>
-					</a>
-				</aside> <!-- user profile sidebar -->
-
-			<div class="row">
-				<div class="col-md-6 col-md-offset-4" id="results-section"> <!-- search bar -->
-				    <div class="input-group search-results">
-				    <div class="row">
-				    	<div class="col-xs-6" type="input-group-btn drop-down-select">
-				    		<select id="drop-down-search" class="form-control selectpicker" data-style="btn-primary">
-				    			<option value="">Category</option>
-				    			<option value="firstName">First Name</option>
-				    			<option value="lastName">Last Name</option>
-				    			<option value="status">
-				    			Employment Status</option>
-				    			<option value="location">Location</option>
-				    			<option value="cohort">Cohort</option>		
-				    			<option value="email">Email Address</option>	
-				    			
-				    		</select>
-				    	</div>
-				    	<div class="form-group col-xs-5">
-							<input id="userFilter" type="text" class=" form-control" placeholder="Search"/>
-				    	</div>
-				      
-				      <span class="input-group-btn">
-				        <button class="btn btn-default" type="button" id="searchBtn"><i class="fa fa-search" aria-hidden="true"></i>
-						</button>
-				      </span>
-				      </div>
-				    </div><!-- /search bar -->
-				    <div class= "allRows"></div><!-- /search results -->
-
+    		<div class="container">
+	    		<div class="row main-row">
+	    			<div class="col-sm-4">
+						<aside class="text-center" id="profile-section"> <!-- user profile sidebar -->
+							<a href="/myProfile">
+							<p class="profile-image"> </p>
+							<h1 class="user-fullname"> </h1>
+							<p class="user-employment-status"></p>
+							<p class="user-city"></p>
+							<p class="user-cohort"></p>
+							<p class="user-linkedin"></p>
+							<p class="user-github"></p>
+							</a>
+						</aside> <!-- user profile sidebar -->
+					</div>
+					<div class="col-sm-8" id="results-section"> <!-- search bar -->
+					    <div class="input-group search-results">
+					    	<div class="row input-areas">
+						    	<div class="col-xs-6" type="input-group-btn drop-down-select">
+						    		<select id="drop-down-search" class="form-control selectpicker" data-style="btn-primary">
+						    			<option value="">Category</option>
+						    			<option value="firstName">First Name</option>
+						    			<option value="lastName">Last Name</option>
+						    			<option value="status">
+						    			Employment Status</option>
+						    			<option value="location">Location</option>
+						    			<option value="cohort">Cohort</option>		
+						    			<option value="email">Email Address</option>	
+						    		</select>
+						    	</div>
+						    	<div class="form-group col-xs-5">
+									<input id="userFilter" type="text" class=" form-control" placeholder="Search"/>
+						    	</div>
+					      
+						      <span class="input-group-btn">
+						        <button class="btn btn-default" type="button" id="searchBtn"><i class="fa fa-search" aria-hidden="true"></i>
+								</button>
+						      </span>
+					      </div> <!-- /row -->
+					    </div><!-- /search bar -->
+					</div> <!-- /col-md-6 -->
+				</div> <!-- /row -->
+			</div> <!-- /container -->
 
 				<!-- Modal -->
 				<div class="modal edit-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -82,13 +82,13 @@
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				      </div>
 				      <div class="modal-body">
-				      	<div class="row">
+				      	<div class="row modal-row">
 				      		<div class="col-sm-5 text-center">
-				      			<img src="../assets/test.jpg" class="profile-image">
+				      			<img class="modal-profile-image profile-image" src="../assets/test.jpg">
 				      		</div>
 				      		<div class="col-md-7">
-				      			<h1>Isaac Hawkins</h1>
-				      			<h4 class="employer">Google</h4>
+				      			<h1 class="modal-name">Isaac Hawkins</h1>
+				      			<h4 class="modal-employer">Google</h4>
 				      			<hr />
 								<div class="row">
 									<div class="col-xs-4">
@@ -98,31 +98,29 @@
 										<p>Mentor</p>
 									</div>
 									<div class="col-xs-8">
-										<p class="search-cohort">Full-time | Spring 2017</p>
-										<p class="search-email">hawkins.isaac@gmail.com</p>
-										<p class="search-city">Austin, Texas</p>
-										<p class="search-mentor">Yes</p>
+										<p class="modal-cohort"></p>
+										<p class="modal-email"></p>
+										<p class="modal-city"></p>
+										<p class="modal-mentor"></p>
 									</div>
 								</div>
 				      		</div>
 				      	</div>
-				      	<div class="row modal-links text-center">
+				      	<div class="row modal-links text-center"> <!-- row -->
 							<div class="col-xs-4">
-								<a class="search-linkedin" href="www.linkedin.com"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+								<a class="modal-linkedin" href="www.linkedin.com"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
 							</div>
 							<div class="col-xs-4">
-								<a class="search-portfolio" href="ikehawkins.com"><i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
+								<a class="modal-portfolio" href="ikehawkins.com"><i class="fa fa-laptop fa-2x" aria-hidden="true"></i></a>
 							</div>
 							<div class="col-xs-4">
-								<a class="search-github" href="www.github.com"><i class="fa fa-github fa-2x" aria-hidden="true"></i>
+								<a class="modal-github" href="www.github.com"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
 							</div>
-				      	</div>
+				      	</div> <!-- /row -->
 				      </div>
-				    </div>
-				  </div>
-				</div> <!-- /modal -->
-			</div>
-		</main>	
+					</div> <!-- /modal content -->
+				</div>
+			</div><!-- /modal -->
 		<script src="../js/dashboard.js"></script>
 		<script type="text/javascript" src="../js/search.js"></script>
 	</body>

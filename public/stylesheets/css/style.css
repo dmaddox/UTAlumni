@@ -126,25 +126,25 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
 #firstname, #lastname {
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Source Sans Pro", sans-serif; }
 
-#location, #cohort {
-  display: inline; }
+.navbar-text {
+  margin: 15px 10px; }
 
-#location {
-  padding-right: 20px;
-  border-right: 1px solid; }
-
-#cohort {
-  padding-left: 20px; }
+#employment-text {
+  color: green; }
 
 #results-hr {
-  color: #000; }
+  color: #000;
+  margin: 10px 0; }
 
 .fa-briefcase {
-  margin-top: 40px;
+  margin-top: 5px;
   color: green; }
+
+#employed {
+  margin-bottom: 80px; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 10px;
@@ -292,13 +292,21 @@ input:-webkit-autofill {
   margin: 40px; }
 
 .search-results {
-  margin-top: 70px;
   width: 100%; }
 
 .individual-result {
   margin: 10px 0;
   position: relative;
-  box-shadow: 7px 6px 5px rgba(0, 0, 0, 0.4); }
+  padding: 10px;
+  border-left: 5px solid green;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 2px -2px #e4e4e4; }
+
+#dashboard-page {
+  background-color: #eee; }
 
 .modal-links {
   background: linear-gradient(to bottom right, #F0C27B, #4B1248); }
@@ -310,11 +318,22 @@ input:-webkit-autofill {
   padding: 20px;
   color: white; }
 
+#results-company {
+  margin-top: 0px;
+  font-weight: 200;
+  font-style: italic; }
+
+#employment-status {
+  color: green; }
+
 #profile-section {
-  position: fixed;
-  width: 30%;
-  float: left;
-  top: 51px; }
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 30px 0;
+  margin-top: 20px; }
+
+.input-areas {
+  margin-top: 20px; }
 
 .form-group {
   padding-right: 0px; }
