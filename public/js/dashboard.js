@@ -16,7 +16,7 @@ $(document).ready(function() {
           "<div class='col-xs-3 text-center'>" +
             "<img src = '" + data[i].profilePic + "'class='results-image'/>"+
           "</div>"+
-          "<div class='col-xs-7'>"+
+          "<div class='col-xs-7' id='searchDiv'>"+
             "<span id='firstname'>" + data[i].firstname + "</span><span id='lastname'> " + data[i].lastname + "</span>"+
             "<h4 id='results-company'>Google</h4>"+
             "<hr id='results-hr'/>" +
