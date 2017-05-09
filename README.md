@@ -6,13 +6,15 @@
 
 
 ---------
+
 ##Features
+
 * ### Stay in contact with your cohort and new students. 
 
 * ### Give back to the UT boot camp community 
 
-..* #### Take students and graduates under your wing as a mentor.
+..* Take students and graduates under your wing as a mentor.
 
-..* #### Let your peers know about job opportunities and information about companies.
+..* Let your peers know about job opportunities and information about companies.
 
 * ### Create a private account through our authentication system and track your progress. 
