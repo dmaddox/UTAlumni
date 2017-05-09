@@ -12,3 +12,6 @@
 	color: black;
 	text-decoration: none;
 }
+@mixin image-circle{
+	border-radius: 50%;
+}

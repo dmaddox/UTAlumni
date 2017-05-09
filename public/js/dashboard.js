@@ -57,7 +57,7 @@ $(document).ready(function() {
 		$(".user-cohort").html("Graduation: " + data.cohort);
 		$(".user-linkedin").html("Linkedin Profile: " + data.linkedInURL);
 		$(".user-profile").html("Profile: " + data.portfolioURL);
-		$(".profile-image").html("<img src = '" + data.profilePic + "' height = 200px width = 200px/>");
+		$(".profile-image").html("<img src = '" + data.profilePic + "'class= profile-image height = 200px width = 200px/>");
 	});
 
 

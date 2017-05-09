@@ -446,7 +446,8 @@ h2 {
   flex: 1; }
 
 .input-label {
-  width: 100%; }
+  width: 100%;
+  margin-top: 15px; }
 
 .input-field {
   flex-grow: 1;
@@ -457,6 +458,13 @@ h2 {
 
 .url-input {
   width: 100%; }
+
+.edit-modal-content {
+  padding-bottom: 20px;
+  border-radius: 0; }
+
+.edit-modal-dialog {
+  width: 60%; }
 
 .featurette {
   overflow: hidden; }
