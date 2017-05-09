@@ -437,9 +437,6 @@ h2 {
 .border-section {
   border-left: 1px solid #eee; }
 
-.multi-input-row {
-  display: flex; }
-
 .form-pair {
   display: flex;
   flex-wrap: wrap;
