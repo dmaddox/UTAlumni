@@ -1,6 +1,10 @@
 h1, h2, h3, h4, h5, h6 {
   margin-top: 10px; }
 
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400; }
+
 #sign-up-form {
   width: 400px;
   margin: 50px auto;
@@ -125,14 +129,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
 #firstname, #lastname {
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Source Sans Pro", sans-serif; }
+
+.navbar-text {
+  margin: 15px 10px; }
 
 #employment-text {
   color: green; }
-
-#cohort {
-  padding-left: 20px; }
 
 #results-hr {
   color: #000;
@@ -142,8 +146,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 5px;
   color: green; }
 
+#employed {
+  margin-bottom: 80px; }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 10px; }
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400; }
 
 a {
   color: black;
@@ -159,7 +170,12 @@ a {
     text-decoration: none; }
 
 .nav-tabs li {
-  background-color: #d3d3d3; }
+  background-color: #d3d3d3;
+  width: 50%; }
+
+.nav-tabs > li > a {
+  border-radius: 0;
+  margin-right: 0; }
 
 .about-item {
   color: black;
@@ -167,9 +183,19 @@ a {
   background-color: transparent; }
 
 .navbar-brand {
-  background-color: transparent; }
+  background-color: transparent;
+  color: white;
+  text-shadow: none; }
   .navbar-brand:visited {
-    background-color: transparent; }
+    background-color: transparent;
+    color: white;
+    text-shadow: none; }
+
+.edit {
+  background-color: #bf5700;
+  border: none;
+  text-shadow: none;
+  margin-top: 40px; }
 
 .person-target {
   height: 50%;
@@ -184,20 +210,37 @@ a {
   right: 50px; }
 
 .navbar-brand {
-  background-color: transparent; }
+  background-color: transparent;
+  color: white;
+  font-size: 30px; }
+
+.navbar-text {
+  color: white;
+  font-size: 24px; }
 
 .navbar {
-  margin-bottom: 0;
-  height: 50px;
-  background-color: #ffffff; }
+  margin-bottom: 70px;
+  height: 70px;
+  background-color: transparent;
+  border-radius: none;
+  border: none; }
+
+.landing-box-tab {
+  border: none !important; }
+
+input::placeholder {
+  background-color: white; }
+
+/* Change the white to any color ;) */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset; }
 
 .main-image {
-  background: url(../../assets/meetingSpace.jpg) no-repeat center center fixed;
+  background: url(../../assets/heading-background.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100%;
   padding-bottom: 50px; }
 
 .log-in {
@@ -207,43 +250,53 @@ a {
   border-radius: 50%;
   height: 200px; }
 
+.edit-profile-image {
+  position: absolute;
+  top: -110px;
+  right: 490px;
+  border: 4px solid white; }
+
 .results-image {
   border-radius: 50%;
   height: 100px; }
 
 .main-title {
-  margin-bottom: 100px;
   color: #ffffff; }
 
 .main-subtitle {
-  margin-bottom: 50px;
-  padding-right: 50px;
   color: #ffffff; }
-
-.header-image {
-  text-align: center;
-  background: url(../../assets/meetingSpace.jpg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 70vh;
-  margin-bottom: 20px;
-  position: relative; }
 
 .img-circle {
   padding: 20px;
   height: 300px; }
+
+.landing-icon {
+  width: 30%; }
+
+.step-container-header {
+  margin-bottom: 20px; }
+
+.background-banner-image {
+  background: url(../../assets/heading-background.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 300px; }
+
+.edit-fullname {
+  padding-top: 50px; }
 
 .brand-text {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;
   color: #392f2d !important; }
 
-#sign-up {
-  padding: 20px 0 20px 0;
-  margin-bottom: 20px;
-  border-radius: 0px 10px 10px 10px; }
+h1 {
+  font-size: 50px; }
+
+h2 {
+  font-size: 24px; }
 
 .sign-in-row {
   display: flex;
@@ -251,17 +304,19 @@ a {
 
 .form-container {
   background-color: #fff;
-  padding: 20px 20px 20px 20px; }
-
-#about-hookedin {
-  padding-top: 60px;
-  margin-bottom: 60px; }
+  padding: 20px 20px 20px 20px;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5); }
 
 .description-text {
   margin-bottom: 40px; }
 
+.step-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px; }
+
 .search-results {
-  margin-top: 70px;
   width: 100%; }
 
 .individual-result {
@@ -278,8 +333,8 @@ a {
 #dashboard-page {
   background-color: #eee; }
 
-.main-content {
-  padding-top: 130px; }
+.main-row {
+  margin-top: 75px; }
 
 .modal-links {
   background: linear-gradient(to bottom right, #F0C27B, #4B1248); }
@@ -293,20 +348,20 @@ a {
 
 #results-company {
   margin-top: 0px;
-  font-weight: 200px;
+  font-weight: 200;
   font-style: italic; }
 
 #employment-status {
   color: green; }
 
 #profile-section {
-  position: fixed;
-  width: 30%;
-  float: left;
-  top: 51px;
   background-color: white;
   border: 1px solid #ccc;
-  padding: 15px 0px; }
+  padding: 30px 0;
+  margin-top: 20px; }
+
+.input-areas {
+  margin-top: 20px; }
 
 .form-group {
   padding-right: 0px; }
@@ -372,7 +427,12 @@ a {
   position: relative; }
 
 .content {
-  margin-top: 60px; }
+  margin-top: -20px;
+  padding-bottom: 70px;
+  padding-top: 27px;
+  background-color: white;
+  position: relative;
+  box-shadow: 0px 11px 19px rgba(0, 0, 0, 0.17); }
 
 .border-section {
   border-left: 1px solid #eee; }
@@ -392,7 +452,8 @@ a {
   flex-grow: 1;
   margin-right: 10px;
   height: 40px;
-  padding: 10px; }
+  padding: 10px;
+  border-radius: 0; }
 
 .url-input {
   width: 100%; }
@@ -412,5 +473,8 @@ a {
 @media only screen and (max-width: 992px) {
   .border-section {
     border-left: none; } }
+@media only screen and (max-width: 992px) {
+  .landing-icon {
+    width: 20%; } }
 
 /*# sourceMappingURL=style.css.map */

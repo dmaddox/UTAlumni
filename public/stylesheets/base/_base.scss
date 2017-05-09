@@ -130,12 +130,16 @@
 
 //Dashboard results
 #firstname, #lastname {
-	font-size: 30px;
+	font-size: 25px;
 	font-family: $main-font;
 }
 
 #location {
 
+}
+
+.navbar-text {
+	margin: 15px 10px;
 }
 
 #employment-text {
@@ -152,6 +156,9 @@
 	color: $employment-green;
 }
 
+#employed {
+	margin-bottom: 80px;
+}
 
 
 

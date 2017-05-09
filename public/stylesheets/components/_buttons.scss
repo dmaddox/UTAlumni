@@ -21,6 +21,11 @@ a {
 }
 .nav-tabs li{
 	background-color: $light-grey;
+	width: 50%;
+}
+.nav-tabs>li>a {
+	border-radius: 0;
+	margin-right: 0;
 }
 .about-item {
 	@include link;
@@ -30,8 +35,12 @@ a {
 
 .navbar-brand{
 	background-color: transparent;
+	color: white;
+	text-shadow: none;
 	&:visited{
 		background-color: transparent;
+		color: white;
+		text-shadow: none;
 	}
 }
 
@@ -61,7 +70,12 @@ a {
 
 // =====================================================================
 
-
+.edit{
+	background-color: $orange;
+	border: none;
+	text-shadow: none;
+	margin-top: 40px;
+}
 // =====================================================================
 
 // About

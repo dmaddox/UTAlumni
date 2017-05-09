@@ -5,10 +5,12 @@
 // =====================================================================
 
 //sign-up form container
-#sign-up {
-    padding: 20px 0 20px 0;
-    margin-bottom: 20px;
-    border-radius: 0px 10px 10px 10px;
+
+h1{
+	font-size: 50px;
+}
+h2{
+	font-size: 24px;
 }
 .sign-in-row{
 	display: flex;
@@ -17,17 +19,19 @@
 .form-container {
 	background-color: #fff;
     padding: 20px 20px 20px 20px;
-}
-
-#about-hookedin {
-	padding-top: 60px;
-	margin-bottom: 60px;
+   	box-shadow: 2px 3px 8px rgba(0,0,0, 0.5);
 }
 
 .description-text {
 	margin-bottom: 40px;
 }
 
+.step-container{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
+}
 
 
 // =====================================================================
@@ -36,7 +40,6 @@
 
 // =====================================================================
 .search-results {
-	margin-top: 70px;
 	width: 100%;
 }
 
@@ -57,8 +60,9 @@
 }
 
 // vertical centering of main content
-.main-content {
-	padding-top: 130px;
+
+.main-row {
+	margin-top:75px;
 }
 
 //Modal 
@@ -78,7 +82,7 @@
 
 #results-company {
 	margin-top: 0px;
-	font-weight: 200px;
+	font-weight: 200;
 	font-style: italic;
 }
 #employment-status {
@@ -86,13 +90,14 @@
 }
 
 #profile-section {
-	position: fixed;
-	width: 30%;
-	float: left;
-	top: 51px;
 	background-color: white;
 	border: 1px solid #ccc;
-	padding: 15px 0px;
+	padding: 30px 0;
+	margin-top: 20px;
+}
+
+.input-areas {
+	margin-top: 20px;
 }
 .form-group{
 	padding-right: 0px;
@@ -173,7 +178,12 @@
 	position: relative;
 }
 .content{
-	margin-top: 60px;
+	margin-top: -20px;
+	padding-bottom: 70px;
+    padding-top: 27px;
+    background-color: white;
+    position: relative;
+    box-shadow: 0px 11px 19px rgba(0, 0, 0, 0.17);
 }
 .border-section{
 	border-left: 1px solid #eee;
@@ -194,6 +204,7 @@
 	margin-right: 10px;
 	height: 40px;
 	padding: 10px;
+	border-radius: 0;
 }
 .url-input{
 	width: 100%;
@@ -231,7 +242,16 @@
         border-left: none;
     }
 }
+// =====================================================================
 
+// Landing Page
+
+// =====================================================================
+@media only screen and (max-width: 992px){
+	.landing-icon{
+		width: 20%;
+	}
+}
 
 
 

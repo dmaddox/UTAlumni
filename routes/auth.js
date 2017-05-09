@@ -66,21 +66,10 @@ module.exports = function(app) {
 //information added by user in the /myProfile page will be posted to the database
 	app.post("/myProfile", isLoggedIn, function(req, res) {
 		var boolean
-		console.log(req.body.email);
-		console.log(req.body.status);
-		console.log(req.body.location);
-		console.log(req.body.linkedInURL);
-		console.log(req.body.profilePic);
-		console.log(req.body.portfolioURL);
-		console.log(req.body.about);
-		console.log(req.body.mentor);
-		console.log(req.body.interview_time);
-		console.log(req.body.first_salary);
-		// console.log(req.body.status);
 		db.user.update({
-			email: req.body.email,
 			employer: req.body.employer,
-			location: req.body.location,
+			city: req.body.city,
+			state: req.body.state,
 			linkedInURL: req.body.linkedInURL,
 			profilePic: req.body.profilePic,
 			portfolioURL: req.body.portfolioURL,
