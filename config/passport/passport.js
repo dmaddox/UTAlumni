@@ -35,8 +35,8 @@ module.exports = function(passport, user) {
 						lastname: req.body.lname,
 						cohort: req.body.cohort,
 						status: req.body.status,
-						city: req.body.city,
-						state: req.body.state,
+						// city: req.body.city,
+						// state: req.body.state,
 						linkedInURL: req.body.linkedInURL,
 						profilePic: req.body.profilePic,
 						portfolioURL: req.body.portfolioURL
