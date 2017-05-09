@@ -20,7 +20,7 @@ $(document).ready(function() {
             "<span id='firstname'>" + data[i].firstname + "</span><span id='lastname'> " + data[i].lastname + "</span>"+
             "<h4 id='results-company'>Google</h4>"+
             "<hr id='results-hr'/>" +
-            "<p id='location'>"+"<span id='city'>" + data[i].city + "</span><span id='lastname'> " + data[i].state + "</span>"+
+            "<p id='location'>"+"<span id='city'>" + data[i].city + "</span><span id='state'> " + data[i].state + "</span>"+
             "<p id='cohort'>" + data[i].cohort + "</p>"+
           "</div>"+
           "<div class='col-xs-2 text-right'>"+
