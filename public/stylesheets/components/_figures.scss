@@ -12,10 +12,13 @@
 .navbar {
 	margin-bottom: 70px;
 	height: 70px;
-	background-color: transparent;
+	background-color: rgb(151, 78, 14);
 	border-radius: none;
 	border: none;
 
+}
+.index-navbar{
+	background-color: transparent;
 }
 .landing-box-tab{
 	border: none !important;
@@ -51,12 +54,15 @@ input:-webkit-autofill {
 }
 
 .edit-profile-image{
-	position: absolute;
-    top: -110px;
-    right: 490px;
-    border: 4px solid white;
+    border: 2px solid white;
 }
-
+.picture-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -100px;
+}
 .results-image {
 	@include results-image;
 }
@@ -89,6 +95,17 @@ input:-webkit-autofill {
 	background-size: cover;
 	height: 300px;
 }
+.background-banner-image-aside{
+	background: url(../../assets/heading-background.png) no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 150px;
+}
 .edit-fullname{
 	padding-top: 50px;
+}
+#search-btn{
+	padding: 5.5px;
 }

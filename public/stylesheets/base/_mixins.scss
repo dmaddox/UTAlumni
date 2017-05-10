@@ -4,7 +4,8 @@
 }
 
 @mixin results-image {
-	border-radius: 50%;
+	border-radius: 49.9%;
+	border: 2px solid white;
 	height: 100px;
 }
 
