@@ -61,8 +61,16 @@ $(document).ready(function() {
 		$(".user-city").html("Location: " + data.city + ", " + data.state);
 		$(".user-cohort").html("Graduation: " + data.cohort);
 		$(".user-linkedin").html("Linkedin Profile: " + data.linkedInURL);
-		$(".user-profile").html("Profile: " + data.portfolioURL);
+		$(".user-profile").html("Portfolio Link: " + data.portfolioURL);
 		$(".profile-image").html("<img src = '" + data.profilePic + "'class= profile-image height = 200px width = 200px/>");
+
+		//fill in here
+		$(".user-status").html("Employment Status: " + data.status);
+		$(".user-employer").html("Employer: " + data.employer);
+		$(".user-salary").html("Salary Range: " + data.firstSalary);
+		$(".user-interview-time").html("Interview Time: " + data.interview_time);
+		$(".user-mentor").html("Mentor: " + data.mentor);
+
 	});
 
 }); // end of document ready
