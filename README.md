@@ -20,32 +20,32 @@
 * ### Create a private account through our authentication system and track your progress. 
 
 ---------
-
-                                               ## Step 1
+<p align="center">
+## Step 1
 ![step one](https://github.com/jflook10/UTAlumni/blob/master/public/assets/form.png)
-
-                                              ### Join the network
+### Join the network
 
 #### Tell us a little about yourself and let others know what you're up to by filling out your custom profile.
 
 
-                                                ## Step 2
+## Step 2
 ![step two](https://github.com/jflook10/UTAlumni/blob/master/public/assets/search.png)
-                                               ### Search for graduates
+### Search for graduates
 
 #### Search the database for current students or alumni to learn about their career placement path.
 
-                                                ## Step 3
+## Step 3
 ![step three](https://github.com/jflook10/UTAlumni/blob/master/public/assets/conversation.png)
-                                               ### Make connections at companies
+### Make connections at companies
 
 #### Learn about companies who have hired bootcamp graduates, reach out to current employees in your network for helpful advice, find your next job.
-
-                                                ## Step 4
+## Step 4
 ![step four](https://github.com/jflook10/UTAlumni/blob/master/public/assets/search.png)
-                                               ### Give back
+### Give back
 
 #### Already have a job? Update your profile so currents students can search for you. Become a mentor and give back to the bootcamp community!
+</p>
+
 
 ------
 
