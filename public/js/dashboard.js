@@ -31,6 +31,10 @@ $(document).ready(function() {
               "<i class='fa fa-briefcase fa-2x' aria-hidden='true'></i>"+
               "<p id='employment-text'>Hired</p>"+
             "</div>")
+            $("#results-company").html(data[i].employer)
+          }
+          else{
+          	$("#results-company").empty();
           }
     	}//end of for loop
 
