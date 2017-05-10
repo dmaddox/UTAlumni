@@ -91,10 +91,10 @@ module.exports = function(app) {
 		})
 		res.redirect('myProfile');
 	})
-	app.post("/api/techhire", isLoggedIn, function(req, res) {
+	app.get("/api/employment/:id", isLoggedIn, function(req, res) {
 			db.user.findAll({
 				where: {
-					status: "employed-tech"
+					status: req.params.id
 				}
 			}).then(function(result){
 				res.json(result);
