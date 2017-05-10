@@ -82,6 +82,7 @@ $(document).ready(function() {
 		} else {
 			$(".individual-result").each(function(index) {
 				var divResult;
+				console.log(this);
 				// THIS IS THE QUESTION- how can we targe the h3 w/i a div and get the value
 				if (dropFilter === "city" || dropFilter === "state") {
 					divResult = $(this).children("#searchDiv").children('#location').children('#'+dropFilter).html().trim();
