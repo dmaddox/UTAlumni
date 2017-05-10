@@ -3,31 +3,35 @@ var passport = require('passport');
 var db = require('../models');
 var path = require("path");
 module.exports = function(app) {
-//when local host URL has /signup, sign-up.html is displayed
+	//when local host URL has /signup, sign-up.html is displayed
 	app.get('/signup', function(req, res) {
 		res.sendFile(path.join(__dirname, "../public/html/sign-up.html"));
 	});
-//when local host URL has /, index.html is displayed
+	//when local host URL has /, index.html is displayed
 	app.get('/', function(req, res) {
 		res.sendFile(path.join(__dirname, "../public/html/index.html"))
 	});
-//information from /signup is posted to database
+	//information from /signup is posted to database
 	app.post('/signup', passport.authenticate('local-signup', {
 		successRedirect: '/dashboard',
 		failureRedirect: '/signup'
 	}));
-//when local host URL has /dashboard, dashboard.html is displayed
+	//when local host URL has /dashboard, dashboard.html is displayed
 	app.get('/dashboard', isLoggedIn, function(req, res) {
 		res.sendFile(path.join(__dirname, "../public/html/dashboard.html"));
 	});
 	// got to the about page, no log in required
 	app.get("/about", function(req, res) {
-		res.sendFile(path.join(__dirname, "../public/html/about.html"));
-	})
-//session is ended and user is redirected to the index when logged out
+			res.sendFile(path.join(__dirname, "../public/html/about.html"));
+		})
+		//session is ended and user is redirected to the index when logged out
 	app.get('/logout', function(req, res) {
 		req.session.destroy(function(err) {
-			res.redirect('/');
+			if (err) {
+				res.send(err)
+			} else {
+				res.redirect('/');
+			}
 		});
 	});
 
@@ -59,11 +63,11 @@ module.exports = function(app) {
 		})
 	});
 
-//if user is logged in and goes to /myProfile URL, myProfile.html will be shown
+	//if user is logged in and goes to /myProfile URL, myProfile.html will be shown
 	app.get("/myProfile", isLoggedIn, function(req, res) {
-		res.sendFile(path.join(__dirname, "../public/html/myProfile.html"));
-	})
-//information added by user in the /myProfile page will be posted to the database
+			res.sendFile(path.join(__dirname, "../public/html/myProfile.html"));
+		})
+		//information added by user in the /myProfile page will be posted to the database
 	app.post("/myProfile", isLoggedIn, function(req, res) {
 		var boolean
 		db.user.update({
@@ -87,7 +91,16 @@ module.exports = function(app) {
 		})
 		res.redirect('myProfile');
 	})
-//determine is user is logged in
+	app.get("/api/employment/:id", isLoggedIn, function(req, res) {
+			db.user.findAll({
+				where: {
+					status: req.params.id
+				}
+			}).then(function(result){
+				res.json(result);
+			})
+		})
+		//determine is user is logged in
 	function isLoggedIn(req, res, next) {
 		if (req.isAuthenticated()) {
 			return next();
@@ -96,7 +109,7 @@ module.exports = function(app) {
 	}
 	// Handle 404 - Keep this as a last route
 	app.use(function(req, res, next) {
-		res.status(400);
+		res.status(404);
 		res.send('404: File Not Found');
 	});
 }

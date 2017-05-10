@@ -32,7 +32,8 @@ $(".edit").on("click", function() {
           //add logged-in user data to the left panel on dashboard.html  
             $(".firstname").val(data.firstname);
             $(".lastname").val(data.lastname);
-            $(".location").val(data.location);
+            $(".city").val(data.city);
+            $(".state").val(data.state);
             $(".about").val(data.about);
             $(".status").val(data.status);
             console.log(data.status)
