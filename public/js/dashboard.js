@@ -23,13 +23,16 @@ $(document).ready(function() {
             "<p id='location'>"+"<span id='city'>" + data[i].city + "</span>,<span id='state'> " + data[i].state + "</span>"+
             "<p id='cohort'>" + data[i].cohort + "</p>"+
           "</div>"+
-          "<div class='col-xs-2 text-right'>"+
-            "<div id='employed'>" +
+          "<div class='col-xs-2 text-right' id='employmentStatus'>"+
+          "</div>")
+
+          if(data[i].status === "employed-tech"||data[i].status === "employed-else"){
+          	$("#employmentStatus").html("<div id='employed'>" +
               "<i class='fa fa-briefcase fa-2x' aria-hidden='true'></i>"+
               "<p id='employment-text'>Hired</p>"+
-            "</div>"+
-          "</div>"
-        )}//end of for loop
+            "</div>")
+          }
+    	}//end of for loop
 
 		// click event to populate the modal
 		$("div.individual-result").on("click", function(){
