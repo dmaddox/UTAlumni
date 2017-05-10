@@ -7,30 +7,30 @@
 ---------
 <p align="center">
 
-<b> ## Step 1
+
 ![step one](https://github.com/jflook10/UTAlumni/blob/master/public/assets/form.png)
-<b> ### Join the network
+<b> Join the network </b>
 
-<b>#### Tell us a little about yourself and let others know what you're up to by filling out your custom profile.
+<b> Tell us a little about yourself and let others know what you're up to by filling out your custom profile. </b>
 
 
-<b>## Step 2
+
 ![step two](https://github.com/jflook10/UTAlumni/blob/master/public/assets/search.png)
-<b> ### Search for graduates
+<b> Search for graduates </b>
 
-<b>#### Search the database for current students or alumni to learn about their career placement path.
+<b> Search the database for current students or alumni to learn about their career placement path. </b>
 
-<b> ## Step 3
+
 ![step three](https://github.com/jflook10/UTAlumni/blob/master/public/assets/conversation.png)
-<b> ### Make connections at companies
+<b> Make connections at companies </b>
 
-#### Learn about companies who have hired bootcamp graduates, reach out to current employees in your network for helpful advice, find your next job.
+<b> Learn about companies who have hired bootcamp graduates, reach out to current employees in your network for helpful advice, find your next job. </b>
 
-## Step 4
+
 ![step four](https://github.com/jflook10/UTAlumni/blob/master/public/assets/search.png)
-### Give back
+<b> Give back </b>
 
-#### Already have a job? Update your profile so currents students can search for you. Become a mentor and give back to the bootcamp community!
+<b> Already have a job? Update your profile so currents students can search for you. Become a mentor and give back to the bootcamp community! </b>
 </p>
 
 
