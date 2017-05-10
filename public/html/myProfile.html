@@ -25,21 +25,22 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 	<body>
-
-		<nav class="navbar navbar-default navbar-fixed-top">
-		  <div class="container">
-		      <a class="navbar-brand" href="/">HookedIn</a>
-		      <a class="about" href="/about"><p class="navbar-text pull-right">About</p></a>
-		      <a class="about" href="/dashboard"><p class="navbar-text pull-right">Dashboard</p></a>
-		  </div>
-    	</nav>
+		<div class="background-banner-image">
+			<nav class="navbar navbar-fixed-top">
+			  <div class="container">
+			      <a class="navbar-brand" href="/">HookedIn</a>
+			      <a class="about" href="/about"><p class="navbar-text pull-right">About</p></a>
+			      <a class="about" href="/dashboard"><p class="navbar-text pull-right">Dashboard</p></a>
+			  </div>
+	    	</nav>
+	    </div>
     	 <!-- /navbar -->
-    	<div class="background-banner-image">
-    	</div>
+    	
+    	
     
-		<div class="container content profile-content">
+			<div class="container content profile-content">
     		
-				      		<div class="text-center">
+				      		<div class="container picture-container">
 				      			<img src="#" class="profile-image edit-profile-image">
 				      		</div>
 					      		<div class="profile-container">
@@ -92,6 +93,7 @@
 					      		</div>
 					      	</div>
 						</div>
+				</div>
     			<!-- <p class="profile-image"> </p>
 				<h1 class="user-fullname"> </h1>
  -->
@@ -99,8 +101,8 @@
 				<!-- Modal -->
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="form-modal">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
+			<div class="modal-dialog edit-modal-dialog" role="document">
+				<div class="modal-content edit-modal-content">
 				 	<div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				    </div>
@@ -114,18 +116,76 @@
 										<div class="form-pair">
 							              	<label class="input-label" for="firstname">First Name: </label>
 											<input class="firstname input-field" type="text" name="firstname" id="firstname"/>
-											<p id="location-error"></p>
+											
 										</div>
 										<div class="form-pair">
 											<label class="input-label" for="lastname">last Name: </label>
 											<input class="lastname input-field" type="text" name="lastname" id="lastname"/>
-											<p id="location-error"></p>
 										</div>
 									</div>
 
 									<div class="form-pair">
-										<label class="input-label" for="location">Location: </label>
-										<input class="location input-field" type="text" name="location" placeholder="location"/>
+										<label class="input-label" for="city">City: </label>
+										<input type="text" name="city" class="city input-field url-input"/>
+									</div>
+
+									<div class="form-pair">
+										<label class="input-label" for="state">State: </label>
+										<select class="form-control state input-field" name ="state">
+											<option value="">select one</option>
+											<option value="AK">Alaska</option>
+											<option value="AL">Alabama</option>
+											<option value="AR">Arkansas</option>
+											<option value="AZ">Arizona</option>
+											<option value="CA">California</option>
+											<option value="CO">Colorado</option>
+											<option value="CT">Connecticut</option>
+											<option value="DC">District of Columbia</option>
+											<option value="DE">Delaware</option>
+											<option value="FL">Florida</option>
+											<option value="GA">Georgia</option>
+											<option value="HI">Hawaii</option>
+											<option value="IA">Iowa</option>
+											<option value="ID">Idaho</option>
+											<option value="IL">Illinois</option>
+											<option value="IN">Indiana</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+											<option value="LA">Louisiana</option>
+											<option value="MA">Massachusetts</option>
+											<option value="MD">Maryland</option>
+											<option value="ME">Maine</option>
+											<option value="MI">Michigan</option>
+											<option value="MN">Minnesota</option>
+											<option value="MO">Missouri</option>
+											<option value="MS">Mississippi</option>
+											<option value="MT">Montana</option>
+											<option value="NC">North Carolina</option>
+											<option value="ND">North Dakota</option>
+											<option value="NE">Nebraska</option>
+											<option value="NH">New Hampshire</option>
+											<option value="NJ">New Jersey</option>
+											<option value="NM">New Mexico</option>
+											<option value="NV">Nevada</option>
+											<option value="NY">New York</option>
+											<option value="OH">Ohio</option>
+											<option value="OK">Oklahoma</option>
+											<option value="OR">Oregon</option>
+											<option value="PA">Pennsylvania</option>
+											<option value="PR">Puerto Rico</option>
+											<option value="RI">Rhode Island</option>
+											<option value="SC">South Carolina</option>
+											<option value="SD">South Dakota</option>
+											<option value="TN">Tennessee</option>
+											<option value="TX">Texas</option>
+											<option value="UT">Utah</option>
+											<option value="VA">Virginia</option>
+											<option value="VT">Vermont</option>
+											<option value="WA">Washington</option>
+											<option value="WI">Wisconsin</option>
+											<option value="WV">West Virginia</option>
+											<option value="WY">Wyoming</option>
+										</select>
 									</div>
 									<div class="multi-input-row">
 										<div class="form-pair">
@@ -188,6 +248,7 @@
 											<option value="12 months">12+</option>
 										</select>
 									</div>	
+										
 									<div class="form-pair">
 										<label class="input-label" for="mentor">Open to mentoring?: </label>
 										<select class="form-control mentor input-field" name ="mentor">

@@ -191,6 +191,30 @@ a {
     color: white;
     text-shadow: none; }
 
+#btn-sign-in {
+  background-color: darkgrey;
+  color: white;
+  width: 100%;
+  text-shadow: none;
+  border-radius: 0;
+  font-size: 20px;
+  height: 50px;
+  border: none;
+  font-weight: 300; }
+  #btn-sign-in:hover {
+    background-color: #767676; }
+
+.register-link {
+  padding: 15px 0px 15px 0;
+  margin: 15px 0px 15px 0;
+  background-color: #22c0d5;
+  color: white;
+  font-size: 20px; }
+  .register-link:visited {
+    color: white; }
+  .register-link:hover {
+    background-color: #14717d; }
+
 .edit {
   background-color: #bf5700;
   border: none;
@@ -221,9 +245,12 @@ a {
 .navbar {
   margin-bottom: 70px;
   height: 70px;
-  background-color: transparent;
+  background-color: #974e0e;
   border-radius: none;
   border: none; }
+
+.index-navbar {
+  background-color: transparent; }
 
 .landing-box-tab {
   border: none !important; }
@@ -251,13 +278,18 @@ input:-webkit-autofill {
   height: 200px; }
 
 .edit-profile-image {
+  border: 2px solid white; }
+
+.picture-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   position: absolute;
-  top: -110px;
-  right: 490px;
-  border: 4px solid white; }
+  top: -100px; }
 
 .results-image {
-  border-radius: 50%;
+  border-radius: 49.9%;
+  border: 2px solid white;
   height: 100px; }
 
 .main-title {
@@ -284,8 +316,19 @@ input:-webkit-autofill {
   background-size: cover;
   height: 300px; }
 
+.background-banner-image-aside {
+  background: url(../../assets/heading-background.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 150px; }
+
 .edit-fullname {
   padding-top: 50px; }
+
+#search-btn {
+  padding: 5.5px; }
 
 .brand-text {
   font-family: "Source Sans Pro", sans-serif;
@@ -316,8 +359,29 @@ h2 {
   justify-content: center;
   margin: 40px; }
 
+.sign-in-divider {
+  margin: 15px 0px 15px 0; }
+
+.index-dividers {
+  display: none; }
+
+.sign-in-text {
+  font-size: 18px; }
+
+@media (max-width: 399px) {
+  #sign-up-form {
+    width: 100%; }
+
+  #sign-up-form fieldset {
+    margin: 0% 5%;
+    width: 90%;
+    padding: 15px; } }
 .search-results {
   width: 100%; }
+
+.results-section {
+  overflow-y: auto;
+  margin-top: 20px; }
 
 .individual-result {
   margin: 10px 0;
@@ -334,7 +398,10 @@ h2 {
   background-color: #eee; }
 
 .main-row {
-  margin-top: 75px; }
+  padding-left: 250px; }
+
+.main-content {
+  margin-top: 70px; }
 
 .modal-links {
   background: linear-gradient(to bottom right, #F0C27B, #4B1248); }
@@ -357,8 +424,20 @@ h2 {
 #profile-section {
   background-color: white;
   border: 1px solid #ccc;
-  padding: 30px 0;
-  margin-top: 20px; }
+  margin-top: 40px;
+  z-index: 1000;
+  position: fixed;
+  left: 350px;
+  width: 25%;
+  height: 80%;
+  margin-left: -20%;
+  overflow-y: auto; }
+
+.profile-container {
+  margin-top: 40px; }
+
+.profile-bottom {
+  margin-top: -100px; }
 
 .input-areas {
   margin-top: 20px; }
@@ -437,26 +516,32 @@ h2 {
 .border-section {
   border-left: 1px solid #eee; }
 
-.multi-input-row {
-  display: flex; }
-
 .form-pair {
   display: flex;
   flex-wrap: wrap;
   flex: 1; }
 
 .input-label {
-  width: 100%; }
+  width: 100%;
+  margin-top: 15px; }
 
 .input-field {
   flex-grow: 1;
   margin-right: 10px;
-  height: 40px;
+  height: 50px;
   padding: 10px;
-  border-radius: 0; }
+  border-radius: 0;
+  font-size: 18px; }
 
 .url-input {
   width: 100%; }
+
+.edit-modal-content {
+  padding-bottom: 20px;
+  border-radius: 0; }
+
+.edit-modal-dialog {
+  width: 60%; }
 
 .featurette {
   overflow: hidden; }
@@ -475,6 +560,32 @@ h2 {
     border-left: none; } }
 @media only screen and (max-width: 992px) {
   .landing-icon {
-    width: 20%; } }
+    width: 20%; }
+
+  .index-dividers {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 2px solid #333; }
+
+  .register-btn-container {
+    display: flex;
+    justify-content: center; }
+
+  .register-link {
+    flex-grow: 1; } }
+@media only screen and (max-width: 1280px) {
+  #profile-section {
+    position: relative;
+    margin-left: auto;
+    height: auto;
+    width: 100%;
+    left: 0px; }
+
+  .main-row {
+    padding-left: 0; }
+
+  #results-section {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -32,6 +32,28 @@ h2{
     justify-content: center;
     margin: 40px;
 }
+.sign-in-divider{
+	margin: 15px 0px 15px 0
+}
+.index-dividers{
+	display: none;
+}
+.sign-in-text{
+	font-size: 18px;
+}
+
+//media query for sign-up form 
+@media (max-width: 399px){
+	#sign-up-form{
+		width: 100%;
+	}
+
+	#sign-up-form fieldset{
+		margin: 0% 5%;
+		width: 90%;
+		padding: 15px;
+	}
+}
 
 
 // =====================================================================
@@ -41,6 +63,10 @@ h2{
 // =====================================================================
 .search-results {
 	width: 100%;
+}
+.results-section{
+	overflow-y:auto;
+	margin-top: 20px;
 }
 
 .individual-result {
@@ -62,7 +88,10 @@ h2{
 // vertical centering of main content
 
 .main-row {
-	margin-top:75px;
+	padding-left: 250px;
+}
+.main-content{
+	margin-top: 70px;
 }
 
 //Modal 
@@ -92,8 +121,21 @@ h2{
 #profile-section {
 	background-color: white;
 	border: 1px solid #ccc;
-	padding: 30px 0;
-	margin-top: 20px;
+	// padding: 30px 0;
+	margin-top: 40px;
+	z-index: 1000;
+    position: fixed;
+    left: 350px;
+    width: 25%;
+    height: 80%;
+    margin-left: -20%;
+    overflow-y: auto;
+}
+.profile-container{
+	margin-top: 40px;
+}
+.profile-bottom{
+	margin-top: -100px;
 }
 
 .input-areas {
@@ -189,7 +231,7 @@ h2{
 	border-left: 1px solid #eee;
 }
 .multi-input-row{
-	display: flex;
+	// display: flex;
 }
 .form-pair{
 	display: flex;
@@ -198,16 +240,25 @@ h2{
 }
 .input-label{
 	width: 100%;
+	margin-top: 15px;
 }
 .input-field{
 	flex-grow: 1;
 	margin-right: 10px;
-	height: 40px;
+	height: 50px;
 	padding: 10px;
 	border-radius: 0;
+	font-size: 18px;
 }
 .url-input{
 	width: 100%;
+}
+.edit-modal-content{
+	padding-bottom: 20px;
+	border-radius: 0;
+}
+.edit-modal-dialog{
+	width: 60%;
 }
 
 
@@ -250,6 +301,40 @@ h2{
 @media only screen and (max-width: 992px){
 	.landing-icon{
 		width: 20%;
+	}
+	.index-dividers{
+		display: block;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-top: 2px solid #333;
+	}
+	.register-btn-container{
+		display: flex;
+		justify-content: center;
+	}
+	.register-link{
+		flex-grow: 1;
+	}
+}
+// =====================================================================
+
+// Dashboard
+
+// =====================================================================
+
+@media only screen and (max-width: 1280px){
+	#profile-section{
+		position: relative;
+		margin-left: auto;
+		height: auto;
+		width: 100%;
+		left: 0px;
+	}
+	.main-row{
+		padding-left: 0;
+	}
+	#results-section{
+		width: 100%;
 	}
 }
 

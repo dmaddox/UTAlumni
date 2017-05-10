@@ -23,17 +23,22 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 	<body id="dashboard-page">
-		<nav class="navbar navbar-default navbar-fixed-top">
+	
+		<nav class="navbar navbar-fixed-top">
 		  <div class="container">
 		      <a class="navbar-brand" href="/">HookedIn</a>
 		      <a class="about" href="/about"><p class="navbar-text pull-right">About</p></a>
 		      <a class="about" href="/myProfile"><p class="navbar-text pull-right">Profile</p></a>
 		  </div>
     	</nav> <!-- /navbar -->
-    		<div class="container">
+    	
+    
+    		<div class="container main-content">
 	    		<div class="row main-row">
-	    			<div class="col-sm-4">
+	    			<div class="col-md-12">
 						<aside class="text-center" id="profile-section"> <!-- user profile sidebar -->
+							<div class="background-banner-image-aside"></div>
+							<div class="profile-bottom">
 							<a href="/myProfile">
 							<p class="profile-image"> </p>
 							<h1 class="user-fullname"> </h1>
@@ -43,9 +48,10 @@
 							<p class="user-linkedin"></p>
 							<p class="user-github"></p>
 							</a>
+							</div>
 						</aside> <!-- user profile sidebar -->
 					</div>
-					<div class="col-sm-8" id="results-section"> <!-- search bar -->
+					<div class="col-md-10 col-md-offset-2 pull-right" id="results-section"> <!-- search bar -->
 					    <div class="input-group search-results">
 					    	<div class="row input-areas">
 						    	<div class="col-xs-6" type="input-group-btn drop-down-select">
@@ -71,7 +77,7 @@
 					</div> <!-- /col-md-6 -->
 				</div> <!-- /row -->
 			</div> <!-- /container -->
-
+		</div>
 				<!-- Modal -->
 				<div class="modal edit-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 				  <div class="modal-dialog" role="document">

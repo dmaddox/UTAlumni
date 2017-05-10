@@ -27,7 +27,7 @@
 	</head>
 	<body>
 		<main class="main-image">
-			<nav class="navbar hidden-xs">
+			<nav class="index-navbar navbar hidden-xs">
 			
 			  <div class="container">
 			      <a class="navbar-brand" href="/">HookedIn</a>
@@ -42,15 +42,16 @@
 						<h3 class="col-xs-12 main-subtitle hidden-xs">Connect with your friends and other cohort students. Discover companies where you have a mutual connection.</h3>
 					</div>
 				
-					<div class="col-xs-12 col-sm-5 col-md-4  col-sm-offset-1 col-md-offset-1">
+					<!-- <div class="col-xs-12 col-sm-5 col-md-4  col-sm-offset-1 col-md-offset-1">
 						<div id="nav-tabs text-right"> <!-- Nav tabs -->
-						  <ul class="nav nav-tabs" role="tablist">
-						    <li role="presentation" class="active"><a class="landing-box-tab" href="#home" aria-controls="home" role="tab" data-toggle="tab">Log in</a></li>
-						    <li role="presentation"><a class="landing-box-tab" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Sign Up</a></li>
-						  </ul>
+						  <!-- <ul class="nav nav-tabs" role="tablist">
+						    <li role="presentation" class="active"><a class="landing-box-tab" href="#home" aria-controls="home" role="tab" data-toggle="tab">Log in</a></li> -->
+						    <!-- <li role="presentation"><a class="landing-box-tab" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Sign Up</a></li> -->
+						 <!--  </ul> --> -->
 
 						  <!-- Tab panes -->
-						  <dsiv class="tab-content">
+					<div class="col-xs-12 col-sm-5 col-md-4  col-sm-offset-1 col-md-offset-1">
+						  <div class="tab-content">
 						    <div role="tabpanel" class="tab-pane active" id="home">
 						    	<!-- Login Form -->
 							    <div class="form-container">
@@ -67,29 +68,19 @@
 											    	<input type="password" name="sign-in-password" class="form-control input-field" id="password-input" placeholder="Password">
 											  </div>
 											  <button type="submit" class="btn btn-default" id="btn-sign-in">Sign in</button>
+											  <hr class="sign-in-divider">
+											  <div class="text-center">
+											 	 <span class="col-md-12 sign-in-text">Don't have an account? </span>
+												</div>
+												<div class="text-center register-btn-container">
+											 	 <a class="col-sm-12 register-link" href="/signup">Register now!</a>
+											  </div>
 											</form>
 										</div>
 									</div>
 								</div>
 						    </div>
-						    <div role="tabpanel" class="tab-pane" id="profile">
-						    <!-- Sign-up Form -->
-						     <div class="form-container">
-						    	<h3 class="text-center">Register Now!</h3>
-							    	<form class="sign-up" id="sign-up" action="/index" method="POST">
-									  <div class="form-group border">
-									    <input type="name" name="sign-up-first-name" class="form-control input-field" id="first-name" placeholder="First Name">
-									  </div>
-									  <div class="form-group">
-									    <input type="name" name="sign-up-last-name" class="form-control input-field" id="last-name" placeholder="Last Name">
-									  </div>
-									  <div class="form-group">
-									    <input type="email" name="sign-up-email" class="form-control input-field" id="email" placeholder="Cohort Email">
-									  </div>
-									  <button type="submit" class="btn btn-default" id="btn-sign-up">Sign Up</button>
-									</form>	
-						    	</div>
-						  	</div>
+						 
 						  </div>
 						</div>
 					</div>
@@ -109,6 +100,7 @@
 							Tell us a little about yourself and let others know what you're up to by filling out your custom profile. 
 						</p>
 				</div>
+				<hr class="index-dividers">
 				<div class="xs-col-12 col-md-3 text-center step-item-container">
 					<img class="landing-icon" src="../assets/search.png">
 					<h1 class="">Step 2</h1>
@@ -117,6 +109,7 @@
 						Search the database for current students or alumni to learn about their career placement path. 
 					</p>
 				</div>
+				<hr class="index-dividers">
 				<div class="xs-col-12 col-md-3 text-center step-item-container">
 					<img class="landing-icon" src="../assets/conversation.png">
 					<h1 class="">Step 3</h1>
@@ -125,6 +118,7 @@
 						Learn about companies who have hired bootcamp graduates, reach out to current employees in your network for helpful advice, find your next job.
 					</p>
 				</div>
+				<hr class="index-dividers">
 				<div class="xs-col-12 col-md-3 text-center step-item-container">
 					<img class="landing-icon" src="../assets/handshake.png">
 					<h1 class="">Step 4</h1>
