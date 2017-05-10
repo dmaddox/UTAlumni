@@ -28,6 +28,9 @@ h1, h2, h3, h4, h5, h6 {
 #sign-up-form fieldset:not(:first-of-type) {
   display: none; }
 
+#signup-body {
+  background-color: #eee; }
+
 /*inputs*/
 #sign-up-form input, #sign-up-form textarea {
   padding: 10px;
@@ -66,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 /*buttons*/
 #sign-up-form .action-button {
   width: 100px;
-  background: #27AE60;
+  background: #974e0e;
   font-weight: bold;
   color: white;
   border: 0 none;
@@ -153,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
 #progress-bar li.active:before, #progress-bar li.active:after {
-  background: #27AE60;
+  background: #974e0e;
   color: white; }
 
 .input-error {
