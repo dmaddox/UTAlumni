@@ -28,16 +28,19 @@ h1, h2, h3, h4, h5, h6 {
 #sign-up-form fieldset:not(:first-of-type) {
   display: none; }
 
+#signup-body {
+  background-color: #eee; }
+
 /*inputs*/
 #sign-up-form input, #sign-up-form textarea {
-  padding: 15px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
   margin-bottom: 20px;
   box-sizing: border-box;
   font-family: montserrat;
   color: #2C3E50;
-  font-size: 13px; }
+  font-size: 18px; }
 
 #input-first-name {
   display: inline;
@@ -51,13 +54,22 @@ h1, h2, h3, h4, h5, h6 {
 #email-error {
   margin: 0; }
 
+#location-error {
+  margin: 0; }
+
+#linkedin-picture {
+  width: 49%; }
+
+#linkedin-URL {
+  width: 49%; }
+
 #email, #pass, #confirmP {
   width: 100%; }
 
 /*buttons*/
 #sign-up-form .action-button {
   width: 100px;
-  background: #27AE60;
+  background: #974e0e;
   font-weight: bold;
   color: white;
   border: 0 none;
@@ -67,14 +79,25 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px 5px; }
 
 #city {
-  margin-top: 15px; }
+  margin-top: 0px;
+  float: left;
+  display: inline;
+  width: 49%; }
+
+#state {
+  display: inline;
+  width: 49%;
+  float: right; }
 
 #sign-up-form .action-button:hover, #sign-up-form .action-button:focus {
   box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60; }
 
+.form-control {
+  margin-bottom: 20px; }
+
 /*headings*/
 .fs-title {
-  font-size: 15px;
+  font-size: 20px;
   text-transform: uppercase;
   color: #2C3E50;
   margin-bottom: 10px; }
@@ -133,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
 #progress-bar li.active:before, #progress-bar li.active:after {
-  background: #27AE60;
+  background: #974e0e;
   color: white; }
 
 .input-error {
@@ -163,6 +186,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #employed {
   margin-bottom: 80px; }
+
+.header-image {
+  background: url("../../assets/group.jpeg") center center no-repeat;
+  background-size: cover;
+  height: 600px; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 10px; }
@@ -228,6 +256,28 @@ a {
   .register-link:visited {
     color: white; }
   .register-link:hover {
+    background-color: #14717d; }
+
+#searchBtn {
+  border: none;
+  position: absolute;
+  right: 0;
+  background-color: #eeeeee;
+  border-radius: 0;
+  font-size: 16px; }
+
+#reset-button {
+  font-weight: 300;
+  width: 100px;
+  height: 34px;
+  background-color: #22c0d5;
+  color: white;
+  font-size: 20px;
+  border-radius: 0;
+  font-size: 16px; }
+  #reset-button:visited {
+    color: white; }
+  #reset-button:hover {
     background-color: #14717d; }
 
 .edit {
@@ -345,6 +395,13 @@ input:-webkit-autofill {
 #search-btn {
   padding: 5.5px; }
 
+.search-input {
+  border-radius: 0;
+  border: none; }
+
+#userFilterElement {
+  padding-left: 0px; }
+
 .brand-text {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;
@@ -394,9 +451,15 @@ h2 {
 .search-results {
   width: 100%; }
 
-.results-section {
+.search-bar {
+  top: 70px;
+  background-color: #d66e14;
+  border: none;
+  height: 70px; }
+
+#results-section {
   overflow-y: auto;
-  margin-top: 20px; }
+  margin-top: 30px; }
 
 .individual-result {
   margin: 10px 0;
@@ -413,10 +476,11 @@ h2 {
   background-color: #eee; }
 
 .main-row {
-  padding-left: 250px; }
+  padding-left: 250px;
+  padding-top: 20px; }
 
 .main-content {
-  margin-top: 70px; }
+  margin-top: 120px; }
 
 .modal-links {
   background: linear-gradient(to bottom right, #F0C27B, #4B1248); }
@@ -442,11 +506,9 @@ h2 {
   margin-top: 40px;
   z-index: 1000;
   position: fixed;
-  left: 350px;
-  width: 25%;
-  height: 80%;
-  margin-left: -20%;
-  overflow-y: auto; }
+  left: 300px;
+  width: 30%;
+  margin-left: -20%; }
 
 .profile-container {
   margin-top: 40px; }
@@ -455,10 +517,15 @@ h2 {
   margin-top: -100px; }
 
 .input-areas {
-  margin-top: 20px; }
+  margin-top: 17px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center; }
 
 .form-group {
-  padding-right: 0px; }
+  padding-right: 0px;
+  position: relative;
+  border-radius: none; }
 
 #profile-background {
   height: 150px;

@@ -19,7 +19,7 @@
 		<!-- Custom CSS Link -->
 		<link rel="stylesheet" type="text/css" href="../stylesheets/css/style.css"">
 	</head>
-	<body>
+	<body id="signup-body">
 		<nav class="navbar navbar-default">
 		  <div class="container">
 		      <a class="navbar-brand" href="index.html">HookedIn</a>
@@ -30,13 +30,13 @@
     	<form action="/signup" method="POST" id="sign-up-form">
     		<!-- Progress Bar -->
     		<ul id="progress-bar">
-    			<li class="active">Step 1</li>
-    			<li>Step 2</li>
-    			<li>Step 3</li>
+    			<li class="active"></li>
+    			<li></li>
+    			<li></li>
     		</ul>
 <!-- Fieldset 1 -->
     		<fieldset class="text-left">
-	    		<h2 class="fs-title text-center">Create account</h2>
+	    		<h2 class="fs-title text-center">Login Info</h2>
 	    		<h3 class="fs-subtitle text-center">step 1</h3>
 	    		<input type="text" name="fname" id="input-first-name" class="input-value" placeholder="First Name" />
 				<input type="text" name="lname" id="input-last-name" class="input-value" placeholder="Last Name"/>
@@ -49,32 +49,28 @@
     		</fieldset>
 <!-- Fieldset 2 -->
 			<fieldset>
-	    		<h2 class="fs-title">Personal details</h2>
+	    		<h2 class="fs-title">Bootcamp details</h2>
 	    		<h3 class="fs-subtitle">step 2</h3>
-	    		<label for="cohort">UT cohort:</label>
-				  <select class="form-control" name ="cohort" class="cohort">
-				  	<option value=""></option>
+				  <select class="form-control input-lg cohort" name ="cohort">
+				  	<option value="">Cohort</option>
 				  	<option value="Fall Full Time 2016">Fall Full Time 2016</option>
 				    <option value="Fall Part Time 2016">Fall Part Time 2016</option>
 				    <option value="Spring Full Time 2017">Spring Full Time 2017</option>
 				    <option value="Spring Part Time 2017">Spring Part Time 2017</option>
 				    <option value="Fall Full Time 2017">Fall Full Time 2017</option>
 				  </select>
-				<label for="status">Employment Status:</label>
-				  <select class="form-control" name ="status" class="status">
-				  	<option value=""></option>
+				  <select class="form-control input-lg status" name ="status">
+				  	<option value="">Employment Status</option>
 				    <option value="current-student">Currently in bootcamp</option>
 				    <option value="employed-tech">Employed (in tech)</option>
 				    <option value="employed-else">Employed (not in tech)</option>
 				    <option value="seeking">Job-seeking</option>
 				  </select>
 				
-				<label class="input-label" for="state">City: </label>
 				<input type="text" name="city" class="input-value" id="city" placeholder="city"/>
-
-				<label class="input-label" for="state">State: </label>
-					<select class="form-control" name ="state" class="state">
-						<option value="">N/A</option>
+					<select class="form-control input-lg" name ="state" id="state">
+						<option value="">State</option>
+						<option value="TX">Texas</option>
 						<option value="AK">Alaska</option>
 						<option value="AL">Alabama</option>
 						<option value="AR">Arkansas</option>
@@ -119,7 +115,6 @@
 						<option value="SC">South Carolina</option>
 						<option value="SD">South Dakota</option>
 						<option value="TN">Tennessee</option>
-						<option value="TX">Texas</option>
 						<option value="UT">Utah</option>
 						<option value="VA">Virginia</option>
 						<option value="VT">Vermont</option>
@@ -127,8 +122,7 @@
 						<option value="WI">Wisconsin</option>
 						<option value="WV">West Virginia</option>
 						<option value="WY">Wyoming</option>
-					</select>
-								 
+					</select>	 
 				  <p id="location-error"></p>
 				<input type="button" name="previous" class="previous action-button" value="Previous" />
 			    <input type="button" name="next" class="next action-button" value="Next">
@@ -137,10 +131,8 @@
     		<fieldset>
 	    		<h2 class="fs-title">Media</h2>
 	    		<h3 class="fs-subtitle">step 3</h3>
-	    		<h4>LinkedIn Picture</h4>
-	    		<input type="text" name="profilePic" class="input-val" placeholder="Please use LinkedIn picture URL"/>
-	    		<h4>LinkedIn</h4>
-				<input type="text" name="linkedInURL" placeholder="LinkedIn profile URL"/>
+	    		<input type="text" name="profilePic" class="input-val" id="linkedin-picture" placeholder="Picture URL"/>
+				<input type="text" name="linkedInURL" id="linkedin-URL" placeholder="LinkedIn profile URL"/>
 				<input type="button" name="previous" class="previous action-button" value="Previous" />
 	    		<input type="submit" name="submit" class="next submit action-button" value="Submit" />
     		</fieldset>

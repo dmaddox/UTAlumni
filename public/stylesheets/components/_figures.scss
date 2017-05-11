@@ -2,21 +2,22 @@
 .navbar-brand {
 	background-color: transparent;
 	color: white;
-	font-size: 30px;	
+	font-size: 30px;
 }
 .navbar-text{
 	color: white;
-	font-size: 24px; 
+	font-size: 24px;
 }
 
 .navbar {
 	margin-bottom: 70px;
 	height: 70px;
-	background-color: rgb(151, 78, 14);
+	background-color: $dark-orange;
 	border-radius: none;
 	border: none;
 
 }
+
 .index-navbar{
 	background-color: transparent;
 }
@@ -35,7 +36,7 @@ input:-webkit-autofill {
 
 //background-image placeholder
 .main-image {
-	background: url(../../assets/heading-background.png) no-repeat center center fixed; 
+	background: url(../../assets/heading-background.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -46,11 +47,11 @@ input:-webkit-autofill {
 //log-in header
 .log-in {
 	margin-top: 0;
-}	
+}
 
 //user's profile image
 .profile-image {
-	@include profile-image;	
+	@include profile-image;
 }
 
 .edit-profile-image{
@@ -88,7 +89,7 @@ input:-webkit-autofill {
 	margin-bottom: 20px;
 }
 .background-banner-image{
-	background: url(../../assets/heading-background.png) no-repeat center center; 
+	background: url(../../assets/heading-background.png) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -96,7 +97,7 @@ input:-webkit-autofill {
 	height: 300px;
 }
 .background-banner-image-aside{
-	background: url(../../assets/heading-background.png) no-repeat center center; 
+	background: url(../../assets/heading-background.png) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -108,4 +109,14 @@ input:-webkit-autofill {
 }
 #search-btn{
 	padding: 5.5px;
+}
+.search-input{
+	border-radius: 0;
+	border: none;
+}
+
+// dashboard
+
+#userFilterElement{
+padding-left: 0px;
 }
