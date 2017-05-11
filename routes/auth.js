@@ -94,9 +94,7 @@ module.exports = function(app) {
   app.get("/api/stats/", isLoggedIn, function(req, res) {
     var inTech;
     var employedOutTech;
-
     var studentNum;
-
     var noJobNum;
     var dataObject;
     db.user.findAll({
