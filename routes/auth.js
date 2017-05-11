@@ -123,13 +123,69 @@ module.exports = function(app) {
             }
           }).then(function(seeking) {
             noJobNum = seeking.length;
-            dataObject = {
-              employedTech: inTech,
-              employedElse: employedOutTech,
-              studentNum: studentNum,
-              noJob: noJobNum
-            };
-            res.json(dataObject);
+            db.user.findAll({
+              where: {
+                $or: [
+                  {
+                    interview_time: "0 months"
+                  }, {
+                    interview_time: "1 months"
+                  }, {
+                    interview_time: "2 months"
+                  }, {
+                    interview_time: "3 months"
+                  }
+                ]
+              }
+            }).then(function(zeroToThree) {
+              var zeroNum = zeroToThree.length;
+              db.user.findAll({
+                where: {
+                  $or: [
+                    {
+                      interview_time: "4 months"
+                    }, {
+                      interview_time: "5 months"
+                    }, {
+                      interview_time: "6 months"
+                    }, {
+                      interview_time: "7 months"
+                    }
+                  ]
+                }
+              }).then(function(fourToSeven) {
+                var fourNum = fourToSeven.length;
+                db.user.findAll({
+                  where: {
+                    $or: [
+                      {
+                        interview_time: "8 months"
+                      }, {
+                        interview_time: "9 months"
+                      }, {
+                        interview_time: "10 months"
+                      }, {
+                        interview_time: "11 months"
+                      }, {
+                        interview_time: "12 months"
+                      }
+                    ]
+                  }
+                }).then(function(eightToTwelve) {
+                  var eightNum = eightToTwelve.length;
+									dataObject = {
+										employedTech: inTech,
+										employedElse: employedOutTech,
+										studentNum: studentNum,
+										noJob: noJobNum,
+										zeroToThree: zeroNum,
+										fourToSeven: fourNum,
+										eightToTwelve: eightNum
+									};
+									res.json(dataObject);
+                });
+              });
+            });
           });
         });
       });
