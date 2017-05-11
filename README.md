@@ -67,3 +67,7 @@ Already have a job? Update your profile so currents students can search for you.
 #### Jquery
 
 * The library we used to create succinct and simplified javascript code.
+
+#### Cron Job
+
+* Used to create time intervals for performing functions, such as weekly statistic analysis of the job market.
