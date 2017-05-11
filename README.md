@@ -37,19 +37,19 @@ Already have a job? Update your profile so currents students can search for you.
 ## Front-End Technologies
 
 
-  * #### JQuery
+#### JQuery
 
   The library we used to create succinct and simplified javascript code.  
 
-  * #### SASS
+#### SASS
 
   A CSS extention language that helps handle styling.  
 
-  * #### Bootstrap
+#### Bootstrap
 
   An elegant and simple framework used for styling and making the app mobile responsive.  
 
-  * #### Flexbox
+#### Flexbox
 
   A styling framework for the grid system.  
   
@@ -58,23 +58,23 @@ Already have a job? Update your profile so currents students can search for you.
 
 
 
-  * #### MySQL
+#### MySQL
 
   Used to store data from users for both login and profile sections.  
 
-  * #### Node.js
+#### Node.js
 
   The main platform used in the back-end development.  
 
-  * #### Express
+#### Express
 
   The framework used to create and execute routing in node.  
 
-  * #### Passport
+#### Passport
 
   In conjunction with bcrypt, passport handled user authentication to keep the focus of our app exclusively on UT boot camp students and alumni.  
 
-  * #### Sequelize
+#### Sequelize
 
   The ORM used in node for communicating with and querying our MySQL database.  
 
@@ -82,10 +82,10 @@ Already have a job? Update your profile so currents students can search for you.
 ## Other Technologies
 
 
-  * #### Cron Job
+#### Cron Job
 
   Used to create time intervals for performing functions, such as weekly statistic analysis of the job market.  
 
-  * #### Trello
+#### Trello
 
   In order to stay on-track and able to collaborate effectively, we utilized Trello to organize and assign tasks.  
