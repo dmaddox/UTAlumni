@@ -34,15 +34,17 @@ Already have a job? Update your profile so currents students can search for you.
 
 ---------
 
-## Technologies
+## Front-End Technologies
 
-#### SASS
 
-coming soon
+  * #### JQuery
 
-#### Flexbox
+  The library we used to create succinct and simplified javascript code.
 
-coming soon
+
+
+
+
 
 #### MySQL
 
@@ -64,9 +66,6 @@ In conjunction with bcrypt, passport handled user authentication to keep the foc
 
 The ORM used in node for communicating with and querying our MySQL database.
 
-#### JQuery
-
-The library we used to create succinct and simplified javascript code.
 
 #### Cron Job
 
