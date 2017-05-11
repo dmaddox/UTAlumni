@@ -6,7 +6,7 @@
 
 ---------
 <p align="center">
-<img src="https://github.com/jflook10/UTAlumni/blob/master/public/assets/form.png" alt="Drawing" style= "height: 50px;" "width: 100px;"/>
+<img src="https://github.com/jflook10/UTAlumni/blob/master/public/assets/form.png" alt="Drawing" style= "height: 50%;" "width: 50%;"/>
 
 <b> Join the network </b>
 
