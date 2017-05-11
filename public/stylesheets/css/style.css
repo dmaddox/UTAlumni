@@ -187,6 +187,11 @@ h1, h2, h3, h4, h5, h6 {
 #employed {
   margin-bottom: 80px; }
 
+.header-image {
+  background: url("../../assets/group.jpeg") center center no-repeat;
+  background-size: cover;
+  height: 600px; }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 10px; }
 

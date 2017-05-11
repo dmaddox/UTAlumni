@@ -61,7 +61,7 @@ module.exports = function(passport, user) {
 	passport.serializeUser(function(user, done) {
 		done(null, user.id);
 	});
-	// deserialize user 
+	// deserialize user
 	passport.deserializeUser(function(id, done) {
 		User.findById(id).then(function(user) {
 			if (user) {
@@ -84,7 +84,7 @@ module.exports = function(passport, user) {
 			//encrypt password
 			var isValidPassword = function(userpass, password) {
 				return bCrypt.compareSync(password, userpass);
-			}
+			};
 			//check to see if email is in database
 			User.findOne({
 				where: {
@@ -114,4 +114,4 @@ module.exports = function(passport, user) {
 			});
 		}
 	));
-}
+};
