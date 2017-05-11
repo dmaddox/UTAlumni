@@ -25,13 +25,20 @@ $(document).ready(function() {
 				"</div>" +
 				"<div class='col-xs-2 text-right' id='employmentStatus"+i+"' data-employ=" + data[i].status + ">" +
 				"</div>")
-			if (data[i].status === "employed-tech" || data[i].status === "employed-else") {
+			if (data[i].status === "employed-tech") {
 				$("#employmentStatus"+i).html("<div id='employed'>" +
 					"<i class='fa fa-briefcase fa-2x' aria-hidden='true'></i>" +
-					"<p id='employment-text'>Hired</p>" +
+					"<p id='employment-text'>Hired in tech</p>" +
 					"</div>")
 				$("#results-company"+i).html(data[i].employer)
-			} else {
+			} 
+			else if (data[i].status === "employed-else") {
+				$("#employmentStatus"+i).html("<div id='employed'>" +
+					"<i class='fa fa-briefcase fa-2x' aria-hidden='true'></i>" +
+					"<p id='employment-text'>Hired outside of tech</p>" +
+					"</div>")
+				$("#results-company"+i).html(data[i].employer)
+			}else {
 				$("#results-company"+i).empty();
 			}
 		} //end of for loop
@@ -44,12 +51,20 @@ $(document).ready(function() {
 			$(".modal-profile-image").attr("src", "").attr("src", data[resultId].profilePic);
 			$(".modal-name").html("").html(data[resultId].firstname + " " + data[resultId].lastname);
 			$(".modal-employer").html("").html(data[resultId].employer);
-			$(".modal-cohort").html("").html(data[resultId].cohort);
-			$(".modal-email").html("").html(data[resultId].email);
 			$(".modal-city").html("").html(data[resultId].city + ", " + data[resultId].state);
+
+			$(".modal-employ-status").html("").html(data[resultId].status);
+			$(".modal-salary").html("").html(data[resultId].first_salary);
+			$(".modal-job-seeking").html("").html(data[resultId].interview_time);
+			$(".modal-cohort").html("").html(data[resultId].cohort);
+
+			$(".modal-email").html("").html(data[resultId].email);
+			$(".modal-linkedin").html("").html("<a href = '"+ data[resultId].linkedInURL+  "'>"+ data[resultId].linkedInURL + "</a>");
+			$(".modal-personal-site").html("").html("<a href = '"+ data[resultId].portfolioURL+  "'>"+ data[resultId].portfolioURL+ "</a>");
+			// $(".modal-linkedin").html('<a href=" '+ linkedInURL + ' " >' + data[resultId].linkedInURL + '</a>');
+			// $(".modal-profile").html('<a href='+ '"' + portfolioURL + '"'+ '>' + data[resultId].portfolioURL + '</a>');
 			$(".modal-mentor").html("").html(data[resultId].mentor);
-			$(".modal-linkedin").attr("href", "").attr("href", data[resultId].linkedInURL);
-			$(".modal-profile").attr("href", "").attr("href", data[resultId].portfolioURL);
+			$(".modal-about").html("").html(data[resultId].about);
 		})
 	}); // done users api call
 	$.ajax({

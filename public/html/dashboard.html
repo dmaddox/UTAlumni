@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title></title>
-      <!-- jQuery CDN -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <!-- Optional theme -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-      <!-- Latest compiled and minified JavaScript -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-      <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-      <!-- Font Awesome -->
-      <script src="https://use.fontawesome.com/28a2b82478.js"></script>
-      <!-- Custom CSS Link -->
-      <link rel="stylesheet" type="text/css" href="../stylesheets/css/style.css">
+  <head>
+    <title></title>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/28a2b82478.js"></script>
+
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" type="text/css" href="../stylesheets/css/style.css">
       <!-- jquery -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   </head>
-   <body id="dashboard-page">
-      <nav class="navbar navbar-fixed-top">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body id="dashboard-page">
+  
+  <nav class="navbar navbar-fixed-top">
          <div class="container">
             <a class="navbar-brand" href="/">HookedIn</a>
             <a class="about" href="/about">
@@ -43,22 +49,24 @@
                 </select>
              </div>
              <div class="form-group col-xs-3" id="userFilterElement">
-            	<button class="btn" type="button" id="searchBtn">
-           		<i class="fa fa-search" aria-hidden="true"></i>
-        		</button>
-       			<input id="userFilter" type="text" class="search-input form-control" placeholder="Search">
-      		 </div>
-      		 <div class="col-xs-3">
-      		 	<button class="btn" type="button" id="reset-button">Reset</button>
-      		 </div>
+              <button class="btn" type="button" id="searchBtn">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+            <input id="userFilter" type="text" class="search-input form-control" placeholder="Search">
+           </div>
+           <div class="col-xs-3">
+            <button class="btn" type="button" id="reset-button">Reset</button>
+           </div>
           <!-- /row -->
           </div>
        </div>
       <!-- /navbar -->
-      <div class="container main-content">
-         <div class="row main-row">
+      
+    
+        <div class="container main-content">
+          <div class="row main-row">
             <div class="col-md-12">
-               <aside class="text-center" id="profile-section"> <!-- user profile sidebar -->
+            <aside class="text-center" id="profile-section"> <!-- user profile sidebar -->
               <div class="background-banner-image-aside"></div>
               <div class="profile-bottom">
                 
@@ -76,67 +84,79 @@
                 <p class="user-mentor"></p>
               </div>
             </aside> <!-- user profile sidebar -->
-            </div>
-            <div class="col-md-10 col-md-offset-2 pull-right" id="results-section">
-            </div>
-            <!-- /col-md-6 -->
-         </div>
-         <!-- /row -->
-      </div>
-      <!-- /container -->
-      </div>
-      <!-- Modal -->
-      <div class="modal edit-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-         <div class="modal-dialog" role="document">
+          </div>
+          <div class="col-md-10 col-md-offset-2 pull-right" id="results-section"> <!-- search bar -->
+              <div class="input-group search-results">
+                <div class="row input-areas">
+                  <div class="col-xs-6" type="input-group-btn drop-down-select">
+                    <select id="drop-down-search" class="form-control selectpicker" data-style="btn-primary">
+                      <option value="">Category</option>
+                      <option value="firstname">First Name</option>
+                      <option value="lastname">Last Name</option>
+                      <option value="city">City</option>  
+                      <option value="state">State</option>  
+                      <option value="cohort">Cohort</option>      
+                    </select>
+                  </div>
+                  <div class="form-group col-xs-5" id="userFilterElement">
+                  <input id="userFilter" type="text" class=" form-control" placeholder="Search"/>
+                  </div>
+                
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" id="searchBtn"><i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+                  </span>
+                </div> <!-- /row -->
+              </div><!-- /search bar -->
+          </div> <!-- /col-md-6 -->
+        </div> <!-- /row -->
+      </div> <!-- /container -->
+    </div>
+        <!-- Modal -->
+        <div class="modal edit-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
             <div class="modal-content">
-               <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-               </div>
-               <div class="modal-body">
-                  <div class="row modal-row">
-                     <div class="col-sm-5 text-center">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body">
+                <div class="row modal-row">
+                  <div class="col-md-7">
+                    <div class="row"> <!-- row for the selected user's main info -->
+                      <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                         <img class="modal-profile-image profile-image" src="../assets/test.jpg">
-                     </div>
-                     <div class="col-md-7">
-                        <h1 class="modal-name">Isaac Hawkins</h1>
-                        <h4 class="modal-employer">Google</h4>
-                        <hr />
-                        <div class="row">
-                           <div class="col-xs-4">
-                              <p>Cohort</p>
-                              <p>Email</p>
-                              <p>City</p>
-                              <p>Mentor</p>
-                           </div>
-                           <div class="col-xs-8">
-                              <p class="modal-cohort"></p>
-                              <p class="modal-email"></p>
-                              <p class="modal-city"></p>
-                              <p class="modal-mentor"></p>
-                           </div>
-                        </div>
-                     </div>
+                      </div>
+                      <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                        <h1 class="modal-name"></h1>
+                        <h4 class="modal-employer"></h4>
+                        <h4 class="modal-para modal-city"></h4>
+                      </div>
+                      <hr/>
+                    </div> <!-- end row -->
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> <!-- general job info -->
+                    <p>Employment Status: <span class="modal-employ-status"></span></p>
+                    <p>First Salary after bootcamp: <span class=" modal-salary"></span></p>
+                    <p>Time Job-seeking post bootcamp: <span class="modal-job-seeking"></span></p>
+                    <p>Cohort: <span class="modal-cohort"></span></p>
                   </div>
-                  <div class="row modal-links text-center">
-                     <!-- row -->
-                     <div class="col-xs-4">
-                        <a class="modal-linkedin" href="www.linkedin.com"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-                     </div>
-                     <div class="col-xs-4">
-                        <a class="modal-portfolio" href="ikehawkins.com"><i class="fa fa-laptop fa-2x" aria-hidden="true"></i></a>
-                     </div>
-                     <div class="col-xs-4">
-                        <a class="modal-github" href="www.github.com"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-                     </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> <!-- contact info -->
+                    <p>Email: <span class="modal-email"></span></p>
+                    <p>LinkedIn: <span class="modal-linkedin"></span></p>
+                    <p>Personal site: <span class="modal-personal-site"></span></p>
+                    <p>Mentor: <span class="modal-mentor"></span></p>
                   </div>
-                  <!-- /row -->
-               </div>
-            </div>
-            <!-- /modal content -->
-         </div>
-      </div>
-      <!-- /modal -->
-      <script src="../js/dashboard.js"></script>
-      <script type="text/javascript" src="../js/search.js"></script>
-   </body>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <!-- seperate about section for more text -->
+                    <p>About: <span class="modal-about"></span></p>
+                  </div>
+                </div>
+                  </div>
+                </div>
+              </div>
+          </div> <!-- /modal content -->
+        </div>
+      </div><!-- /modal -->
+    <script src="../js/dashboard.js"></script>
+    <script type="text/javascript" src="../js/search.js"></script>
+  </body>
 </html>
