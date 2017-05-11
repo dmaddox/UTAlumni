@@ -39,19 +39,19 @@ Already have a job? Update your profile so currents students can search for you.
 
 #### JQuery
 
-  The library we used to create succinct and simplified javascript code.  
+&nbsp;&nbsp;&nbsp;&nbsp;The library we used to create succinct and simplified javascript code.  
 
 #### SASS
 
-  A CSS extention language that helps handle styling.  
+&nbsp;&nbsp;&nbsp;&nbsp;A CSS extention language that helps handle styling.  
 
 #### Bootstrap
 
-  An elegant and simple framework used for styling and making the app mobile responsive.  
+&nbsp;&nbsp;&nbsp;&nbsp;An elegant and simple framework used for styling and making the app mobile responsive.  
 
 #### Flexbox
 
-  A styling framework for the grid system.  
+&nbsp;&nbsp;&nbsp;&nbsp;A styling framework for the grid system.  
   
 
 ## Back-End Technologies
@@ -60,23 +60,23 @@ Already have a job? Update your profile so currents students can search for you.
 
 #### MySQL
 
-  Used to store data from users for both login and profile sections.  
+&nbsp;&nbsp;&nbsp;&nbsp;Used to store data from users for both login and profile sections.  
 
 #### Node.js
 
-  The main platform used in the back-end development.  
+&nbsp;&nbsp;&nbsp;&nbsp;The main platform used in the back-end development.  
 
 #### Express
 
-  The framework used to create and execute routing in node.  
+&nbsp;&nbsp;&nbsp;&nbsp;The framework used to create and execute routing in node.  
 
 #### Passport
 
-  In conjunction with bcrypt, passport handled user authentication to keep the focus of our app exclusively on UT boot camp students and alumni.  
+&nbsp;&nbsp;&nbsp;&nbsp;In conjunction with bcrypt, passport handled user authentication to keep the focus of our app exclusively on UT boot camp students and alumni.  
 
 #### Sequelize
 
-  The ORM used in node for communicating with and querying our MySQL database.  
+&nbsp;&nbsp;&nbsp;&nbsp;The ORM used in node for communicating with and querying our MySQL database.  
 
 
 ## Other Technologies
@@ -84,8 +84,8 @@ Already have a job? Update your profile so currents students can search for you.
 
 #### Cron Job
 
-  Used to create time intervals for performing functions, such as weekly statistic analysis of the job market.  
+&nbsp;&nbsp;&nbsp;&nbsp;Used to create time intervals for performing functions, such as weekly statistic analysis of the job market.  
 
 #### Trello
 
-  In order to stay on-track and able to collaborate effectively, we utilized Trello to organize and assign tasks.  
+&nbsp;&nbsp;&nbsp;&nbsp;In order to stay on-track and able to collaborate effectively, we utilized Trello to organize and assign tasks.  
