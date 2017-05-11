@@ -38,32 +38,32 @@ Already have a job? Update your profile so currents students can search for you.
 
 #### SASS
 
-..* coming soon
+* coming soon
 
 #### Flexbox
 
-..* coming soon
+* coming soon
 
 #### MySQL
 
-..* Used to store data from users for both login and profile sections.
+* Used to store data from users for both login and profile sections.
 
 #### Node.js
 
-...* The main platform used in the back-end development.
+* The main platform used in the back-end development.
 
 #### Express
 
-..* The framework used to create and execute routing in node.
+* The framework used to create and execute routing in node.
 
 #### Passport
 
-..* In conjunction with bcrypt, passport handled user authentication to keep the focus of our app exclusively on UT boot camp students and alumni.
+* In conjunction with bcrypt, passport handled user authentication to keep the focus of our app exclusively on UT boot camp students and alumni.
 
 #### Sequelize
 
-..* The ORM used in node for communicating with and querying our MySQL database.
+* The ORM used in node for communicating with and querying our MySQL database.
 
 #### Jquery
 
-..* The library we used to create succinct and simplified javascript code.
+* The library we used to create succinct and simplified javascript code.
