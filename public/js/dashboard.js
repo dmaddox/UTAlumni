@@ -73,18 +73,18 @@ $(document).ready(function() {
 	}).done(function(data) {
 		//add logged-in user data to the left panel on the dashboard 
 		$(".user-fullname").html(data.firstname + " " + data.lastname);
-		$(".user-city").html("Location: " + data.city + ", " + data.state);
-		$(".user-cohort").html("Graduation: " + data.cohort);
-		$(".user-linkedin").html("Linkedin Profile: " + data.linkedInURL);
-		$(".user-profile").html("Portfolio Link: " + data.portfolioURL);
+		$(".user-city").html(data.city + ", " + data.state);
+		$(".user-cohort").html(data.cohort);
+		$(".user-linkedin").html(data.linkedInURL);
+		$(".user-profile").html(data.portfolioURL);
 		$(".profile-image").html("<img src = '" + data.profilePic + "'class= profile-image height = 200px width = 200px/>");
 
 		//fill in here
-		$(".user-status").html("Employment Status: " + data.status);
-		$(".user-employer").html("Employer: " + data.employer);
-		$(".user-salary").html("Salary Range: " + data.firstSalary);
-		$(".user-interview-time").html("Interview Time: " + data.interview_time);
-		$(".user-mentor").html("Mentor: " + data.mentor);
+		$(".user-status").html(data.status);
+		$(".user-employer").html(data.employer);
+		$(".user-salary").html("First salary: " + data.firstSalary);
+		$(".user-interview-time").html("Time job-seeking: " + data.interview_time);
+		$(".user-mentor").html("Open to mentor: " + data.mentor);
 
 	});
 
