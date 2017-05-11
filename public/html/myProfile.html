@@ -1,256 +1,272 @@
 <!DOCTYPE html>
 <html lang="en-us">
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <head>
-      <title></title>
-      <!-- jQuery CDN -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <!-- Optional theme -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-      <!-- Latest compiled and minified JavaScript -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-      <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-      <!-- Font Awesome -->
-      <script src="https://use.fontawesome.com/28a2b82478.js"></script>
-      <!-- Custom CSS Link -->
-      <link rel="stylesheet" type="text/css" href="../stylesheets/css/style.css">
-      <!-- jquery -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   </head>
-   <body>
-      <div class="background-banner-image">
-         <nav class="navbar navbar-fixed-top">
-            <div class="container">
-               <a class="navbar-brand" href="/">HookedIn</a>
-               <a class="about" href="/about">
-                  <p class="navbar-text pull-right">About</p>
-               </a>
-               <a class="about" href="/dashboard">
-                  <p class="navbar-text pull-right">Dashboard</p>
-               </a>
-            </div>
-         </nav>
-      </div>
-      <!-- /navbar -->
-      <div class="container content profile-content">
-         <div class="container picture-container">
-            <img src="#" class="profile-image edit-profile-image">
-         </div>
-         <div class="profile-container">
-            <div class="text-center">
-               <h1 class="edit-fullname"></h1>
-               <h4 class="edit-location"></h4>
-               <p><em class="edit-about"></em></p>
-               <p><i class="about-icon fa about-icon fa-graduation-cap" aria-hidden="true"></i><span class="edit-cohort"></span><span> </span><i class="about-icon fa about-icon fa-envelope-o" aria-hidden="true"></i><span> </span><span class="edit-email"></span></p>
-               <hr/>
-               <div class="col-xs-12 col-md-6 about-section-container">
-                  <div class="about-section">
-                     <div class="col-xs-12 about-pair">
-                        <label class="about-item-label"><i class="about-icon fa about-icon fa-briefcase" aria-hidden="true"></i> Employment status</label>
-                        <span class="edit-status about-item"></span>
-                     </div>
-                     <div class="col-xs-12 about-pair">
-                        <label class="about-item-label"><i class="about-icon fa about-icon fa-briefcase" aria-hidden="true"></i> Employer</label>
-                        <span class="edit-employer about-item"></span>
-                     </div>
-                     <div class="col-xs-12 about-pair">
-                        <label class="about-item-label"><i class="about-icon fa about-icon fa-money" aria-hidden="true"></i> First Salary after bootcamp</label>
-                        <span class="edit-salary about-item"></span>
-                     </div>
-                     <div class="col-xs-12 about-pair">
-                        <label class="about-item-label"><i class="about-icon fa about-icon fa-hourglass-half" aria-hidden="true"></i> Time Job-seeking post bootcamp</label>
-                        <span class="edit-interview-time about-item"></span>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xs-12 col-md-6 border-section about-section-container">
-                  <div class="about-section">
-                     <div class="col-xs-12 about-pair">
-                        <label class="about-item-label"><i class="about-icon fa about-icon fa-linkedin" aria-hidden="true"></i> LinkedIn</label>
-                        <span class="edit-linkedin about-item"></span>
-                     </div>
-                     <div class="col-xs-12 about-pair">
-                        <label class="about-item-label"><i class="about-icon fa about-icon fa-laptop" aria-hidden="true"></i> Personal site</label>
-                        <span class="edit-portfolioURL about-item"></span>
-                     </div>
-                     <div class="col-xs-12 about-pair">
-                        <label class="about-item-label"><i class="about-icon fa about-icon fa-users" aria-hidden="true"></i> Open to mentoring</label>
-                        <span class="edit-mentor about-item"></span>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xs-12 text-center">
-                  <button class="edit btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa about-icon fa-pencil" aria-hidden="true"></i> Edit profile</button>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-         <div class="form-modal">
-            <div class="modal-dialog edit-modal-dialog" role="document">
-               <div class="modal-content edit-modal-content">
-                  <div class="modal-header">
-                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  </div>
-                  <div class="modal-body">
-                     <form class="update-profile-form" method="POST" action="/myProfile">
-                        <div class="form-group">
-                           <h2 class="fs-title text-center">Update Account</h2>
-                           <div class="multi-input-row">
-                              <div class="form-pair">
-                                 <label class="input-label" for="firstname">First Name: </label>
-                                 <input class="firstname input-field" type="text" name="firstname" id="firstname"/>
-                              </div>
-                              <div class="form-pair">
-                                 <label class="input-label" for="lastname">last Name: </label>
-                                 <input class="lastname input-field" type="text" name="lastname" id="lastname"/>
-                              </div>
-                           </div>
-                           <div class="form-pair">
-                              <label class="input-label" for="city">City: </label>
-                              <input type="text" name="city" class="city input-field url-input"/>
-                           </div>
-                           <div class="form-pair">
-                              <label class="input-label" for="state">State: </label>
-                              <select class="form-control state input-field" name ="state">
-                                 <option value="">select one</option>
-                                 <option value="AK">Alaska</option>
-                                 <option value="AL">Alabama</option>
-                                 <option value="AR">Arkansas</option>
-                                 <option value="AZ">Arizona</option>
-                                 <option value="CA">California</option>
-                                 <option value="CO">Colorado</option>
-                                 <option value="CT">Connecticut</option>
-                                 <option value="DC">District of Columbia</option>
-                                 <option value="DE">Delaware</option>
-                                 <option value="FL">Florida</option>
-                                 <option value="GA">Georgia</option>
-                                 <option value="HI">Hawaii</option>
-                                 <option value="IA">Iowa</option>
-                                 <option value="ID">Idaho</option>
-                                 <option value="IL">Illinois</option>
-                                 <option value="IN">Indiana</option>
-                                 <option value="KS">Kansas</option>
-                                 <option value="KY">Kentucky</option>
-                                 <option value="LA">Louisiana</option>
-                                 <option value="MA">Massachusetts</option>
-                                 <option value="MD">Maryland</option>
-                                 <option value="ME">Maine</option>
-                                 <option value="MI">Michigan</option>
-                                 <option value="MN">Minnesota</option>
-                                 <option value="MO">Missouri</option>
-                                 <option value="MS">Mississippi</option>
-                                 <option value="MT">Montana</option>
-                                 <option value="NC">North Carolina</option>
-                                 <option value="ND">North Dakota</option>
-                                 <option value="NE">Nebraska</option>
-                                 <option value="NH">New Hampshire</option>
-                                 <option value="NJ">New Jersey</option>
-                                 <option value="NM">New Mexico</option>
-                                 <option value="NV">Nevada</option>
-                                 <option value="NY">New York</option>
-                                 <option value="OH">Ohio</option>
-                                 <option value="OK">Oklahoma</option>
-                                 <option value="OR">Oregon</option>
-                                 <option value="PA">Pennsylvania</option>
-                                 <option value="PR">Puerto Rico</option>
-                                 <option value="RI">Rhode Island</option>
-                                 <option value="SC">South Carolina</option>
-                                 <option value="SD">South Dakota</option>
-                                 <option value="TN">Tennessee</option>
-                                 <option value="TX">Texas</option>
-                                 <option value="UT">Utah</option>
-                                 <option value="VA">Virginia</option>
-                                 <option value="VT">Vermont</option>
-                                 <option value="WA">Washington</option>
-                                 <option value="WI">Wisconsin</option>
-                                 <option value="WV">West Virginia</option>
-                                 <option value="WY">Wyoming</option>
-                              </select>
-                           </div>
-                           <div class="multi-input-row">
-                              <div class="form-pair">
-                                 <label class="input-label" for="status">Employment Status: </label>
-                                 <select class="form-control status input-field" name ="status">
-                                    <option value="">select one</option>
-                                    <option value="current-student">Currently in bootcamp</option>
-                                    <option value="employed-tech">Employed (in tech)</option>
-                                    <option value="employed-else">Employed (not in tech)</option>
-                                    <option value="seeking">Job-seeking </option>
-                                 </select>
-                              </div>
-                           </div>
-                           <div class="form-pair">
-                              <label class="input-label" for="">LinkedIn Picture Url: </label>
-                              <input type="text" name="profilePic" class="profilePic input-field url-input" placeholder="Please use LinkedIn picture URL"/>
-                           </div>
-                           <div class="form-pair">
-                              <label class="input-label" for="linkedInURL">LinkedIn: </label>
-                              <input type="text" name="linkedInURL" class="linkedInURL input-field url-input" placeholder="LinkedIn profile URL"/>
-                           </div>
-                           <div class="form-pair">
-                              <label class="input-label" for="portfolioURL">Personal Portfolio Site: </label>
-                              <input type="text" name="portfolioURL" class="portfolioURL input-field " placeholder="portfolio Url"/>
-                           </div>
-                           <div class="form-pair">
-                              <label class="input-label" for="employer">employer: </label>
-                              <input type="text" name="employer" class="employer input-field" placeholder="employer"/>
-                           </div>
-                           <div class="form-pair">
-                              <label class="input-label" for="firstSalary">First salary: </label>
-                              <select class="form-control first_salary input-field" name ="first_salary">
-                                 <option value="">select one</option>
-                                 <option value="$0-20,000">$0-20,000</option>
-                                 <option value="$20,000-40,000">$20,000-40,000</option>
-                                 <option value="$40,000-60,000">$40,000-60,000</option>
-                                 <option value="$60,000-80,000">$60,000-80,000</option>
-                                 <option value="$80,000-100,000">$80,000-100,000</option>
-                              </select>
-                           </div>
-                           <div class="form-pair">
-                              <label class="input-label" for="interview_time">Number of months job-seeking after graduation: </label>
-                              <select class="form-control interview_time input-field" name ="interview_time">
-                                 <option value="">select one</option>
-                                 <option value="0 months">0</option>
-                                 <option value="1 months">1</option>
-                                 <option value="2 months">2</option>
-                                 <option value="3 months">3</option>
-                                 <option value="4 months">4</option>
-                                 <option value="5 months">5</option>
-                                 <option value="6 months">6</option>
-                                 <option value="7 months">7</option>
-                                 <option value="8 months">8</option>
-                                 <option value="9 months">9</option>
-                                 <option value="10 months">10</option>
-                                 <option value="11 months">11</option>
-                                 <option value="12 months">12+</option>
-                              </select>
-                           </div>
-                           <div class="form-pair">
-                              <label class="input-label" for="mentor">Open to mentoring?: </label>
-                              <select class="form-control mentor input-field" name ="mentor">
-                                 <option value="">select one</option>
-                                 <option value="Yes">Yes</option>
-                                 <option value="No">No</option>
-                              </select>
-                           </div>
-                           <div class="form-pair">
-                              <label class="input-label" for="about">About: </label>
-                              <textarea name="about" class=" input-field about">Tell us about yourself</textarea>
-                           </div>
-                        </div>
-                        <button type="submit" class="btn btn-default">Submit</button>
-                     </form>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- /modal -->
-      </div>
-      </div>	
-      <script src="../js/myProfile.js"></script>
-   </body>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<title></title>
+		<!-- jQuery CDN -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Font Awesome -->
+		<script src="https://use.fontawesome.com/28a2b82478.js"></script>
+
+		<!-- Custom CSS Link -->
+		<link rel="stylesheet" type="text/css" href="../stylesheets/css/style.css">
+			<!-- jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="background-banner-image">
+			<nav class="navbar navbar-fixed-top">
+			  <div class="container">
+			      <a class="navbar-brand" href="/">HookedIn</a>
+			      <a class="about" href="/about"><p class="navbar-text pull-right">About</p></a>
+			      <a class="about" href="/dashboard"><p class="navbar-text pull-right">Dashboard</p></a>
+			  </div>
+	    	</nav>
+	    </div>
+    	 <!-- /navbar -->
+			<div class="container content profile-content">
+	      		<div class="container picture-container">
+	      			<img src="#" class="profile-image edit-profile-image">
+	      		</div>
+		      	<div class="profile-container">
+		      		<div class="text-center">
+		      			<h1 class="edit-fullname"></h1>
+		      			<h4 class="edit-location"></h4>
+		      			<p><em class="edit-about"></em></p>
+						<p><i class="about-icon fa about-icon fa-graduation-cap" aria-hidden="true"></i><span class="edit-cohort"></span><span> </span><i class="about-icon fa about-icon fa-envelope-o" aria-hidden="true"></i><span> </span><span class="edit-email"></span></p>
+		      			<hr/>
+						<div class="col-xs-12 col-md-6 about-section-container">
+							<div class="about-section">
+								<div class="col-xs-12 about-pair">
+									<label class="about-item-label"><i class="about-icon fa about-icon fa-briefcase" aria-hidden="true"></i> Employment status</label>
+									<span class="edit-status about-item"></span>
+								</div>
+
+								<div class="col-xs-12 about-pair">
+									<label class="about-item-label"><i class="about-icon fa about-icon fa-briefcase" aria-hidden="true"></i> Employer</label>
+									<span class="edit-employer about-item"></span>
+								</div>
+								<div class="col-xs-12 about-pair">
+									<label class="about-item-label"><i class="about-icon fa about-icon fa-money" aria-hidden="true"></i> First Salary after bootcamp</label>
+									<span class="edit-salary about-item"></span>
+								</div>
+								<div class="col-xs-12 about-pair">
+									<label class="about-item-label"><i class="about-icon fa about-icon fa-hourglass-half" aria-hidden="true"></i> Time Job-seeking post bootcamp</label>
+									<span class="edit-interview-time about-item"></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-6 border-section about-section-container">
+							<div class="about-section">
+								<div class="col-xs-12 about-pair">
+									<label class="about-item-label"><i class="about-icon fa about-icon fa-linkedin" aria-hidden="true"></i> LinkedIn</label>
+									<span class="edit-linkedin about-item"></span>
+								</div>
+								<div class="col-xs-12 about-pair">
+									<label class="about-item-label"><i class="about-icon fa about-icon fa-laptop" aria-hidden="true"></i> Personal site</label>
+									<span class="edit-portfolioURL about-item"></span>
+								</div>
+								<div class="col-xs-12 about-pair">
+									<label class="about-item-label"><i class="about-icon fa about-icon fa-users" aria-hidden="true"></i> Open to mentoring</label>
+									<span class="edit-mentor about-item"></span>
+								</div>
+							</div>
+						</div>
+			      		<div class="col-xs-12 text-center">
+			      			 <button class="edit btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa about-icon fa-pencil" aria-hidden="true"></i> Edit profile</button>
+			      		</div>
+		      		</div>
+				</div>
+			</div>
+    			<!-- <p class="profile-image"> </p>
+				<h1 class="user-fullname"> </h1>
+ -->
+
+				<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="form-modal">
+			<div class="modal-dialog edit-modal-dialog" role="document">
+				<div class="modal-content edit-modal-content">
+				 	<div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				    </div>
+				  		<div class="modal-body">
+							<form class="update-profile-form" method="POST" action="/myProfile">
+
+					            <div class="form-group">
+					              <h2 class="fs-title text-center">Update Account</h2>
+
+									<div class="multi-input-row">
+										<div class="form-pair">
+							              	<label class="input-label" for="firstname">First Name: </label>
+											<input class="firstname input-field" type="text" name="firstname" id="firstname"/>
+
+										</div>
+										<div class="form-pair">
+											<label class="input-label" for="lastname">last Name: </label>
+											<input class="lastname input-field" type="text" name="lastname" id="lastname"/>
+										</div>
+									</div>
+
+									<div class="form-pair">
+										<label class="input-label" for="city">City: </label>
+										<input type="text" name="city" class="city input-field url-input"/>
+									</div>
+
+									<div class="form-pair">
+										<label class="input-label" for="state">State: </label>
+										<select class="form-control state input-field" name ="state">
+											<option value="">select one</option>
+											<option value="AK">Alaska</option>
+											<option value="AL">Alabama</option>
+											<option value="AR">Arkansas</option>
+											<option value="AZ">Arizona</option>
+											<option value="CA">California</option>
+											<option value="CO">Colorado</option>
+											<option value="CT">Connecticut</option>
+											<option value="DC">District of Columbia</option>
+											<option value="DE">Delaware</option>
+											<option value="FL">Florida</option>
+											<option value="GA">Georgia</option>
+											<option value="HI">Hawaii</option>
+											<option value="IA">Iowa</option>
+											<option value="ID">Idaho</option>
+											<option value="IL">Illinois</option>
+											<option value="IN">Indiana</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+											<option value="LA">Louisiana</option>
+											<option value="MA">Massachusetts</option>
+											<option value="MD">Maryland</option>
+											<option value="ME">Maine</option>
+											<option value="MI">Michigan</option>
+											<option value="MN">Minnesota</option>
+											<option value="MO">Missouri</option>
+											<option value="MS">Mississippi</option>
+											<option value="MT">Montana</option>
+											<option value="NC">North Carolina</option>
+											<option value="ND">North Dakota</option>
+											<option value="NE">Nebraska</option>
+											<option value="NH">New Hampshire</option>
+											<option value="NJ">New Jersey</option>
+											<option value="NM">New Mexico</option>
+											<option value="NV">Nevada</option>
+											<option value="NY">New York</option>
+											<option value="OH">Ohio</option>
+											<option value="OK">Oklahoma</option>
+											<option value="OR">Oregon</option>
+											<option value="PA">Pennsylvania</option>
+											<option value="PR">Puerto Rico</option>
+											<option value="RI">Rhode Island</option>
+											<option value="SC">South Carolina</option>
+											<option value="SD">South Dakota</option>
+											<option value="TN">Tennessee</option>
+											<option value="TX">Texas</option>
+											<option value="UT">Utah</option>
+											<option value="VA">Virginia</option>
+											<option value="VT">Vermont</option>
+											<option value="WA">Washington</option>
+											<option value="WI">Wisconsin</option>
+											<option value="WV">West Virginia</option>
+											<option value="WY">Wyoming</option>
+										</select>
+									</div>
+									<div class="multi-input-row">
+										<div class="form-pair">
+											<label class="input-label" for="status">Employment Status: </label>
+											<select class="form-control status input-field" name ="status">
+												<option value="">select one</option>
+												<option value="current-student">Currently in bootcamp</option>
+											 	<option value="employed-tech">Employed (in tech)</option>
+												<option value="employed-else">Employed (not in tech)</option>
+												<option value="seeking">Job-seeking </option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-pair">
+										<label class="input-label" for="">LinkedIn Picture Url: </label>
+										<input type="text" name="profilePic" class="profilePic input-field url-input" placeholder="Please use LinkedIn picture URL"/>
+									</div>
+
+									<div class="form-pair">
+								    	<label class="input-label" for="linkedInURL">LinkedIn: </label>
+										<input type="text" name="linkedInURL" class="linkedInURL input-field url-input" placeholder="LinkedIn profile URL"/>
+									</div>
+									<div class="form-pair">
+										<label class="input-label" for="portfolioURL">Personal Portfolio Site: </label>
+										<input type="text" name="portfolioURL" class="portfolioURL input-field " placeholder="portfolio Url"/>
+									</div>
+
+									<div class="form-pair">
+										<label class="input-label" for="employer">employer: </label>
+										<input type="text" name="employer" class="employer input-field" placeholder="employer"/>
+									</div>
+									<div class="form-pair">
+										<label class="input-label" for="firstSalary">First salary: </label>
+										<select class="form-control first_salary input-field" name ="first_salary">
+											<option value="">select one</option>
+											<option value="$0-20,000">$0-20,000</option>
+											<option value="$20,000-40,000">$20,000-40,000</option>
+											<option value="$40,000-60,000">$40,000-60,000</option>
+											<option value="$60,000-80,000">$60,000-80,000</option>
+											<option value="$80,000-100,000">$80,000-100,000</option>
+											</select>
+									</div>
+									<div class="form-pair">
+										<label class="input-label" for="interview_time">Number of months job-seeking after graduation: </label>
+										<select class="form-control interview_time input-field" name ="interview_time">
+											<option value="">select one</option>
+											<option value="0 months">0</option>
+											<option value="1 months">1</option>
+											<option value="2 months">2</option>
+											<option value="3 months">3</option>
+											<option value="4 months">4</option>
+											<option value="5 months">5</option>
+											<option value="6 months">6</option>
+											<option value="7 months">7</option>
+											<option value="8 months">8</option>
+											<option value="9 months">9</option>
+											<option value="10 months">10</option>
+											<option value="11 months">11</option>
+											<option value="12 months">12+</option>
+										</select>
+									</div>
+
+									<div class="form-pair">
+										<label class="input-label" for="mentor">Open to mentoring?: </label>
+										<select class="form-control mentor input-field" name ="mentor">
+											<option value="">select one</option>
+											<option value="Yes">Yes</option>
+											<option value="No">No</option>
+										</select>
+									</div>
+									<div class="form-pair">
+										<label class="input-label" for="about">About: </label>
+										<textarea name="about" class=" input-field about">Tell us about yourself</textarea>
+									</div>
+
+					            </div>
+					            <button type="submit" class="btn btn-default">Submit</button>
+					       	</form>
+						</div>
+				   </div>
+				  </div>
+				</div> <!-- /modal -->
+			</div>
+	</div>
+	<script src="../js/myProfile.js"></script>
+	</body>
+
 </html>

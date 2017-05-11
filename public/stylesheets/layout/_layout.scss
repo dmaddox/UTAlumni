@@ -68,6 +68,7 @@ h2{
 	top: 70px;
 	background-color: #d66e14;
 	border: none;
+	height: 70px;
 }
 #results-section{
 	overflow-y:auto;
@@ -94,6 +95,7 @@ h2{
 
 .main-row {
 	padding-left: 250px;
+	padding-top: 20px;
 }
 .main-content{
 	margin-top: 120px;
@@ -142,7 +144,7 @@ h2{
 }
 
 .input-areas {
-	margin-top: 20px;
+	margin-top: 17px;
 	display: flex;
     flex-grow: 1;
     justify-content: center;
@@ -150,12 +152,8 @@ h2{
 .form-group{
 	padding-right: 0px;
 	position: relative;
-	border-radius: 0;
+	border-radius: none;
 
-}
-.form-control{
-	border-radius: 0;
-	border: none;
 }
 
 
