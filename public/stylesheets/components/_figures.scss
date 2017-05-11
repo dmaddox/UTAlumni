@@ -12,7 +12,7 @@
 .navbar {
 	margin-bottom: 70px;
 	height: 70px;
-	background-color: rgb(151, 78, 14);
+	background-color: darken(#d66e14, 10%);
 	border-radius: none;
 	border: none;
 
@@ -108,4 +108,10 @@ input:-webkit-autofill {
 }
 #search-btn{
 	padding: 5.5px;
+}
+
+// dashboard
+
+#userFilterElement{
+padding-left: 0px;
 }

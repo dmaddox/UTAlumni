@@ -64,9 +64,14 @@ h2{
 .search-results {
 	width: 100%;
 }
-.results-section{
+.search-bar{
+	top: 70px;
+	background-color: #d66e14;
+	border: none;
+}
+#results-section{
 	overflow-y:auto;
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 .individual-result {
@@ -91,7 +96,7 @@ h2{
 	padding-left: 250px;
 }
 .main-content{
-	margin-top: 70px;
+	margin-top: 120px;
 }
 
 //Modal 
@@ -138,10 +143,19 @@ h2{
 
 .input-areas {
 	margin-top: 20px;
+	display: flex;
+    flex-grow: 1;
+    justify-content: center;
 }
 .form-group{
 	padding-right: 0px;
+	position: relative;
+	border-radius: 0;
 
+}
+.form-control{
+	border-radius: 0;
+	border: none;
 }
 
 

@@ -87,7 +87,33 @@ a {
 
 // =====================================================================
 
+#searchBtn{
+	border: none;
+    position: absolute;
+    right: 0;
+    background-color: #eeeeee;
+    border-radius: 0;
+    font-size: 16px;
+}
 
+#reset-button{
+	font-weight: 300;
+	width: 100px;
+	height: 34px;
+    background-color: #22c0d5;
+    color: white;
+    font-size: 20px;
+    border-radius: 0;
+    font-size: 16px;
+
+    &:visited{
+    	color: white;
+    }
+    &:hover {
+		background-color: darken(#22c0d5, 20%);
+	}
+
+}
 
 // =====================================================================
 

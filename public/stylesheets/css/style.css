@@ -230,6 +230,28 @@ a {
   .register-link:hover {
     background-color: #14717d; }
 
+#searchBtn {
+  border: none;
+  position: absolute;
+  right: 0;
+  background-color: #eeeeee;
+  border-radius: 0;
+  font-size: 16px; }
+
+#reset-button {
+  font-weight: 300;
+  width: 100px;
+  height: 34px;
+  background-color: #22c0d5;
+  color: white;
+  font-size: 20px;
+  border-radius: 0;
+  font-size: 16px; }
+  #reset-button:visited {
+    color: white; }
+  #reset-button:hover {
+    background-color: #14717d; }
+
 .edit {
   background-color: #bf5700;
   border: none;
@@ -260,7 +282,7 @@ a {
 .navbar {
   margin-bottom: 70px;
   height: 70px;
-  background-color: #974e0e;
+  background-color: #a75610;
   border-radius: none;
   border: none; }
 
@@ -345,6 +367,9 @@ input:-webkit-autofill {
 #search-btn {
   padding: 5.5px; }
 
+#userFilterElement {
+  padding-left: 0px; }
+
 .brand-text {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;
@@ -394,9 +419,14 @@ h2 {
 .search-results {
   width: 100%; }
 
-.results-section {
+.search-bar {
+  top: 70px;
+  background-color: #d66e14;
+  border: none; }
+
+#results-section {
   overflow-y: auto;
-  margin-top: 20px; }
+  margin-top: 30px; }
 
 .individual-result {
   margin: 10px 0;
@@ -416,7 +446,7 @@ h2 {
   padding-left: 250px; }
 
 .main-content {
-  margin-top: 70px; }
+  margin-top: 120px; }
 
 .modal-links {
   background: linear-gradient(to bottom right, #F0C27B, #4B1248); }
@@ -453,10 +483,19 @@ h2 {
   margin-top: -100px; }
 
 .input-areas {
-  margin-top: 20px; }
+  margin-top: 20px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center; }
 
 .form-group {
-  padding-right: 0px; }
+  padding-right: 0px;
+  position: relative;
+  border-radius: 0; }
+
+.form-control {
+  border-radius: 0;
+  border: none; }
 
 #profile-background {
   height: 150px;
