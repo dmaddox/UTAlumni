@@ -8,7 +8,7 @@
 <p align="center">
 
 
-![step one](https://github.com/jflook10/UTAlumni/blob/master/public/assets/form.png)
+![step one](https://github.com/jflook10/UTAlumni/blob/master/public/assets/form.png =250x)
 <b> Join the network </b>
 
  Tell us a little about yourself and let others know what you're up to by filling out your custom profile. 
