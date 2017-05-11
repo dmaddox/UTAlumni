@@ -6,9 +6,8 @@
 
 ---------
 <p align="center">
+<img src="https://github.com/jflook10/UTAlumni/blob/master/public/assets/form.png" alt="Drawing" style="width: 200px;"/>
 
-
-![step one](https://github.com/jflook10/UTAlumni/blob/master/public/assets/form.png =250x)
 <b> Join the network </b>
 
  Tell us a little about yourself and let others know what you're up to by filling out your custom profile. 
