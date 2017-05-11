@@ -10,12 +10,14 @@
 }
 
 .navbar {
-	margin-bottom: 70px;
 	height: 70px;
-	background-color: $dark-orange;
+	margin-bottom:0px;
 	border-radius: none;
 	border: none;
-
+}
+.navbar-default {
+	background-color: $dark-orange;
+	margin-top:0px;
 }
 
 .index-navbar{
