@@ -36,7 +36,6 @@ $(".edit").on("click", function() {
             $(".state").val(data.state);
             $(".about").val(data.about);
             $(".status").val(data.status);
-            console.log(data.status)
             $(".employer").val(data.employer);
             $(".first_salary").val(data.first_salary);
             $(".interview_time").val(data.interview_time);
@@ -45,5 +44,22 @@ $(".edit").on("click", function() {
             $(".mentor").val(data.mentor);
             $(".profilePic").val(data.profilePic);
 
-        });// done
-  });// end of document ready
+    });// done
+
+
+// -------------  Update available characters on the profile 'about' edit section ------------// 
+
+function updateCountdown() {
+    // 280 is the max message length
+    var remaining = 280 - $('#message-countdown').val().length;
+    $('#text-count-down').text(remaining + ' characters remaining.');
+};
+updateCountdown();
+$('#message-countdown').on("input", updateCountdown);
+
+
+// -------------   -------------   -------------     -------------    -------------  ------------// 
+
+
+});// end of document ready
+
