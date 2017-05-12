@@ -327,6 +327,9 @@ a {
   background-color: #974e0e;
   margin-top: 0px; }
 
+.navbar-signup {
+  background-color: #974e0e; }
+
 .index-navbar {
   background-color: transparent; }
 
@@ -432,7 +435,7 @@ input:-webkit-autofill {
 
 #brand-color {
   color: #d66e14;
-  padding-top: 25px; }
+  padding-top: 20px; }
 
 h1 {
   font-size: 50px; }
