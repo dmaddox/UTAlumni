@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 80px; }
 
 .header-image {
-  background: url("../../assets/group.jpeg") center center no-repeat;
+  background: url("../../assets/group.jpg") center center no-repeat;
   background-size: cover;
   height: 400px; }
 
@@ -435,8 +435,7 @@ input:-webkit-autofill {
   font-family: 24px; }
 
 #brand-color {
-  color: #d66e14;
-  padding-top: 20px; }
+  padding-top: 30px; }
 
 h1 {
   font-size: 50px; }
