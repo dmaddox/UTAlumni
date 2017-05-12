@@ -294,13 +294,23 @@ margin-top: 120px;
 }
 .featurette-divider{
 	margin: 80px, auto;
+	height: 1px;
+	background-color: #ccc;
 }
 .about-text{
 	padding: 20px;
 }
 .profile-divider{
 	border-top: 2px solid #eee;
+	background-color: #d66e14;
+    height: 1px;
 }
+
+.person-row {
+	margin: 40px 0px;
+}
+
+
 
 // =====================================================================
 
