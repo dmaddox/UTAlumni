@@ -67,9 +67,15 @@ $(document).ready(function() {
 		<input id="userFilter" type="text" class="search-input form-control" placeholder="Search">`);
     }
   });
+  $("#reset-button").on("click", function() {
+    $("#userFilter").val("");
+     $(".individual-result").each(function(index) {
+       $(this).show();
+     });
+   });
   $(".searchBarDiv").on("input", function() {
     var userFilter;
-    var dropFilter = "firstname";
+    var dropFilter;
     dropFilter = $("#drop-down-search").val().trim();
     userFilter = $("#userFilter").val().trim();
     if (dropFilter === "category") {} else {
