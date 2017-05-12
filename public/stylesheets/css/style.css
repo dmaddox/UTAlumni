@@ -321,10 +321,11 @@ a {
 .navbar {
   margin-bottom: 0px;
   border-radius: none;
-  border: none; }
+  border: none;
+  background-color: #974e0e;
+  height: 80px; }
 
 .navbar-default {
-  background-color: #974e0e;
   margin-top: 0px; }
 
 .index-navbar {
@@ -479,7 +480,7 @@ h2 {
   width: 100%; }
 
 .search-bar {
-  top: 70px;
+  top: 80px;
   background-color: #d66e14;
   border: none;
   height: 70px; }
