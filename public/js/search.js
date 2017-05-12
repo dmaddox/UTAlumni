@@ -3,7 +3,7 @@ $(document).ready(function() {
     var dropFilter;
     dropFilter = $("#drop-down-search").val().trim();
     if (dropFilter === "cohort") {
-      $(".searchBarDiv").html(`<select id="userFilter" class="form-control selectpicker" data-style="btn-primary"><option value="Fall Full Time 2016">Fall Full Time 2016</option><option value="Fall Part Time 2016">Fall Part Time 2016</option><option value="Spring Full Time 2017">Spring Full Time 2017</option><option value="Spring Part Time 2017">Spring Part Time 2017</option><option value="Fall Full Time 2017">Fall Full Time 2017</option></select>`);
+      $(".searchBarDiv").html('<select id="userFilter" class="form-control selectpicker" data-style="btn-primary"><option value="Fall Full Time 2016">Fall Full Time 2016</option><option value="Fall Part Time 2016">Fall Part Time 2016</option><option value="Spring Full Time 2017">Spring Full Time 2017</option><option value="Spring Part Time 2017">Spring Part Time 2017</option><option value="Fall Full Time 2017">Fall Full Time 2017</option></select>');
 
     } else if (dropFilter === "state") {
       $('.searchBarDiv').html(`
@@ -63,8 +63,7 @@ $(document).ready(function() {
 			<option value="WY">Wyoming</option>
 		</select>`);
     } else {
-      $(".searchBarDiv").html(`
-		<input id="userFilter" type="text" class="search-input form-control" placeholder="Search">`);
+      $(".searchBarDiv").html('<input id="userFilter" type="text" class="search-input form-control" placeholder="Search">');
     }
   });
   $("#reset-button").on("click", function() {
