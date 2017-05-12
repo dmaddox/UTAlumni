@@ -25,16 +25,16 @@
   <body id="dashboard-page">
   
   <nav class="navbar navbar-fixed-top">
-         <div class="container">
-            <a class="navbar-brand" href="/">HookedIn</a>
-            <a class="about" href="/about">
-               <p class="navbar-text pull-right">About</p>
-            </a>
-            <a class="about" href="/myProfile">
-               <p class="navbar-text pull-right">Profile</p>
-            </a>
-         </div>
-      </nav>
+     <div class="container">
+        <a class="navbar-brand" href="/">HookedIn</a>
+        <a class="about" href="/about">
+           <p class="navbar-text pull-right">About</p>
+        </a>
+        <a class="about" href="/myProfile">
+           <p class="navbar-text pull-right">Profile</p>
+        </a>
+     </div>
+  </nav>
       <div class="navbar-fixed-top search-bar">
         <!-- search bar -->   
           <div class="row input-areas">
@@ -85,57 +85,65 @@
             </div>
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8" id="results-section"> 
           </div>
-       </div>
-        <div class="row">
-           <div class="hidden-xs hidden-sm hidden-md col-lg-4" id="statistics-section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quae dolorum delectus, quaerat aut esse non voluptas inventore, numquam, accusamus sunt officiis sequi. Quo nulla ea similique eius nesciunt in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel inventore harum dolor ex culpa quasi error veritatis eligendi, incidunt praesentium delectus vero sed impedit quod fugit sit dolorem in sapiente. 
-          </div>
-      </div>
+       </div> <!-- end of the main row -->
+      
+<!-- START THE PIE CHART CODE  -->
+      <div class="row col-xs-12 col-lg-4" id="statistics-section">
+        <div id="employ-piechart" style="width: 100%; height: 500px;"></div>
+        <div id="interview-piechart" style="width: 100%; height: 500px;"></div>
      </div> <!-- /row -->
-        <!-- Modal -->
-        <div class="modal edit-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
+<!-- Modal -->
+<div class="modal edit-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              </div>
-              <div class="modal-body">
+            </div>
+            <div class="modal-body">
                 <div class="row modal-row">
-                  <div class="col-md-7">
-                    <div class="row"> <!-- row for the selected user's main info -->
-                      <div class="col-5 col-sm-5 col-md-5 col-lg-5">
-                        <img class="modal-profile-image profile-image" src="../assets/test.jpg">
-                      </div>
-                      <div class="col-7 col-sm-7 col-md-7 col-lg-7">
-                        <h1 class="modal-name"></h1>
-                        <h4 class="modal-employer"></h4>
-                        <h4 class="modal-para modal-city"></h4>
-                      </div>
-                      <hr/>
-                    </div> <!-- end row -->
-                <div class="row">
-                  <div class="col-6 col-sm-6 col-md-6 col-lg-6"> <!-- general job info -->
-                    <p>Employment Status: <span class="modal-employ-status"></span></p>
-                    <p>First Salary after bootcamp: <span class=" modal-salary"></span></p>
-                    <p>Time Job-seeking post bootcamp: <span class="modal-job-seeking"></span></p>
-                    <p>Cohort: <span class="modal-cohort"></span></p>
-                  </div>
-                  <div class="col-6 col-sm-6 col-md-6 col-lg-6"> <!-- contact info -->
-                    <p>Email: <span class="modal-email"></span></p>
-                    <p>LinkedIn: <span class="modal-linkedin"></span></p>
-                    <p>Personal site: <span class="modal-personal-site"></span></p>
-                    <p>Mentor: <span class="modal-mentor"></span></p>
-                  </div>
-                  <div class="col-12 col-sm-12 col-md-12 col-lg-12"> <!-- seperate about section for more text -->
-                    <p>About: <span class="modal-about"></span></p>
-                  </div>
+                    <div class="col-7">
+                        <div class="row">
+                            <!-- row for the selected user's main info -->
+                            <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+                                <img class="modal-profile-image profile-image" src="../assets/test.jpg">
+                            </div>
+                            <div class="col-7 col-sm-7 col-md-7 col-lg-7">
+                                <h1 class="modal-name"></h1>
+                                <h4 class="modal-employer"></h4>
+                                <h4 class="modal-para modal-city"></h4>
+                            </div>
+                            <hr/>
+                        </div>
+                        <!-- end row -->
+                        <div class="row">
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                                <!-- general job info -->
+                                <p>Employment Status: <span class="modal-employ-status"></span></p>
+                                <p>First Salary after bootcamp: <span class=" modal-salary"></span></p>
+                                <p>Time Job-seeking post bootcamp: <span class="modal-job-seeking"></span></p>
+                                <p>Cohort: <span class="modal-cohort"></span></p>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                                <!-- contact info -->
+                                <p>Email: <span class="modal-email"></span></p>
+                                <p>LinkedIn: <span class="modal-linkedin"></span></p>
+                                <p>Personal site: <span class="modal-personal-site"></span></p>
+                                <p>Mentor: <span class="modal-mentor"></span></p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <!-- seperate about section for more text -->
+                                <p>About: <span class="modal-about"></span></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                  </div>
-                </div>
-              </div>
-          </div> <!-- /modal content -->
+            </div> <!-- end modal body -->
         </div>
-      </div><!-- /modal -->
+    </div>
+ </div><!-- /modal end  -->
     <script src="../js/dashboard.js"></script>
-    <script type="text/javascript" src="../js/search.js"></script>
+    <script type="text/javascript" src="./js/search.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="./js/piechart.js"></script>
   </body>
 </html>
