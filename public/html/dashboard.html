@@ -23,7 +23,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body id="dashboard-page">
-  
+
   <nav class="navbar navbar-fixed-top">
      <div class="container">
         <a class="navbar-brand" href="/">HookedIn</a>
@@ -36,7 +36,7 @@
      </div>
   </nav>
       <div class="navbar-fixed-top search-bar">
-        <!-- search bar -->   
+        <!-- search bar -->
           <div class="row input-areas">
              <div class="col-xs-3 col-xs-offset-5" type="input-group-btn drop-down-select">
                 <select id="drop-down-search" class="form-control selectpicker" data-style="btn-primary">
@@ -49,10 +49,12 @@
                 </select>
              </div>
              <div class="form-group col-xs-3" id="userFilterElement">
-              <button class="btn" type="button" id="searchBtn">
-              <i class="fa fa-search" aria-hidden="true"></i>
-            </button>
-            <input id="userFilter" type="text" class="search-input form-control" placeholder="Search">
+               <button class="btn" type="button" id="searchBtn">
+                     <i class="fa fa-search" aria-hidden="true"></i>
+                   </button>
+               <div class="searchBarDiv">
+                 <input id="userFilter" type="text" class="search-input form-control" placeholder="Search">
+               </div>
            </div>
            <div class="col-xs-3">
             <button class="btn" type="button" id="reset-button">Reset</button>
@@ -70,7 +72,7 @@
                 <a href="/myProfile"> <p class="profile-image"></p></a>
                 <a href="/myProfile"><h1 class="user-fullname"> </h1></a>
                 <!-- profile info bottom section -->
-                <div class="profile-bottom-info text-left"> 
+                <div class="profile-bottom-info text-left">
                  <p><i class="profile-icon fa fa-home" aria-hidden="true"></i><span class="user-city"></span></p>
                   <p><i class="profile-icon fa fa-graduation-cap" aria-hidden="true"></i><span class="user-cohort"></span></p>
                   <p><i class="profile-icon fa fa-linkedin" aria-hidden="true"></i><span class="user-linkedin"></span></p>
@@ -83,10 +85,10 @@
               </div> <!--end profile container -->
              </aside> <!-- user profile sidebar -->
             </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8" id="results-section"> 
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8" id="results-section">
           </div>
        </div> <!-- end of the main row -->
-      
+
 <!-- START THE PIE CHART CODE  -->
       <div class="row col-xs-12 col-lg-4" id="statistics-section">
         <div id="employ-piechart" style="width: 100%; height: 500px;"></div>
