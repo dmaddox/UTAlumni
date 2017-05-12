@@ -13,7 +13,7 @@ module.exports = function(app) {
   });
   //information from /signup is posted to database
   app.post('/signup', passport.authenticate('local-signup', {
-    successRedirect: '/dashboard',
+    successRedirect: '/myProfile',
     failureRedirect: '/signup'
   }));
   //when local host URL has /dashboard, dashboard.html is displayed
