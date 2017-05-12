@@ -674,9 +674,8 @@ h2 {
   padding: 20px; }
 
 .profile-divider {
-  border-top: 2px solid #eee;
   background-color: #d66e14;
-  height: 1px; }
+  height: 2px; }
 
 .person-row {
   margin: 40px 0px; }
