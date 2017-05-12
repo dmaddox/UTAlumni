@@ -82,7 +82,7 @@ $(document).ready(function() {
 		//fill in here
 		$(".user-status").html(data.status);
 		$(".user-employer").html(data.employer);
-		$(".user-salary").html("First salary: " + data.firstSalary);
+		$(".user-salary").html("First salary: " + data.first_salary);
 		$(".user-interview-time").html("Time job-seeking: " + data.interview_time);
 		$(".user-mentor").html("Open to mentor: " + data.mentor);
 
