@@ -1,4 +1,7 @@
+var modalForm;
+    alert("hi");
 $( document ).ready(function() {
+
         $.ajax({
       url:'/api/currentUser',
       method:'GET'
@@ -21,6 +24,18 @@ $( document ).ready(function() {
             $(".profile-image").attr("src", data.profilePic);
 
         });// done
+
+$(".profile-modal-submit").click(function(e){
+    alert("hi");
+    e.preventDefault();
+    modalForm = $(this).parent();
+    currentFieldset.find('input[class="required"], select').each(function () {
+    if ($(this).val() == "") {
+        $(this).addClass('input-error');
+    } else {
+        $(this).removeClass('input-error');
+    }
+});
   });// end of document ready
 
 $(".edit").on("click", function() {
@@ -61,5 +76,5 @@ $('#message-countdown').on("input", updateCountdown);
 // -------------   -------------   -------------     -------------    -------------  ------------// 
 
 
-});// end of document ready
+});// end of 'edit' click function
 
