@@ -26,7 +26,10 @@ $.ajax({
 
     var employOptions = {
       title: 'Employment Rates',
-      colors:["#22C0D5", '#F27732','#FF995F', "#D6540B"]
+      colors:["#22C0D5", '#F27732','#FF995F', "#D6540B"],
+      fontSize: 16,
+      fontName: "Helvetica",
+      legend: {position: "top", alignment: "start", textStyle: {fontSize: 16}}
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('employ-piechart'));
@@ -46,7 +49,10 @@ $.ajax({
 
   var interviewOptions = {
     title: 'Months Job Seeking',
-    colors:["#22C0D5", '#F27732','#FF995F', "#D6540B"]
+    colors:["#22C0D5", '#F27732','#FF995F', "#D6540B"],
+    fontSize: 16,
+    fontName: "Helvetica",
+    legend: {position: "top", alignment: "start", textStyle: {fontSize: 16}}
   };
 
   var chart = new google.visualization.PieChart(document.getElementById('interview-piechart'));
@@ -54,6 +60,10 @@ $.ajax({
   chart.draw(interviewData, interviewOptions);
   } 
 
+  $(window).on("resize", function () {
+      interviewDrawChart();
+      employDrawChart();
+  });
 
 }); //end of done
 

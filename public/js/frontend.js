@@ -1,4 +1,3 @@
-
 var currentFieldset;
 var nextFieldset;
 var previousFieldset;
