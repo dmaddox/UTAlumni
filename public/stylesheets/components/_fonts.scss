@@ -1,7 +1,7 @@
 .brand-text {
 	font-family: $main-font;
-	font-size: $font-heading;
 	color: $dark-grey !important;
+	@include font-size-regular;
 }
 
 .info {
@@ -10,9 +10,21 @@
 
 .featurette-heading {
 	font-size: 30px;
-	font-family: $font-heading;
 }
 
 #brand-color {
     padding-top: 30px;
+}
+h1{
+	@include font-size-x-large;
+}
+h2{
+	@include font-size-large;
+}
+h3{
+	@include font-size-regular;
+}
+
+p{
+	@include font-size-small;
 }

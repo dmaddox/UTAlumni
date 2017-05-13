@@ -424,18 +424,29 @@ input:-webkit-autofill {
 
 .brand-text {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 24px;
-  color: #392f2d !important; }
+  color: #392f2d !important;
+  font-size: 16px; }
 
 .info {
   font-size: 18px; }
 
 .featurette-heading {
-  font-size: 30px;
-  font-family: 24px; }
+  font-size: 30px; }
 
 #brand-color {
   padding-top: 30px; }
+
+h1 {
+  font-size: 32px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 16px; }
+
+p {
+  font-size: 12px; }
 
 h1 {
   font-size: 50px; }
