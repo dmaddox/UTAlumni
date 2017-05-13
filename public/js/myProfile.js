@@ -77,4 +77,5 @@ $('#message-countdown').on("input", updateCountdown);
 
 
 });// end of 'edit' click function
+});
 

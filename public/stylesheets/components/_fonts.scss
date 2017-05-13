@@ -16,7 +16,7 @@
     padding-top: 30px;
 }
 h1{
-	@include font-size-x-large;
+	@include font-size-xx-large;
 }
 h2{
 	@include font-size-large;
@@ -26,4 +26,5 @@ h3{
 }
 
 p{
-	@include font-size-small;
+	@include font-size-regular;
+}

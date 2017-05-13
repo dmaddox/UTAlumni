@@ -6,11 +6,8 @@
 
 //sign-up form container
 
-h1{
-	font-size: 50px;
-}
-h2{
-	font-size: 24px;
+.main-title{
+	@include font-size-xxx-large;
 }
 .sign-in-row{
 	display: flex;
