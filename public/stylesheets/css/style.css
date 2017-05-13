@@ -189,13 +189,14 @@ h1, h2, h3, h4, h5, h6 {
 .header-image {
   background: url("../../assets/group.jpg") center center no-repeat;
   background-size: cover;
-  height: 400px; }
+  height: 500px; }
 
 .headline {
-  height: 400px;
+  height: 500px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  padding-top: 125px; }
+  padding-top: 125px;
+  margin-top: 70px; }
 
 .headline-text {
   color: white; }
@@ -312,7 +313,8 @@ a {
 .navbar-brand {
   background-color: transparent;
   color: white;
-  font-size: 30px; }
+  font-size: 30px;
+  padding-top: 24px; }
 
 .navbar-text {
   color: white;
@@ -323,7 +325,7 @@ a {
   border-radius: none;
   border: none;
   background-color: #974e0e;
-  height: 80px; }
+  height: 70px; }
 
 .navbar-default {
   margin-top: 0px; }
@@ -434,9 +436,6 @@ input:-webkit-autofill {
   font-size: 30px;
   font-family: 24px; }
 
-#brand-color {
-  padding-top: 30px; }
-
 h1 {
   font-size: 50px; }
 
@@ -482,7 +481,7 @@ h2 {
   width: 100%; }
 
 .search-bar {
-  top: 80px;
+  top: 70px;
   background-color: #d66e14;
   border: none;
   height: 70px; }
@@ -679,6 +678,9 @@ h2 {
 .person-row {
   margin: 40px 0px; }
 
+@media (max-width: 700px) {
+  .navbar-text {
+    font-size: 14px; } }
 @media only screen and (max-width: 992px) {
   .border-section {
     border-left: none; } }

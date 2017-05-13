@@ -103,31 +103,30 @@
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				    </div>
 				  		<div class="modal-body">
-							<form class="update-profile-form" method="POST" action="/myProfile">
-
+							<form data-toggle="validator" class="update-profile-form" method="POST" action="/myProfile">
 					            <div class="form-group">
 					              <h2 class="fs-title text-center">Update Account</h2>
 
 									<div class="multi-input-row">
 										<div class="form-pair">
-							              	<label class="input-label" for="firstname">First Name: </label>
-											<input class="firstname input-field required" type="text" name="firstname" id="firstname"/>
+							              	<label class="input-label" for="firstname">*First Name: </label>
+											<input class="firstname input-field required" type="text" required name="firstname" id="firstname"/>
 
 										</div>
 										<div class="form-pair">
-											<label class="input-label" for="lastname">Last Name: </label>
-											<input class="lastname input-field required" type="text" name="lastname" id="lastname"/>
+											<label class="input-label" for="lastname">*Last Name: </label>
+											<input class="lastname input-field required" required="true" type="text" name="lastname" id="lastname"/>
 										</div>
 									</div>
 
 									<div class="form-pair">
-										<label class="input-label" for="city">City: </label>
-										<input type="text" name="city" class="required city input-field url-input"/>
+										<label class="input-label" for="city">*City: </label>
+										<input type="text" name="city" required="true" class="required city input-field url-input"/>
 									</div>
 
 									<div class="form-pair">
-										<label class="input-label" for="state">State: </label>
-										<select class="form-control required state input-field" name ="state">
+										<label class="input-label" for="state">*State: </label>
+										<select class="form-control required state input-field" required="true" name ="state">
 											<option value="">select one</option>
 											<option value="AK">Alaska</option>
 											<option value="AL">Alabama</option>
@@ -185,8 +184,8 @@
 									</div>
 									<div class="multi-input-row">
 										<div class="form-pair">
-											<label class="input-label" for="status">Employment Status: </label>
-											<select class="form-control status input-field" name ="status">
+											<label class="input-label" for="status">*Employment Status: </label>
+											<select class="form-control status input-field" required="true" name ="status">
 												<option value="">select one</option>
 												<option value="current-student">Currently in bootcamp</option>
 											 	<option value="employed-tech">Employed (in tech)</option>
@@ -197,13 +196,13 @@
 									</div>
 
 									<div class="form-pair">
-										<label class="input-label" for="">LinkedIn Picture Url: </label>
-										<input type="text" name="profilePic" class="required profilePic input-field url-input" placeholder="Please use LinkedIn picture URL"/>
+										<label class="input-label" for="">*LinkedIn Picture Url: </label>
+										<input type="text" required="true" name="profilePic" class="required profilePic input-field url-input" placeholder="Please use LinkedIn picture URL"/>
 									</div>
 
 									<div class="form-pair">
-								    	<label class="input-label" for="linkedInURL">LinkedIn: </label>
-										<input type="text" name="linkedInURL" class="linkedInURL input-field url-input" placeholder="LinkedIn profile URL"/>
+								    	<label class="input-label" for="linkedInURL">*LinkedIn: </label>
+										<input type="text" required="true" name="linkedInURL" class="linkedInURL input-field url-input" placeholder="LinkedIn profile URL"/>
 									</div>
 									<div class="form-pair">
 										<label class="input-label" for="portfolioURL">Personal Portfolio Site: </label>
@@ -268,7 +267,7 @@
 				  </div>
 				</div> <!-- /modal -->
 			</div>
-	</div>
+		</div>
 	<footer>
     <p> &copy; 2017 HookedIn</p>
     </footer>
