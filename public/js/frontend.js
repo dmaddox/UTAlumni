@@ -2,6 +2,9 @@ var currentFieldset;
 var nextFieldset;
 var previousFieldset;
 var animating;
+var left;
+var opacity;
+var scale;
 var emailOK = false;
 var passwordOK = false;
 var locationOK = true;
@@ -80,24 +83,33 @@ $(".next").click(function(){
 	nextFieldset.show();
 
 
-		// hide current
-		currentFieldset.animate({
- 			opacity: 0
-  	}, 800, function() {
-	    currentFieldset.hide();
-	    animating = false;
-			}
-		)
-		nextFieldset.animate({
- 			opacity: 1
-  	}, 800, function() {
-	    currentFieldset.hide();
-	    animating = false;
-			}
-		)
-	}
-});
+	// animate current fieldset as it's opacity is changed to 0
+	currentFieldset.animate({opacity: 0}, {
+		step: function(now, mx){
 
+			scale = 1 - (1 - now)* 0.2;
+
+			left= (now * 50) + "%";
+
+			opacity = 1 - now;
+			currentFieldset.css({
+				'transform':
+				'scale('+ scale +')',
+				'position': 'absolute'
+			});
+			nextFieldset.css({'left': left, 
+				'opacity': opacity});
+  		},
+	  	duration: 800,
+	  	complete: function(){
+	  		// hide current fieldset
+	  		currentFieldset.hide();
+	  		// set animating to false
+	  		animating = false;
+  		}
+  	});
+  }
+});
 
 $(".previous").click(function(){
 	if(animating) return false;
@@ -111,21 +123,29 @@ $(".previous").click(function(){
 	// show next field set
 	previousFieldset.show();
 
-	// hide current
-	currentFieldset.animate({
-	 opacity: 0
-	  }, 800, function() {
-		    currentFieldset.hide();
-		    animating = false;
-		})
-	previousFieldset.animate({
-	 opacity: 1
-	  }, 800, function() {
-		    currentFieldset.hide();
-		    animating = false;
+	// animate current fieldset as it's opacity is changed to 0
+	currentFieldset.animate({opacity: 0},{
+		step: function(now, mx){
+
+			scale = 0.8 + (1 - now) * 0.2;
+
+			left = ((1-now) * 50) + "%";
+
+			opacity = 1 - now;
+
+			currentFieldset.css({'left': left});
+			previousFieldset.css({'transform':
+			'scale(' + scale + ')', 'opacity': opacity});	
+		},
+		duration: 800,
+		complete: function(){
+			// hide current field
+			currentFieldset.hide();
+			// set animating to false
+			animating = false;
 		}
-	)
-});
+	});
+}); 
 
 // smooth scroll 
 $('a[href^="#"]').on('click', function(event) {
