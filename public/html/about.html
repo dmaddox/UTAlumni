@@ -14,26 +14,34 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Source+Sans+Pro" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
     <!-- Custom CSS Link -->
     <link rel="stylesheet" type="text/css" href="../stylesheets/css/style.css" ">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-fixed-top">
-      <div class="container ">
-          <a class="navbar-brand" href="/">HookedIn</a>
-          <a class="about" href="/logout"><p class="navbar-text pull-right">Logout</p></a>
-          <a class="about" href="/dashboard"><p class="navbar-text pull-right">Dashboard</p></a>
-          <a class="about" href="/myProfile"><p class="navbar-text pull-right">Profile</p></a>
-      </div>
-    </nav>
-
-    <!-- Image Header -->
-	<header class="header-image">
+     <!-- Image Header -->
+    
+    <header class="header-image">
+        <nav class="index-navbar navbar-fixed-top">
+          <div class="pull-left">
+            <a class="main-logo" href="/">
+                <p class="brand-text pull-left">Hooked</p>
+                <img class="logo-header" src="../assets/hookedIn_logo.png">
+            </a>
+          </div>
+          <!-- Navbar --> 
+          <div class="navigation pull-right">
+            <a class="about" href="/logout"><p class="navbar-text pull-right">Logout</p></a>
+            <a class="about" href="/dashboard"><p class="navbar-text pull-right">Dashboard</p></a>
+            <a class="about" href="/myProfile"><p class="navbar-text pull-right">Profile</p></a>
+          </div>
+        </nav>
     	<div class="headline">
-    		<div class="container ">
-    			<h1 class="headline-text">Who We Are</h1>
-    			<h2 class="headline-text">Meet the team behind HookedIn</h2>
+    		<div class="container about-header-text">
+    			<h1 class="text-center about-headline">{Meet our team}</h1>
     		</div>
     	</div>
 	</header>

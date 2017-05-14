@@ -3,7 +3,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<head>
-		<title></title>
+		<title>HookedIn</title>
+
+		<!-- FAVICON links -->
+		<link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../assets/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="../favicon.ico/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+		<link rel="manifest" href="../favicon.ico/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
 		<!-- jQuery CDN -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -22,24 +41,31 @@
 		<!-- Google Font -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:500|Source+Sans+Pro" rel="stylesheet">
 
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+
 		<!-- Custom CSS Link -->
 		<link rel="stylesheet" type="text/css" href="../stylesheets/css/style.css">
 	</head>
 	<body>
 		<main class="main-image">
-			<nav class="index-navbar navbar hidden-xs">
-			
-			  <div class="container">
-			      <a class="navbar-brand" href="/">HookedIn</a>
-			      <a class="about" href="/logout"><p class="navbar-text pull-right">Logout</p></a>
-			      <a class="about" href="/about"><p class="navbar-text pull-right">About</p></a>
-			  </div>
+			<nav class="index-navbar navbar">
+				<div class="pull-left">
+					<a class="main-logo" href="/">
+						<p class="brand-text pull-left">Hooked</p>
+						<img class="logo-header" src="../assets/hookedIn_logo.png">
+					</a>
+				</div>
+			   <!--  <a class="navbar-brand" href="/">HookedIn</a> -->
+			   	<div class="navigation pull-right">
+				    <a class="about" href="/logout"><p class="navbar-text pull-right">Logout</p></a>
+				    <a class="about" href="/about"><p class="navbar-text pull-right">About</p></a>
+			    </div>
     		</nav>	
 			<div class="container main-content">
 
 	    		<div class="row">
 	    			<div class ="col-xs-12 col-sm-6 col-md-7">
-						<h1 class="col-xs-12 main-title">Welcome to HookedIn</h1>
+						<h1 class="hidden-xs main-title">Welcome to HookedIn</h1>
 						<h2 class="col-xs-12 main-subtitle hidden-xs">Connect with your friends and other cohort students. Discover companies where you have a mutual connection.</h2>
 					</div>
 					<div class="col-xs-12 col-sm-5 col-md-4  col-sm-offset-1 col-md-offset-1">
@@ -87,8 +113,8 @@
 					<div class="-col-xs-12 col-md-3 text-center step-item-container">
 						<img class="landing-icon" src="../assets/form.png">
 						<h1 class="">Step 1</h1>
-						<h2 class="">Join the network</h2>
-						<p>
+						<h2 class="step-subheader">Join the network</h2>
+						<p class="index-paragraph">
 							Tell us a little about yourself and let others know what you're up to by filling out your custom profile. 
 						</p>
 				</div>
@@ -96,8 +122,8 @@
 				<div class="xs-col-12 col-md-3 text-center step-item-container">
 					<img class="landing-icon" src="../assets/search.png">
 					<h1 class="">Step 2</h1>
-					<h2 class="">Search for graduates</h2>
-					<p>
+					<h2 class="step-subheader">Search for graduates</h2>
+					<p class="index-paragraph">
 						Search the database for current students or alumni to learn about their career placement path. 
 					</p>
 				</div>
@@ -105,8 +131,8 @@
 				<div class="xs-col-12 col-md-3 text-center step-item-container">
 					<img class="landing-icon" src="../assets/conversation.png">
 					<h1 class="">Step 3</h1>
-					<h2 class="">Make connections at companies</h2>
-					<p>
+					<h2 class="step-subheader">Make connections at companies</h2>
+					<p class="index-paragraph">
 						Learn about companies who have hired bootcamp graduates, reach out to current employees in your network for helpful advice, find your next job.
 					</p>
 				</div>
@@ -114,15 +140,14 @@
 				<div class="xs-col-12 col-md-3 text-center step-item-container">
 					<img class="landing-icon" src="../assets/handshake.png">
 					<h1 class="">Step 4</h1>
-					<h2 class="">Give back</h2>
-					<p>
+					<h2 class="step-subheader">Give back</h2>
+					<p class="index-paragraph">
 						Already have a job? Update your profile so currents students can search for you. Become a mentor and give back to the bootcamp community!
 					</p>
 				</div>
 			</div>
 		</section>
-		<footer>
-    <p> &copy; 2017 HookedIn</p>
+		<footer> &copy; 2017 HookedIn
     </footer>
 	</body>
 </html>

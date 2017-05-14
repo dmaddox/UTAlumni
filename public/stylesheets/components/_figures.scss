@@ -5,6 +5,9 @@
 	font-size: 30px;
 	padding-top: 24px;
 }
+.logo-header{
+	height: 70px;
+}
 .navbar-text{
 	color: white;
 	font-size: 24px;
@@ -12,10 +15,14 @@
 
 .navbar {
 	margin-bottom:0px;
+	padding-left: 40px;
+	padding-top: 5px;
+	padding-right: 40px;
 	border-radius: none;
 	border: none;
 	background-color: $dark-orange;
-	height: 70px;
+	height: 80px;
+	font-family: $branding-font;
 }
 .navbar-default {
 	margin-top:0px;
@@ -27,6 +34,9 @@
 
 .index-navbar{
 	background-color: transparent;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding-top: 20px;
 }
 .landing-box-tab{
 	border: none !important;
@@ -93,7 +103,7 @@ input:-webkit-autofill {
 	width: 30%;
 }
 .step-container-header{
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 .background-banner-image{
 	background: url(../../assets/heading-background.png) no-repeat center center;
@@ -129,4 +139,12 @@ padding-left: 0px;
 }
 .profile-icon{
 	padding-right: 10px;
+}
+footer{
+	@include font-size-medium;
+	background-color: $light-grey;
+	text-align: center;
+	height: 50px;
+	color: white;
+	padding-top: 16px;
 }

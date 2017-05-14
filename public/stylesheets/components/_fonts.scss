@@ -1,7 +1,8 @@
 .brand-text {
-	font-family: $main-font;
-	color: $dark-grey !important;
-	@include font-size-regular;
+	font-family: $branding-font;
+	color: white !important;
+
+	@include font-size-large;
 }
 
 .info {
@@ -27,4 +28,13 @@ h3{
 
 p{
 	@include font-size-regular;
+}
+label{
+	@include font-size-medium;
+}
+span{
+	@include font-size-medium;
+}
+#searchDiv p{
+	font-size: 18px;
 }

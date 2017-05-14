@@ -1,7 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Welcome Back!</title>
+
+      <!-- FAVICON links -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -17,20 +37,29 @@
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/28a2b82478.js"></script>
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Source+Sans+Pro" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+
     <!-- Custom CSS Link -->
     <link rel="stylesheet" type="text/css" href="../stylesheets/css/style.css">
       <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body id="dashboard-page">
-
   <nav class="navbar navbar-fixed-top">
-     <div class="container">
-        <a class="navbar-brand" href="/">HookedIn</a>
-        <a class="about" href="/logout"><p class="navbar-text pull-right">Logout</p></a>
+      <div class="pull-left">
+          <a class="main-logo" href="/">
+            <p class="brand-text pull-left">Hooked</p>
+            <img class="logo-header" src="../assets/hookedIn_logo.png">
+          </a>
+      </div>
+      <div class="navigation pull-right">
+      <a class="about" href="/logout"><p class="navbar-text pull-right">Logout</p></a>
         <a class="about" href="/about"><p class="navbar-text pull-right">About</p></a>
         <a class="about" href="/myProfile"><p class="navbar-text pull-right">Profile</p></a>
-     </div>
+      </div>
   </nav>
       <div class="navbar-fixed-top search-bar">
         <!-- search bar -->
@@ -51,7 +80,7 @@
                </div>
            </div>
            <div class="col-xs-3">
-              <button class="btn" type="button" id="reset-button">Reset</button>
+              <button class="btn" type="button" id="reset-button"><i class="fa fa-undo" aria-hidden="true"></i> Reset</button>
            </div>
           <!-- /row -->
           </div>
