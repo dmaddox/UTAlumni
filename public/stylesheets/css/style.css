@@ -443,7 +443,8 @@ input:-webkit-autofill {
   width: 30%; }
 
 .step-container-header {
-  margin-bottom: 40px; }
+  margin-bottom: 70px;
+  font-size: 64px; }
 
 .background-banner-image {
   background: url(../../assets/heading-background.png) no-repeat center center;
@@ -613,15 +614,25 @@ span {
   margin-left: 40px;
   margin-right: 40px; }
 
+.modal-content {
+  border-radius: 0px; }
+
 .modal-links {
-  background: linear-gradient(to bottom right, #F0C27B, #4B1248); }
+  background: linear-gradient(to bottom right, #F0C27B, #4B1248);
+  padding: 20px;
+  color: white; }
 
 .modal-body {
   padding: 15px 15px 0 15px; }
 
-.modal-links {
-  padding: 20px;
-  color: white; }
+.row.modal-row {
+  padding: 10px 20px; }
+
+.modal-info {
+  padding-top: 20px; }
+
+.sub-modal-info > p {
+  font-weight: bold; }
 
 #results-company {
   margin-top: 0px;

@@ -1,5 +1,3 @@
-var modalForm;
-    alert("hi");
 $( document ).ready(function() {
 
         $.ajax({
