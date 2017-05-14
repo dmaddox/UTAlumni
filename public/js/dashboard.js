@@ -61,8 +61,6 @@ $(document).ready(function() {
 			$(".modal-email").html("").html(data[resultId].email);
 			$(".modal-linkedin").html("").html("<a href = '"+ data[resultId].linkedInURL+  "'>"+ data[resultId].linkedInURL + "</a>");
 			$(".modal-personal-site").html("").html("<a href = '"+ data[resultId].portfolioURL+  "'>"+ data[resultId].portfolioURL+ "</a>");
-			// $(".modal-linkedin").html('<a href=" '+ linkedInURL + ' " >' + data[resultId].linkedInURL + '</a>');
-			// $(".modal-profile").html('<a href='+ '"' + portfolioURL + '"'+ '>' + data[resultId].portfolioURL + '</a>');
 			$(".modal-mentor").html("").html(data[resultId].mentor);
 			$(".modal-about").html("").html(data[resultId].about);
 		})
