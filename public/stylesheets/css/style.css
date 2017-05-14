@@ -194,10 +194,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 570px; }
 
 .headline {
-  height: 570px;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding-top: 125px; }
+  color: white; }
 
 .headline-text {
   color: white;
@@ -809,6 +808,9 @@ span {
 
 .edit-modal-dialog {
   width: 60%; }
+
+.about-header-text {
+  margin-top: 40px; }
 
 .featurette {
   overflow: hidden; }
