@@ -38,8 +38,18 @@
 	margin-right: 40px;
 	padding-top: 20px;
 }
+.profile-navbar{
+	background-color: $dark-orange;
+	margin-left: 0;
+	margin-right: 0;
+	padding-top: 5px;
+}
 .landing-box-tab{
 	border: none !important;
+}
+.nav-pic{
+	@include navbar-image;
+	margin-top: 10px;
 }
 
 // override chrome placeholder css
@@ -140,12 +150,15 @@ padding-left: 0px;
 }
 .profile-icon{
 	padding-right: 10px;
+	color: $dark-grey;
 }
 footer{
 	@include font-size-medium;
 	background-color: $light-grey;
 	text-align: center;
-	height: 50px;
+	height: 70px;
 	color: white;
+	width: 100%;
 	padding-top: 16px;
+	margin-top: 20px;
 }

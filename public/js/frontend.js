@@ -106,7 +106,7 @@ $(".previous").click(function(){
 	currentFieldset = $(this).parent();
 	previousFieldset = $(this).parent().prev();
 	// shows next progress step
-	$("#progress-bar li").eq($("fieldset").index(previousFieldset)).removeClass("active");
+	$("#progress-bar li").eq($("fieldset").index(currentFieldset)).removeClass("active");
 
 	// show next field set
 	previousFieldset.show();

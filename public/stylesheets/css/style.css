@@ -128,10 +128,10 @@ h1, h2, h3, h4, h5, h6 {
 #progress-bar li:before {
   content: counter(step);
   counter-increment: step;
-  width: 20px;
-  line-height: 20px;
+  width: 30px;
+  line-height: 30px;
   display: block;
-  font-size: 10px;
+  font-size: 18px;
   color: #333;
   background: white;
   border-radius: 3px;
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
   background: white;
   position: absolute;
   left: -50%;
-  top: 9px;
+  top: 15px;
   z-index: -1;
   /*put it behind the numbers*/ }
 
@@ -389,8 +389,20 @@ a {
   margin-right: 40px;
   padding-top: 20px; }
 
+.profile-navbar {
+  background-color: #b15b11;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 5px; }
+
 .landing-box-tab {
   border: none !important; }
+
+.nav-pic {
+  border-radius: 49.9%;
+  border: 2px solid white;
+  height: 50px;
+  margin-top: 10px; }
 
 input::placeholder {
   background-color: white; }
@@ -411,7 +423,8 @@ input:-webkit-autofill {
   margin-top: 0; }
 
 .profile-image {
-  border-radius: 50%;
+  border-radius: 49.9%;
+  border: 2px solid white;
   height: 200px; }
 
 .edit-profile-image {
@@ -476,15 +489,18 @@ input:-webkit-autofill {
   padding-left: 0px; }
 
 .profile-icon {
-  padding-right: 10px; }
+  padding-right: 10px;
+  color: #392f2d; }
 
 footer {
   font-size: 20px;
   background-color: #d3d3d3;
   text-align: center;
-  height: 50px;
+  height: 70px;
   color: white;
-  padding-top: 16px; }
+  width: 100%;
+  padding-top: 16px;
+  margin-top: 20px; }
 
 .brand-text {
   font-family: "PT Sans", sans-serif;
@@ -658,7 +674,11 @@ span {
   margin-top: -100px; }
 
 .profile-bottom-info {
-  padding-left: 20px; }
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
 
 .input-areas {
   margin-top: 17px;
@@ -794,10 +814,25 @@ span {
   .index-navbar {
     display: flex;
     align-items: center;
-    flex-direction: column; } }
+    flex-direction: column; }
+
+  .nav-pic {
+    display: none; } }
 @media only screen and (max-width: 992px) {
   .border-section {
     border-left: none; } }
+@media only screen and (max-width: 768px) {
+  .profile-content {
+    width: 100%; }
+
+  .profile-navbar {
+    background-color: transparent;
+    position: absolute;
+    top: 0; }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0; } }
 @media only screen and (max-width: 992px) {
   .landing-icon {
     width: 20%; }
@@ -821,6 +856,9 @@ span {
     height: auto;
     width: 100%;
     left: 0px; }
+
+  .profile-section {
+    width: 100%; }
 
   .main-row {
     padding-left: 0; }

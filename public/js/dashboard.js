@@ -26,7 +26,7 @@ $(document).ready(function() {
 				"<div class='col-xs-2 text-right' id='employmentStatus"+i+"' data-employ=" + data[i].status + ">" +
 				"</div>")
 			if (data[i].status === "employed-tech") {
-				$("#employmentStatus"+i).html("<div id='employed'>" +
+				$("#employmentStatus"+i).html("<div class='text-center' id='employed'>" +
 					"<i class='fa fa-briefcase fa-2x' aria-hidden='true'></i>" +
 					"<p id='employment-text'>Hired in tech</p>" +
 					"</div>")
@@ -77,14 +77,15 @@ $(document).ready(function() {
 		$(".user-cohort").html(data.cohort);
 		$(".user-linkedin").html(data.linkedInURL);
 		$(".user-profile").html(data.portfolioURL);
-		$(".profile-image").html("<img src = '" + data.profilePic + "'class= profile-image height = 200px width = 200px/>");
+		$(".profile-image").attr("src", data.profilePic);
 
 		//fill in here
 		$(".user-status").html(data.status);
 		$(".user-employer").html(data.employer);
-		$(".user-salary").html("First salary: " + data.first_salary);
-		$(".user-interview-time").html("Time job-seeking: " + data.interview_time);
+		$(".user-salary").html("First salary post bootcamp: " + data.first_salary);
+		$(".user-interview-time").html("Time job-seeking after bootcamp: " + data.interview_time);
 		$(".user-mentor").html("Open to mentor: " + data.mentor);
+		$(".nav-pic").attr("src", data.profilePic);
 
 	});
 

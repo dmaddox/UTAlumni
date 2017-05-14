@@ -20,6 +20,7 @@ $( document ).ready(function() {
             $(".edit-portfolioURL").html(data.portfolioURL);
             $(".edit-mentor").html(data.mentor);
             $(".profile-image").attr("src", data.profilePic);
+            $(".nav-pic").attr("src", data.profilePic);
 
         });// done
 
