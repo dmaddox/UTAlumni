@@ -46,8 +46,6 @@ $(document).ready(function() {
 		// click event to populate the modal
 		$("div.individual-result").on("click", function() {
 			var resultId = $(this).attr('id');
-			console.log(resultId);
-			console.log(data[resultId].firstname);
 			$(".modal-profile-image").attr("src", "").attr("src", data[resultId].profilePic);
 			$(".modal-name").html("").html(data[resultId].firstname + " " + data[resultId].lastname);
 			$(".modal-employer").html("").html(data[resultId].employer);

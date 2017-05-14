@@ -1,19 +1,16 @@
 $(document).ready(function(){
 
-
-var totalPeople;
 $.ajax({
   url: "/api/stats",
   method:"GET"
 }).done(function(info){
 
-  // totalPeople = info.employedTech + info.employedElse + info.studentNum + info.noJob;
-  // totalinterview = info.employedTech + info.employedElse + info.studentNum + info.noJob;
-
+ //google charts required functions 
  google.charts.load('current', {'packages':['corechart']});
  google.charts.setOnLoadCallback(employDrawChart);
  google.charts.setOnLoadCallback(interviewDrawChart);
 
+  //draw chart for the employment status of all users
   function employDrawChart() {
 
     var employData = google.visualization.arrayToDataTable([
@@ -39,6 +36,7 @@ $.ajax({
     chart.draw(employData, employOptions);
   } 
 
+  //draw chart for length of time in months before users got first post-bootcamp job
   function interviewDrawChart() {
 
   var interviewData = google.visualization.arrayToDataTable([
@@ -64,6 +62,7 @@ $.ajax({
   chart.draw(interviewData, interviewOptions);
   } 
 
+  //make sure charts resize as the page does, default is on load
   $(window).on("resize", function () {
       interviewDrawChart();
       employDrawChart();
