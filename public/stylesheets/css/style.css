@@ -30,7 +30,8 @@ h1, h2, h3, h4, h5, h6 {
   display: none; }
 
 #signup-body {
-  background-color: #eee; }
+  background-color: #eee;
+  padding-top: 95px; }
 
 /*inputs*/
 #sign-up-form input, #sign-up-form textarea {
@@ -500,7 +501,8 @@ footer {
   color: white;
   width: 100%;
   padding-top: 16px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  position: absolute; }
 
 .brand-text {
   font-family: "PT Sans", sans-serif;
