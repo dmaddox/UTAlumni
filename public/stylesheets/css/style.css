@@ -671,6 +671,25 @@ span {
   position: relative;
   border-radius: none; }
 
+#employ-piechart {
+  width: 100%;
+  min-height: 210px;
+  padding-top: 25px;
+  border-bottom: 2px solid #cacaca;
+  background-color: white;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  z-index: 1000; }
+
+#interview-piechart {
+  width: 100%;
+  min-height: 210px;
+  padding-top: 25px;
+  background-color: white;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  z-index: 1000; }
+
 #profile-background {
   height: 150px;
   background: red;

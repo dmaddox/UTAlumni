@@ -61,8 +61,6 @@ $(document).ready(function() {
 			$(".modal-email").html("").html(data[resultId].email);
 			$(".modal-linkedin").html("").html("<a href = '"+ data[resultId].linkedInURL+  "'>"+ data[resultId].linkedInURL + "</a>");
 			$(".modal-personal-site").html("").html("<a href = '"+ data[resultId].portfolioURL+  "'>"+ data[resultId].portfolioURL+ "</a>");
-			// $(".modal-linkedin").html('<a href=" '+ linkedInURL + ' " >' + data[resultId].linkedInURL + '</a>');
-			// $(".modal-profile").html('<a href='+ '"' + portfolioURL + '"'+ '>' + data[resultId].portfolioURL + '</a>');
 			$(".modal-mentor").html("").html(data[resultId].mentor);
 			$(".modal-about").html("").html(data[resultId].about);
 		})
@@ -72,16 +70,15 @@ $(document).ready(function() {
 		method: "GET"
 	}).done(function(data) {
 		//add logged-in user data to the left panel on the dashboard 
-		$(".user-fullname").html(data.firstname + " " + data.lastname);
-		$(".user-city").html(data.city + ", " + data.state);
-		$(".user-cohort").html(data.cohort);
-		$(".user-linkedin").html(data.linkedInURL);
-		$(".user-profile").html(data.portfolioURL);
 		$(".profile-image").html("<img src = '" + data.profilePic + "'class= profile-image height = 200px width = 200px/>");
-
-		//fill in here
-		$(".user-status").html(data.status);
-		$(".user-employer").html(data.employer);
+		$(".user-fullname").html(data.firstname + " " + data.lastname);
+		$(".user-city").html("Location :" + data.city + ", " + data.state);
+		$(".user-cohort").html("UT Cohort: " + data.cohort);
+		// $(".user-email").html("Email:" + data.email);
+		$(".user-linkedin").html("LinkedIn: <a href = '"+data.linkedInURL+"'>" + data.linkedInURL + "</a>");
+		// $(".user-profile").html("Portfolio: " + data.portfolioURL);
+		$(".user-status").html("Employment Status: " + data.status);
+		$(".user-employer").html("Employer: " + data.employer);
 		$(".user-salary").html("First salary: " + data.first_salary);
 		$(".user-interview-time").html("Time job-seeking: " + data.interview_time);
 		$(".user-mentor").html("Open to mentor: " + data.mentor);
