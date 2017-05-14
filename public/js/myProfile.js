@@ -23,18 +23,6 @@ $( document ).ready(function() {
             $(".nav-pic").attr("src", data.profilePic);
 
         });// done
-
-$(".profile-modal-submit").click(function(e){
-    alert("hi");
-    e.preventDefault();
-    modalForm = $(this).parent();
-    currentFieldset.find('input[class="required"], select').each(function () {
-    if ($(this).val() == "") {
-        $(this).addClass('input-error');
-    } else {
-        $(this).removeClass('input-error');
-    }
-});
   });// end of document ready
 
 $(".edit").on("click", function() {
