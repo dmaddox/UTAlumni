@@ -60,10 +60,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
 #linkedin-picture {
-  width: 49%; }
+  width: 100%; }
 
 #linkedin-URL {
-  width: 49%; }
+  width: 100%; }
 
 #email, #pass, #confirmP {
   width: 100%; }
