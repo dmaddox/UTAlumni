@@ -64,7 +64,7 @@
       <div class="navbar-fixed-top search-bar">
         <!-- search bar -->
           <div class="row input-areas">
-             <div class="col-xs-4 col-xs-offset-1 col-md-3 col-md-offset-5" type="input-group-btn drop-down-select">
+             <div class="col-xs-4 col-md-3 col-md-offset-5" type="input-group-btn drop-down-select">
                 <select id="drop-down-search" class="form-control selectpicker" data-style="btn-primary">
                    <option value="category">Category</option>
                    <option value="firstname">First Name</option>
@@ -82,49 +82,54 @@
            <div class="col-xs-2">
               <button class="btn" type="button" id="reset-button"><i class="fa fa-undo" aria-hidden="true"></i> Reset</button>
            </div>
-          <!-- /row -->
-          </div>
-       </div>
-      <!-- /navbar -->
-        <div class="main-content-dashboard">
+          </div><!-- /row -->
+       </div> <!-- end search navbar -->
+        <main class="main-content-dashboard">
           <div class="row">
            <div class="profile-section col-xs-12 col-sm-12 col-md-12 col-lg-4">
-            <aside class="text-center" id="profile-section"> <!-- user profile sidebar -->
-              <div class="background-banner-image-aside"></div>
-              <div class="profile-bottom"> <!--profile section with picture -->
-                <a href="/myProfile"> <img class="profile-image"></img></a>
-                <a href="/myProfile"><h1 class="user-fullname"> </h1></a>
-                <!-- profile info bottom section -->
-                <div class="profile-bottom-info text-left">
-                  <div class="profile-group-small">
-                  <p><i class="profile-icon fa fa-home" aria-hidden="true"></i><span class="user-city"></span></p>
-                  <p><i class="profile-icon fa fa-graduation-cap" aria-hidden="true"></i><span class="user-cohort"></span></p>
-                  <p><i class="profile-icon fa fa-linkedin" aria-hidden="true"></i><span class="user-linkedin"></span></p>
-                  <p><i class="profile-icon fa fa-briefcase" aria-hidden="true"></i><span class="user-status"></span></p>
-                  </div>
-                  <div class="profile-group-small">
-                    <p><i class="profile-icon fa fa-building" aria-hidden="true"></i><span class="user-employer"></span></p>
-                    <p><i class="profile-icon fa fa-money" aria-hidden="true"></i><span class="user-salary"></span></p>
-                    <p><i class="profile-icon fa fa-hourglass-half" aria-hidden="true"></i><span class="user-interview-time"></span></p>
-                    <p><i class="profile-icon fa fa-users" aria-hidden="true"></i><span class="user-mentor"></span></p>
-                  </div>
-                </div> <!-- end bottom section -->
-              </div> <!--end profile container -->
-             </aside> <!-- user profile sidebar -->             
+            <aside class="text-center" id="profile-section">
+                <!-- user profile sidebar -->
+                <div class="background-banner-image-aside"></div>
+                <div class="profile-bottom">
+                    <!--profile section with picture -->
+                    <a href="/myProfile"> <img class="profile-image">
+                    </a>
+                    <a href="/myProfile"><h1 class="user-fullname"> </h1></a>
+                    <!-- profile info bottom section -->
+                    <div class="profile-bottom-info text-left">
+                        <div class="profile-group-small">
+                            <p><i class="profile-icon fa fa-home" aria-hidden="true"></i><span class="user-city"></span>
+                            </p>
+                            <p><i class="profile-icon fa fa-graduation-cap" aria-hidden="true"></i><span class="user-cohort"></span>
+                            </p>
+                            <p><i class="profile-icon fa fa-linkedin" aria-hidden="true"></i><span class="user-linkedin"></span>
+                            </p>
+                            <p><i class="profile-icon fa fa-briefcase" aria-hidden="true"></i><span class="user-status"></span>
+                            </p>
+                        </div>
+                        <div class="profile-group-small">
+                            <p><i class="profile-icon fa fa-building" aria-hidden="true"></i><span class="user-employer"></span>
+                            </p>
+                            <p><i class="profile-icon fa fa-money" aria-hidden="true"></i><span class="user-salary"></span>
+                            </p>
+                            <p><i class="profile-icon fa fa-hourglass-half" aria-hidden="true"></i><span class="user-interview-time"></span>
+                            </p>
+                            <p><i class="profile-icon fa fa-users" aria-hidden="true"></i><span class="user-mentor"></span>
+                            </p>
+                        </div>
+                    </div> <!-- end bottom section -->
+                </div> <!--end profile container -->
+            </aside> <!-- end user profile aside-bar -->          
             <!-- START THE PIE CHART CODE  -->
              <div id="statistics-section">
-              <div id="employ-piechart"></div>
-              <div id="interview-piechart"></div>
-             </div> <!-- /row  piechart -->
+              <div class="hidden-xs col-md-6 col-lg-12" id="employ-piechart"></div>
+              <div class="hidden-xs col-md-6 col-lg-12" id="interview-piechart"></div>
+             </div> <!-- /row end piechart -->
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8" id="results-section">
-          </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8" id="results-section">
+            </div>
        </div> <!-- end of the main row -->
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 scroll" id="results-section">
-            <!-- all user data dynamically is entered into here -->
-          </div>
-       </div> <!-- end of the main row -->
+  </main> <!-- end of main content -->
        <!-- Modal -->
 <div class="modal edit-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
@@ -174,7 +179,7 @@
         </div>
     </div>
  </div><!-- /modal end  -->
- <footer class="pull-left">
+ <footer class="text-center">
  &copy; 2017 HookedIn
  </footer>
     <script src="../js/dashboard.js"></script>

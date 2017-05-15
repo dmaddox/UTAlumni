@@ -506,7 +506,8 @@ footer {
 .brand-text {
   font-family: "PT Sans", sans-serif;
   color: white !important;
-  font-size: 24px; }
+  font-size: 24px;
+  margin-bottom: 0px; }
 
 .info {
   font-size: 18px; }
@@ -836,6 +837,10 @@ span {
 .person-row {
   margin: 40px 0px; }
 
+@media (max-width: 767px) {
+  .info {
+    padding: 0px 15px;
+    text-align: center; } }
 @media (max-width: 700px) {
   .navbar-text {
     font-size: 18px; }

@@ -77,7 +77,7 @@ $(document).ready(function() {
 
 		//fill in here
 		$(".user-status").html(data.status);
-		$(".user-employer").html(data.employer);
+		$(".user-employer").html("Employer: " + data.employer);
 		$(".user-salary").html("First salary post bootcamp: " + data.first_salary);
 		$(".user-interview-time").html("Time job-seeking after bootcamp: " + data.interview_time);
 		$(".user-mentor").html("Open to mentor: " + data.mentor);
