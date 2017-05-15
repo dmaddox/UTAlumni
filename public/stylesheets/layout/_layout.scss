@@ -204,27 +204,60 @@ margin-top: 120px;
 
 // Pie Chart  
 
-#employ-piechart{
+#employ-piechartArea{
 	width: 100%;
-	min-height: 210px;
-    padding-top: 25px;
+	min-height: 275px;
+    z-index: 1000;
+}
+
+#employ-piechart{
+	padding: 25px 15px;
+	padding-bottom: 0px;
     border-bottom: 2px solid #cacaca;
     background-color: white;
     border: 1px solid #ccc;
     margin-top: 20px;
+}
+
+#interview-piechartArea{
+	width: 100%;
+	min-height: 275px;
     z-index: 1000;
 }
 
 #interview-piechart{
-	width: 100%;
-	min-height: 210px;
-  	padding-top: 25px;
+  	padding: 25px 15px;
+  	padding-bottom: 0px;
   	background-color: white;
     border: 1px solid #ccc;
     margin-top: 20px;
-    z-index: 1000;
 }
 
+#employ-piechart > p, #interview-piechart > p {
+	font-size: 20px;
+}
+
+@media (max-width: 1280px){
+	#statistics-section{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#employ-piechart{
+		width: 48%;
+	}
+
+	#interview-piechart{
+		width: 48%;
+	}
+}
+
+//hide the pie charts, picked this size bc at the edge of desktop and tablet
+@media all and (max-width: 980px){
+	#statistics-section{
+		display: none;
+	}
+}
 
 // =====================================================================
 

@@ -693,25 +693,47 @@ span {
   position: relative;
   border-radius: none; }
 
-#employ-piechart {
+#employ-piechartArea {
   width: 100%;
-  min-height: 210px;
-  padding-top: 25px;
+  min-height: 275px;
+  z-index: 1000; }
+
+#employ-piechart {
+  padding: 25px 15px;
+  padding-bottom: 0px;
   border-bottom: 2px solid #cacaca;
   background-color: white;
   border: 1px solid #ccc;
-  margin-top: 20px;
+  margin-top: 20px; }
+
+#interview-piechartArea {
+  width: 100%;
+  min-height: 275px;
   z-index: 1000; }
 
 #interview-piechart {
-  width: 100%;
-  min-height: 210px;
-  padding-top: 25px;
+  padding: 25px 15px;
+  padding-bottom: 0px;
   background-color: white;
   border: 1px solid #ccc;
-  margin-top: 20px;
-  z-index: 1000; }
+  margin-top: 20px; }
 
+#employ-piechart > p, #interview-piechart > p {
+  font-size: 20px; }
+
+@media (max-width: 1280px) {
+  #statistics-section {
+    display: flex;
+    justify-content: space-between; }
+
+  #employ-piechart {
+    width: 48%; }
+
+  #interview-piechart {
+    width: 48%; } }
+@media all and (max-width: 980px) {
+  #statistics-section {
+    display: none; } }
 #profile-background {
   height: 150px;
   background: red;

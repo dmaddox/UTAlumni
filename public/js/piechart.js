@@ -22,16 +22,16 @@ $.ajax({
     ]);
 
     var employOptions = {
-      title: 'Employment Rates',
+      title: '',
       colors:["#22C0D5", "#E79454", "#D3752D", "#FFBA85"],
       fontSize: 16,
       fontName: "Helvetica",
-      legend: {position: "top", maxLines: 5, alignment: "start", textStyle: {fontSize: 16}},
+      legend: {position: "none", maxLines: 5, alignment: "start", textStyle: {fontSize: 16}},
       titleTextStyle : {fontSize: 18, bold: true},
-      chartArea: {top: 60}
+      chartArea: {top: 35}
     };
 
-    var chart = new google.visualization.PieChart(document.getElementById('employ-piechart'));
+    var chart = new google.visualization.PieChart(document.getElementById('employ-piechartArea'));
 
     chart.draw(employData, employOptions);
   } 
@@ -48,16 +48,16 @@ $.ajax({
   ]);
 
   var interviewOptions = {
-    title: 'Months Job Seeking',
+    title: '',
     colors:["#22C0D5", "#E79454", "#D3752D", "#FFBA85"],
     fontSize: 16,
     fontName: "Helvetica",
-    legend: {position: "top", maxLines: 5, alignment: "start", textStyle: {fontSize: 16}},
+    legend: {position: "none", maxLines: 5, alignment: "start", textStyle: {fontSize: 16}},
     titleTextStyle : {fontSize: 18, bold: true},
-    chartArea: {top: 60}
+    chartArea: {top: 35}
   };
 
-  var chart = new google.visualization.PieChart(document.getElementById('interview-piechart'));
+  var chart = new google.visualization.PieChart(document.getElementById('interview-piechartArea'));
 
   chart.draw(interviewData, interviewOptions);
   } 
