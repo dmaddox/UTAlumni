@@ -4,16 +4,14 @@ var fs = require('fs');
 var path = require('path');
 var Sequelize = require('sequelize');
 var basename = path.basename(module.filename);
-var env = process.env.NODE_ENV || "production";
+var env = process.env.NODE_ENV || 'production';
 var config = require(__dirname + '/../config/config.json')[env];
 var db = {};
 
 //configuring the env with sequelize
 if (config.use_env_variable) {
-	console.log("The config user env var is CONNECTED")
 	var sequelize = new Sequelize(process.env[config.use_env_variable]);
 } else {
-	console.log("THE CONFIG env var isnt working! ")
 	var sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
 

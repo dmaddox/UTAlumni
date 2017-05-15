@@ -5,6 +5,7 @@ var session = require('express-session');
 var bodyParser = require('body-parser');
 var CronJob = require('cron').CronJob;
 var env = require('dotenv').load();
+var PORT = process.env.PORT || 5000; 
 	//var exphbs = require('express-handlebars')
 
 //For BodyParser
@@ -152,7 +153,7 @@ models.sequelize.sync().then(function() {
 }).catch(function(err) {
 	console.log(err, "Something went wrong with the Database Update!");
 });
-app.listen(5000, function(err) {
+app.listen(PORT, function(err) {
 	if (!err)
 		console.log("Site is live");
 	else console.log(err);
