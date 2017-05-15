@@ -11,6 +11,7 @@ var db = {};
 
 //configuring the env with sequelize
 if (use_env_variable) {
+	console.log("Got to the the use_env on index");
 	var sequelize = new Sequelize(process.env[use_env_variable]);
 } else {
 	console.log("THE CONFIG env var isnt working! ")
