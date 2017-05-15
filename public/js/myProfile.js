@@ -14,7 +14,7 @@ $( document ).ready(function() {
             $(".edit-employer").html(data.employer);
             $(".edit-salary").html(data.first_salary);
             $(".edit-interview-time").html(data.interview_time);
-            $(".edit-cohort").html(data.cohort);
+            $(".edit-cohort").html(data.cohort + " ");
             $(".edit-email").html(data.email);
             $(".edit-linkedin").html(data.linkedInURL);
             $(".edit-portfolioURL").html(data.portfolioURL);

@@ -263,13 +263,21 @@ margin-top: 120px;
 	flex-grow: 1;
 	text-align: right;
 	word-break: break-all;
+
+	&:hover{
+		color: $light-grey;
+	}
 }
 .about-icon{
-	color: $light-grey;
+	color: $dark-grey;
 	margin-top: 0px;
+	padding-right: 5px;
 }
 .about-section-container{
 	color: $dark-grey;
+}
+.edit-cohort{
+	padding-right: 10px;
 }
 
 #profile-media, #profile-about-me, #profile-employment-info {
