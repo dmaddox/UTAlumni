@@ -185,7 +185,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #20b4c8; }
 
 #employed {
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  text-align: center; }
 
 .header-image {
   background: url("../../assets/group.jpg") center center no-repeat;
