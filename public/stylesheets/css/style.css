@@ -740,13 +740,19 @@ span {
   flex-grow: 1;
   text-align: right;
   word-break: break-all; }
+  .about-item:hover {
+    color: #d3d3d3; }
 
 .about-icon {
-  color: #d3d3d3;
-  margin-top: 0px; }
+  color: #392f2d;
+  margin-top: 0px;
+  padding-right: 5px; }
 
 .about-section-container {
   color: #392f2d; }
+
+.edit-cohort {
+  padding-right: 10px; }
 
 #profile-media, #profile-about-me, #profile-employment-info {
   border: 1px solid #eee;
