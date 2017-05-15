@@ -126,6 +126,10 @@ margin-top: 120px;
 	border-radius: 0px;
 }
 
+#dashboard-modal-content{
+	width: 700px;
+}
+
 .modal-links {
 	background: linear-gradient(to bottom right, #F0C27B, #4B1248);
 	padding: 20px;
@@ -146,6 +150,20 @@ margin-top: 120px;
 
 .sub-modal-info > p {
 	font-weight: bold;
+	font-size: 20px;
+}
+
+#modal-border-right{
+	border-right: 1px solid grey;
+}
+
+@media all and (max-width: 990px){
+	#modal-border-right{
+		border-right: none;
+	}
+	.sub-modal-info {
+		padding-left: 30px
+	}
 }
 
 #results-company {
