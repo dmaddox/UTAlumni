@@ -22,15 +22,7 @@ app.use(session({
 })); // session secret
 app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
-//For Handlebars
-// app.set('views', './views')
-// app.engine('handlebars', exphbs({
-// 	extname: '.handlebars'
-// }));
-// app.set('view engine', '.handlebars');
-// app.get('/', function(req, res) {
-// 	res.send('Welcome to Passport with Sequelize');
-// });
+
 app.use(express.static("./public"));
 
 //Model
