@@ -58,7 +58,7 @@ module.exports = function(app) {
     });
   });
   app.get("/api/users", function(req, res) {
-    db.user.findAll({}).then(function(dbAll) {
+    db.user.findAll({order:["firstname"]}).then(function(dbAll) {
       res.json(dbAll);
     });
   });
