@@ -6,7 +6,6 @@ var bodyParser = require('body-parser');
 var CronJob = require('cron').CronJob;
 var env = require('dotenv').load();
 var PORT = process.env.PORT || 5000; 
-	//var exphbs = require('express-handlebars')
 
 //For BodyParser
 app.use(bodyParser.urlencoded({
