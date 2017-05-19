@@ -36,7 +36,7 @@ Already have a job? Update your profile so currents students can search for you.
 
 ## HookedIn Walk-through 
 
-![Demo](https://github.com/jflook10/UTAlumni/blob/master/public/assets/videos/hookedInTutorial.mp4)
+![Demo](https://github.com/jflook10/UTAlumni/blob/master/public/assets/videos/hookedInTutorial.gif)
 
 
 ---------
