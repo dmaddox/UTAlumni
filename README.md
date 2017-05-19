@@ -37,7 +37,6 @@ Already have a job? Update your profile so currents students can search for you.
 ## HookedIn Walk-through 
 <video min-width="320" min-height="240" controls>
   <source src="https://github.com/jflook10/UTAlumni/blob/master/public/assets/videos/hookedInTutorial.mp4" type="video/mp4">
-  <source src="https://github.com/jflook10/UTAlumni/blob/master/public/assets/videos/hookedInTutorial.ogv" type="video/ogg">
 Your browser does not support the video tag.
 </video>
 
